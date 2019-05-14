@@ -1,1 +1,1 @@
-"Following Java Learning path on Pluralsight" 
+Java path on PluralSight

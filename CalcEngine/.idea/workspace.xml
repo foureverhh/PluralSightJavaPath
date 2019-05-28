@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="418b4da0-997c-470a-b591-6901ecef915f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MathEquation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TheBigPicture/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TheBigPicture/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />

@@ -1,8 +1,8 @@
 public class MathEquation {
-    public double leftVal;
-    public double rightVal;
-    public char opCode;
-    public double result;
+    private double leftVal;
+    private double rightVal;
+    private char opCode;
+    private double result;
 
     public double execute(){
         switch (opCode){
@@ -24,4 +24,48 @@ public class MathEquation {
             }
     }
 
+    public MathEquation() {
+    }
+
+    public MathEquation(char opCode) {
+        this.opCode = opCode;
+    }
+
+    public MathEquation( double leftVal, double rightVal,char opCode){
+        this(opCode);
+        this.leftVal = leftVal;
+        this.rightVal = rightVal;
+    }
+
+    public void setLeftVal(double leftVal) {
+        this.leftVal = leftVal;
+    }
+
+    public void setRightVal(double rightVal) {
+        this.rightVal = rightVal;
+    }
+
+    public void setOpCode(char opCode) {
+        this.opCode = opCode;
+    }
+
+    public double getLeftVal() {
+        return leftVal;
+    }
+
+    public double getRightVal() {
+        return rightVal;
+    }
+
+    public char getOpCode() {
+        return opCode;
+    }
+
+    public void setResult(double result) {
+        this.result = result;
+    }
+
+    public double getResult(){
+        return result;
+    }
 }

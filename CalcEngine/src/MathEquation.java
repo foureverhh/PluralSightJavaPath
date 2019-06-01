@@ -4,23 +4,41 @@ public class MathEquation {
     private char opCode;
     private double result;
 
-    public double execute(){
+    //Method overloading
+    public void execute(double leftVal, double rightVal){
+        this.leftVal = leftVal;
+        this.rightVal = rightVal;
+
+        execute();
+    }
+
+    public void execute(int leftVal, int rightVal){
+        this.leftVal = leftVal;
+        this.rightVal = rightVal;
+
+        execute();
+
+        result = (int)result;
+    }
+
+    public void execute(){
         switch (opCode){
                 case 'a':
-                    return result  = leftVal + rightVal;
-
+                    result  = leftVal + rightVal;
+                    break;
                 case 'd':
-                    return result = rightVal != 0.0d ? leftVal/rightVal : 0.0f;
-
+                    result = rightVal != 0.0d ? leftVal/rightVal : 0.0f;
+                    break;
                 case 's':
-                    return result = leftVal - rightVal;
-
+                    result = leftVal - rightVal;
+                    break;
                 case 'm':
-                    return result = leftVal * rightVal;
-                 default:
-                        System.out.println("Error-invalid opCode");
-                        return result = 0.0d;
-
+                    result = leftVal * rightVal;
+                    break;
+                default:
+                    System.out.println("Error-invalid opCode");
+                    result = 0.0d;
+                    break;
             }
     }
 

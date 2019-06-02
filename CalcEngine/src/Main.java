@@ -44,6 +44,29 @@ public class Main {
 
         equationOverload.execute((double)leftInt, rightInt);
         System.out.println("Result: "+ equationOverload.getResult());
+        System.out.println();
+        System.out.println();
+
+        Flight flight = new Flight();
+        CargoFlight cargoFlight = new CargoFlight();
+
+        System.out.println("Flight Packages: ");
+        System.out.println(flight.packages);
+        System.out.println();
+        System.out.println("Cargo Packages: ");
+        System.out.println(cargoFlight.packages);
+        System.out.println();
+        System.out.println("Flight get seats: ");
+        System.out.println(flight.getSeats());
+        System.out.println();
+        System.out.println("Cargo get seats ");
+        System.out.println(cargoFlight.getSeats());
+        System.out.println();
+
+        Flight flightToCargo = new CargoFlight();
+
+
+
     }
 
 
@@ -60,4 +83,25 @@ public class Main {
     }
     */
 
+}
+
+class Flight{
+    int packages = 200;
+
+    private int seats = 200;
+    public int getSeats() {
+        return seats;
+    }
+
+    public void flightFunc(){
+        System.out.println("Flight func");
+    }
+}
+
+class CargoFlight extends Flight{
+    int packages = 10;
+    private int seats = 100;
+    public void cargoFunc (){
+        System.out.println("Cargo func");
+    }
 }

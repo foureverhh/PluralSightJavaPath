@@ -101,6 +101,9 @@ class Flight{
 class CargoFlight extends Flight{
     int packages = 10;
     private int seats = 100;
+    public int getSeats() {
+        return seats;
+    }
     public void cargoFunc (){
         System.out.println("Cargo func");
     }

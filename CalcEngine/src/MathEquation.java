@@ -4,8 +4,55 @@ public class MathEquation {
     private char opCode;
     private double result;
 
-    public MathEquation(){
+    //Method overloading
+    public void execute(double leftVal, double rightVal){
+        this.leftVal = leftVal;
+        this.rightVal = rightVal;
 
+        execute();
+    }
+
+    public void execute(int leftVal, int rightVal){
+        this.leftVal = leftVal;
+        this.rightVal = rightVal;
+
+        execute();
+
+        result = (int)result;
+    }
+
+    public void execute(){
+        switch (opCode){
+                case 'a':
+                    result  = leftVal + rightVal;
+                    break;
+                case 'd':
+                    result = rightVal != 0.0d ? leftVal/rightVal : 0.0f;
+                    break;
+                case 's':
+                    result = leftVal - rightVal;
+                    break;
+                case 'm':
+                    result = leftVal * rightVal;
+                    break;
+                default:
+                    System.out.println("Error-invalid opCode");
+                    result = 0.0d;
+                    break;
+            }
+    }
+
+    public MathEquation() {
+    }
+
+    public MathEquation(char opCode) {
+        this.opCode = opCode;
+    }
+
+    public MathEquation( double leftVal, double rightVal,char opCode){
+        this(opCode);
+        this.leftVal = leftVal;
+        this.rightVal = rightVal;
     }
 
     public void setLeftVal(double leftVal) {
@@ -32,28 +79,11 @@ public class MathEquation {
         return opCode;
     }
 
-    public double getResult() {
+    public void setResult(double result) {
+        this.result = result;
+    }
+
+    public double getResult(){
         return result;
     }
-
-    public double execute(){
-        switch (opCode){
-                case 'a':
-                    return result  = leftVal + rightVal;
-
-                case 'd':
-                    return result = rightVal != 0.0d ? leftVal/rightVal : 0.0f;
-
-                case 's':
-                    return result = leftVal - rightVal;
-
-                case 'm':
-                    return result = leftVal * rightVal;
-                 default:
-                        System.out.println("Error-invalid opCode");
-                        return result = 0.0d;
-
-            }
-    }
-
 }

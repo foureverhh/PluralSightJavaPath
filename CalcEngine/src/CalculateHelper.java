@@ -10,38 +10,41 @@ public class CalculateHelper {
     private static final char MULTIPLY_SYMBOL = '*';
     private static final char DIVIDE_SYMBOL = '/';
 
-    public void process(String statement){
+    public void process(String statement) throws InvalidStatementException{
         //add 1.0 2.0
         String[] parts = statement.split(" ");
+        if(parts.length != 3)
+            throw new InvalidStatementException("Incorrect number of fields", statement);
+
         String commandString = parts[0];
-        leftValue = Double.parseDouble(parts[1]);
-        rightValue = Double.parseDouble(parts[2]);
-
+        try {
+            leftValue = Double.parseDouble(parts[1]);
+            rightValue = Double.parseDouble(parts[2]);
+        }catch (NumberFormatException e){
+            throw new InvalidStatementException("Non-numeric data", statement,e);
+        }
         setCommandFromString(commandString);
-
+        if(command == null)
+            throw new InvalidStatementException("Invalid command",statement);
         CalculateBase calculator = null;
         switch (command){
             case Add:
                 calculator =new Adder(leftValue, rightValue);
-                calculator.calculate();
-                result = calculator.getResult();
+
                 break;
             case Subtract:
                 calculator =new Substractor(leftValue,rightValue);
-                calculator.calculate();
-                result = calculator.getResult();
                 break;
             case Multiply:
                 calculator = new Multiplier(leftValue,rightValue);
-                calculator.calculate();
-                result = calculator.getResult();
                 break;
             case Divide:
                 calculator = new Divider(leftValue, rightValue);
-                calculator.calculate();
-                result = calculator.getResult();
                 break;
         }
+
+        calculator.calculate();
+        result = calculator.getResult();
     }
 
     private void setCommandFromString(String commandString){

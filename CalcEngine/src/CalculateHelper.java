@@ -5,6 +5,11 @@ public class CalculateHelper {
     double rightValue;
     double result;
 
+    private static final char ADD_SYMBOL = '+';
+    private static final char SUBTRACT_SYMBOL = '-';
+    private static final char MULTIPLY_SYMBOL = '*';
+    private static final char DIVIDE_SYMBOL = '/';
+
     public void process(String statement){
         //add 1.0 2.0
         String[] parts = statement.split(" ");
@@ -18,13 +23,25 @@ public class CalculateHelper {
         switch (command){
             case Add:
                 calculator =new Adder(leftValue, rightValue);
+                calculator.calculate();
+                result = calculator.getResult();
                 break;
             case Subtract:
                 calculator =new Substractor(leftValue,rightValue);
+                calculator.calculate();
+                result = calculator.getResult();
+                break;
+            case Multiply:
+                calculator = new Multiplier(leftValue,rightValue);
+                calculator.calculate();
+                result = calculator.getResult();
+                break;
+            case Divide:
+                calculator = new Divider(leftValue, rightValue);
+                calculator.calculate();
+                result = calculator.getResult();
                 break;
         }
-
-
     }
 
     private void setCommandFromString(String commandString){
@@ -38,6 +55,39 @@ public class CalculateHelper {
             command = MathCommand.Divide;
         else if(commandString.equalsIgnoreCase(MathCommand.Multiply.toString()))
             command = MathCommand.Multiply;
+    }
+
+
+    @Override
+    public String toString() {
+        char symbol = ' ';
+        switch (command){
+            case Add:
+                symbol = ADD_SYMBOL;
+                break;
+            case Subtract:
+                symbol = SUBTRACT_SYMBOL;
+                break;
+            case Multiply:
+                symbol = MULTIPLY_SYMBOL;
+                break;
+            case Divide:
+                symbol = DIVIDE_SYMBOL;
+                break;
+
+        }
+
+        StringBuilder sb = new StringBuilder(20);
+        sb.append(leftValue);
+        sb.append(' ');
+        sb.append(symbol);
+        sb.append(' ');
+        sb.append(rightValue);
+        sb.append(" = ");
+        sb.append(result);
+        return sb.toString();
+
+
     }
 }
 

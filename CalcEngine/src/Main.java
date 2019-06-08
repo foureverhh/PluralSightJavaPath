@@ -19,9 +19,22 @@ public class Main {
         //testEquation.execute();
         //System.out.print("test=");
         //System.out.println(testEquation.getResult());
+        String[] statements = {
+                "divide 100.0 50.0",
+                "add 25.0 92.0",
+                "subtract 225.0 17.0",
+                "multiply 11.0 3.0"
+        };
+        CalculateHelper helper = new CalculateHelper();
+        for(String statement : statements){
+            System.out.println(statement);
+            helper.process(statement);
+            System.out.println(helper);
+        }
 
 
 
+    /*
         MathEquation[] equations = new MathEquation[4];
         equations[0] = new MathEquation(100.0d,50.0d,'d');
         equations[1] = new MathEquation(25.0d,92.0d,'a');
@@ -34,73 +47,13 @@ public class Main {
 
         }
 
-        String[] statements = {
-                "divide 100.0 50.0",
-                "add 25.0 92.0",
-                "subtract 225.0 17.0",
-                "multiply 11.0 3.0"
-        };
 
 
 
-
-
-        List<Integer> sums = new ArrayList<>();
-        //List<Integer> frequencies = new ArrayList<>();
-        List<Integer> frequencies = getFrequencies();
-
-
-        /*
-            frequencies.add(7);
-
-            frequencies.add(7);
-            frequencies.add(-2);
-            frequencies.add(-7);
-            frequencies.add(-4);
-        */
-
-        boolean findNumber = false;
-        int sum =0;
-        sums.add(sum);
-
-        //Iterate all elements in frequencies
-        for(int index = 0; index <= frequencies.size(); index++) {
-
-            if(index == frequencies.size())
-                index = 0;
-
-            sum += frequencies.get(index);
+    */
 
 
 
-            sums.add(sum);
-            //Check results
-            /*
-            for(int number : sums){
-                System.out.print(number+" ");
-            }
-            System.out.println();
-            */
-            int getSameSum = 0;
-            for(Integer number : sums){
-                //int getSameSum = 0;
-                //System.out.println("get 5 at "+sums.indexOf(5));
-                if(sum == number){
-                    getSameSum++;
-                    System.out.println(sum +" "+getSameSum);
-                }
-
-                if(getSameSum == 2){
-                    System.out.println("Get the 2 times sum:");
-                    System.out.println(sum);
-                    findNumber = true;
-                    break;
-                }
-            }
-
-            if(findNumber)
-                break;
-        }
 
         //System.out.println(sum);
         /*
@@ -141,30 +94,8 @@ public class Main {
 
 
 
-    //Get all frequencies
-    private static List<Integer> getFrequencies(){
-        BufferedReader reader;
-        List<Integer> numbers = new ArrayList<>();
-        try {
-            reader = new BufferedReader(new FileReader("number.txt"));
-            String line;
 
-            while((line = reader.readLine()) != null){
-                 int number = Integer.parseInt(line);
-                 numbers.add(number);
-            }
-            reader.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        for(int number: numbers)
-            System.out.print(number+" ");
-        System.out.println();
-        return numbers;
-    }
-
+    /*
     static MathEquation create(double leftVal, double rightVal, char opCode) {
 
 
@@ -228,7 +159,7 @@ public class Main {
     */
 
 }
-
+/*
 class Flight{
     int packages = 200;
 
@@ -252,3 +183,5 @@ class CargoFlight extends Flight{
         System.out.println("Cargo func");
     }
 }
+
+ */

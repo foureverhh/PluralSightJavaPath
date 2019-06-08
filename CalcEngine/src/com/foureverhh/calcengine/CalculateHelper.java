@@ -1,16 +1,23 @@
+package com.foureverhh.calcengine;
+
+import com.foureverhh.calcengine.Adder;
+import com.foureverhh.calcengine.CalculateBase;
+
+import static com.foureverhh.calcengine.MathCommand.*;
+
 public class CalculateHelper {
 
-    MathCommand command;
-    double leftValue;
-    double rightValue;
-    double result;
+    private MathCommand command;
+    private double leftValue;
+    private double rightValue;
+    private double result;
 
     private static final char ADD_SYMBOL = '+';
     private static final char SUBTRACT_SYMBOL = '-';
     private static final char MULTIPLY_SYMBOL = '*';
     private static final char DIVIDE_SYMBOL = '/';
 
-    public void process(String statement) throws InvalidStatementException{
+    public void process(String statement) throws InvalidStatementException {
         //add 1.0 2.0
         String[] parts = statement.split(" ");
         if(parts.length != 3)
@@ -50,14 +57,14 @@ public class CalculateHelper {
     private void setCommandFromString(String commandString){
 
 
-        if(commandString.equalsIgnoreCase(MathCommand.Add.toString()))
-            command = MathCommand.Add;
-        else if(commandString.equalsIgnoreCase(MathCommand.Subtract.toString()))
-            command = MathCommand.Subtract;
-        else if(commandString.equalsIgnoreCase(MathCommand.Divide.toString()))
-            command = MathCommand.Divide;
-        else if(commandString.equalsIgnoreCase(MathCommand.Multiply.toString()))
-            command = MathCommand.Multiply;
+        if(commandString.equalsIgnoreCase(Add.toString()))
+            command = Add;
+        else if(commandString.equalsIgnoreCase(Subtract.toString()))
+            command = Subtract;
+        else if(commandString.equalsIgnoreCase(Divide.toString()))
+            command = Divide;
+        else if(commandString.equalsIgnoreCase(Multiply.toString()))
+            command = Multiply;
     }
 
 

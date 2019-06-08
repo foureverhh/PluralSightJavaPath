@@ -1,3 +1,7 @@
+package com.foureverhh.calcengine;
+
+import com.foureverhh.calcengine.CalculateBase;
+
 public class Multiplier extends CalculateBase
 {
     public Multiplier(){

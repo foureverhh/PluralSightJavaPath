@@ -1,3 +1,5 @@
+package com.foureverhh.calcengine;
+
 public abstract class CalculateBase {
 
     private double leftVal;

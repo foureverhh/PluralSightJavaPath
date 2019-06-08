@@ -1,4 +1,8 @@
-public class Substractor extends CalculateBase{
+package com.foureverhh.calcengine;
+
+import com.foureverhh.calcengine.CalculateBase;
+
+public class Substractor extends CalculateBase {
     public Substractor() {
     }
 

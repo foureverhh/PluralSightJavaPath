@@ -18,7 +18,7 @@ public abstract class CalculateBase {
         return result;
     }
 
-    public void setLeftVal(double leftVal){
+    public void setLeftVal(double leftVal) {
         this.leftVal = leftVal;
     }
 

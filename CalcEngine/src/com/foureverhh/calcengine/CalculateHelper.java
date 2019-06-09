@@ -1,8 +1,5 @@
 package com.foureverhh.calcengine;
 
-import com.foureverhh.calcengine.Adder;
-import com.foureverhh.calcengine.CalculateBase;
-
 import static com.foureverhh.calcengine.MathCommand.*;
 
 public class CalculateHelper {
@@ -40,7 +37,7 @@ public class CalculateHelper {
 
                 break;
             case Subtract:
-                calculator =new Substractor(leftValue,rightValue);
+                calculator =new Subtractor(leftValue,rightValue);
                 break;
             case Multiply:
                 calculator = new Multiplier(leftValue,rightValue);

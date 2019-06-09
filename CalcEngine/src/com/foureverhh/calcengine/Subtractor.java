@@ -2,11 +2,11 @@ package com.foureverhh.calcengine;
 
 import com.foureverhh.calcengine.CalculateBase;
 
-public class Substractor extends CalculateBase {
-    public Substractor() {
+public class Subtractor extends CalculateBase {
+    public Subtractor() {
     }
 
-    public Substractor(double leftVal, double rightVal) {
+    public Subtractor(double leftVal, double rightVal) {
         super(leftVal, rightVal);
     }
 

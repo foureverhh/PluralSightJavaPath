@@ -1,28 +1,27 @@
 package com.foureverhh.calcengine;
 
-public class Adder extends CalculateBase implements MathProcessing{
-
-    public Adder() {
+public class PowerOf extends CalculateBase implements MathProcessing{
+    public PowerOf() {
     }
 
-    public Adder(double leftVal, double rightVal){
-        super(leftVal,rightVal);
+    public PowerOf(double leftVal, double rightVal) {
+        super(leftVal, rightVal);
     }
 
     @Override
     public void calculate() {
-        double value = getLeftVal() + getRightVal();
-        setResult(value);
+        double result = Math.pow(getLeftVal(),getRightVal());
+        setResult(result);
     }
 
     @Override
     public String getKeyword() {
-        return "add";
+        return "power";
     }
 
     @Override
     public char getSymbol() {
-        return '+';
+        return '^';
     }
 
     @Override

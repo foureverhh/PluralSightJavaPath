@@ -47,7 +47,7 @@ public class Main {
     }
 
     private static void writeToFileZip1(FileSystem zipFs,String[] data)throws IOException{
-        try(BufferedWriter writer = Files.newBufferedWriter(zipFs.getPath("/newFile1.txt"))){
+        try(BufferedWriter writer = Files.newBufferedWriter(zipFs.getPath("/newFile1.txt"),StandardOpenOption.APPEND)){
             for(String str: data){
                 writer.write(str);
                 writer.newLine();

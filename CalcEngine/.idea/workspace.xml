@@ -7,25 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="418b4da0-997c-470a-b591-6901ecef915f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CalcEngine_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/foureverhh/calcengine/DynamicHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/foureverhh/calcengine/MathProcessing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/foureverhh/calcengine/PowerOf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AdventureOfCode/Day1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AdventureOfCode/Day1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AdventureOfCode/Day1/out/production/Day1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AdventureOfCode/Day1/out/production/Day1/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AdventureOfCode/Day1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AdventureOfCode/Day1/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalcEngine/com/foureverhh/calcengine/Adder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalcEngine/com/foureverhh/calcengine/Adder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalcEngine/com/foureverhh/calcengine/CalculateHelper$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalcEngine/com/foureverhh/calcengine/CalculateHelper$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalcEngine/com/foureverhh/calcengine/CalculateHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalcEngine/com/foureverhh/calcengine/CalculateHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalcEngine/com/foureverhh/calcengine/Substractor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalcEngine/com/foureverhh/myapp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalcEngine/com/foureverhh/myapp/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/foureverhh/calcengine/Adder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/foureverhh/calcengine/Adder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/foureverhh/calcengine/CalculateBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/foureverhh/calcengine/CalculateBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/foureverhh/calcengine/CalculateHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/foureverhh/calcengine/CalculateHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/foureverhh/calcengine/Substractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/foureverhh/calcengine/Subtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/foureverhh/myapp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/foureverhh/myapp/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,10 +33,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/foureverhh/calcengine/PowerOf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
+            <state relative-caret-position="371">
               <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
               <folding>
                 <element signature="e#157#158#0" expanded="true" />
@@ -98,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/foureverhh/calcengine/DynamicHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="311">
               <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
               <folding>
                 <element signature="e#161#162#0" expanded="true" />
@@ -308,7 +293,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24892704" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -319,12 +303,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19518073" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19518073" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.29759037" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29759037" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
@@ -475,21 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/foureverhh/calcengine/PowerOf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-          <folding>
-            <element signature="e#157#158#0" expanded="true" />
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/foureverhh/myapp/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -499,11 +468,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/foureverhh/calcengine/DynamicHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="311">
           <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
           <folding>
             <element signature="e#161#162#0" expanded="true" />
             <element signature="e#200#201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/foureverhh/calcengine/PowerOf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+          <folding>
+            <element signature="e#157#158#0" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
           </folding>
         </state>
       </provider>

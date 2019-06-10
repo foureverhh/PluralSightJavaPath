@@ -1,10 +1,7 @@
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.nio.file.FileSystem;
-import java.nio.file.FileSystems;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.nio.file.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,7 +16,7 @@ public class Main {
         };
 
         try(FileSystem zipFs = openZip(Paths.get("myData.zip"))){
-
+            copyToZip(zipFs);
         }catch (Exception e){
             System.out.println(e.getClass().getSimpleName() + " - " + e.getMessage());
         }
@@ -34,7 +31,12 @@ public class Main {
         return zipFs;
     }
 
-    private static void copyToZip(FileSystem zipPath) throws IOException{
+    private static void copyToZip(FileSystem zipFs) throws IOException{
+        Path sourceFile = Paths.get("file1.txt");
+        //Path sourceFile = FileSystems.getDefault().getPath("file1.txt");
+        Path destinationFile = zipFs.getPath("file1Copied.txt");
+
+        Files.copy(sourceFile,destinationFile,StandardCopyOption.REPLACE_EXISTING);
 
     }
 

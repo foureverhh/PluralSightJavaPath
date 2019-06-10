@@ -5,22 +5,23 @@ public class Main {
     public static void main(String[] args) {
         //doTryCatchFinally();
         //doTryWithResources();
-        //doTryWithResourcesMulti();
+        doTryWithResourcesMulti();
         //doCloseThing();
     }
 
-    public static void doTryCatchFinal(){
-        char[] buff = new char[8];
+    public static void doTryCatchFinally(){
+        char[] buff = new char[10];
         int length;
         Reader reader = null;
 
         try {
-            reader = Helper.openReader("file1.text");
+           reader = Helper.openReader("file1.txt");
             while((length = reader.read(buff))>=0){
                 System.out.println("\nlength: "+ length);
                 for(int i=0; i< length;i++){
-                    System.out.println(buff[i]);
+                    System.out.print(buff[i]+ " ");
                 }
+                System.out.println();
             }
         } catch (IOException e1) {
             System.out.println(e1.getClass().getSimpleName() + " - " + e1.getMessage());
@@ -52,17 +53,20 @@ public class Main {
     }
 
     public static void doTryWithResourcesMulti(){
-        char[] buff = new char[0];
+        char[] buff = new char[8];
         int length;
-
-
-        try(Reader reader = Helper.openReader("file1.text");
-            Writer writer = Helper.openWriter("file2.text")) {
+        try(Reader reader = Helper.openReader("file1.txt");
+            Writer writer = Helper.openWriter("file2.txt")) {
 
             while((length = reader.read(buff))>=0){
                 System.out.println("\nlength: "+ length);
+                for(int i=0;i<length;i++){
+                    System.out.print(buff[i]+" ");
+                }
+                System.out.println();
                 writer.write(buff,0,length);
             }
+
         } catch (IOException e1) {
             System.out.println(e1.getClass().getSimpleName() + " - " + e1.getMessage());
         }
@@ -73,6 +77,9 @@ public class Main {
             ac.saySomething();
         }catch (IOException e){
             System.out.println(e.getClass().getSimpleName() + " - " + e.getMessage());
+            for(Throwable t : e.getSuppressed()){
+                System.out.println("Suppressed: " + t.getMessage());
+            }
         }
     }
 }

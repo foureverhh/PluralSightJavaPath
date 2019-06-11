@@ -4,10 +4,8 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.Charset;
 import java.nio.file.*;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.StringJoiner;
+import java.sql.SQLOutput;
+import java.util.*;
 
 public class Main {
 
@@ -46,6 +44,44 @@ public class Main {
         sj2.add("Soft");
         System.out.println(sj2.toString());
         */
+
+        /****************** String Format ****************/
+        /*
+        int david = 13, dawson = 11111111, dillon = 4, gordon =2;
+        String str1 = "My nephews are " + david + ", " + dawson + ", " + dillon + ", and " + gordon + " years old.";
+        String str2 = String.format("My nephews are %d, %d, %d, and %d years old.",david,dawson,dillon,gordon);
+        System.out.println(str1);
+        System.out.println(str2);
+
+        double avgDiff = ((david - dawson) + (dawson - dillon) + (dillon - gordon)) / 3.0d;
+        String str3 = "The average age between each is " + avgDiff + " years.";
+        System.out.println(str3);
+        String str4 = String.format("The average age between each is %,010.2f years.",avgDiff);
+        System.out.println(str4);
+
+        int i = 123456, j= 34567890;
+        double k = -234456.78973;
+        System.out.printf("i is %,d.",i);
+        System.out.println();
+        System.out.printf("k is %(,.2f.",k);
+        System.out.println();
+        */
+
+        /**************************************** Argument Index  ****************************************/
+        /*
+        System.out.printf("Print string %s, %s and %s", "A","B","C");
+        System.out.println();
+        System.out.printf("Print string %2$s, %1$s and %2$s", "A","B","C");
+        System.out.println();
+        System.out.printf("Print string %3$s, %<s and %1$s", "A","B","C");
+        */
+
+        try {
+            doWrite(13,11,4,2,1.0d);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
 
     }
 
@@ -92,5 +128,15 @@ public class Main {
 
         */
        Files.write(Paths.get("newFile2Test.txt"), Arrays.asList(data), Charset.defaultCharset(),StandardOpenOption.CREATE);
+    }
+
+    /********************Writing Formatted Content to a Stream ****************************************/
+    static void doWrite(int david, int dawson, int dillon, int gordon, double avgDiff) throws IOException{
+        BufferedWriter writer = Files.newBufferedWriter(Paths.get("MyFile.txt"));
+        try(Formatter f = new Formatter(writer)){
+            f.format("My nephews are %d, %d, %d, and %d years old",david,dawson,dillon,gordon);
+            f.format("\n");
+            f.format("The average age between each is %.1f years",avgDiff);
+        }
     }
 }

@@ -7,6 +7,7 @@ import java.nio.file.*;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.StringJoiner;
 
 public class Main {
 
@@ -15,9 +16,9 @@ public class Main {
                "Line 1",
                "Line 2 2",
                "Line 3 3 3",
-               "Lin4 4 4 4"
+               "Line 4 4 4 4"
         };
-
+/*
         try(FileSystem zipFs = openZip(Paths.get("myData.zip"))){
             copyToZip(zipFs);
             writeToFileZip1(zipFs,data);
@@ -26,6 +27,26 @@ public class Main {
         }catch (Exception e){
             System.out.println(e.getClass().getSimpleName() + " - " + e.getMessage());
         }
+
+*/
+
+        /***********Tested StringJoiner ****************/
+        /*
+        StringJoiner sj = new StringJoiner(", ","Items : "," !");;
+        for(String str : data){
+            sj.add(str);
+        }
+        System.out.println(sj.toString());
+
+        StringJoiner sj1 = new StringJoiner(" , "," [ "," ] ");
+        System.out.println(sj1.toString());
+
+        StringJoiner sj2 = new StringJoiner(" , "," [ "," ] ");
+        sj2.setEmptyValue("HARD");
+        sj2.add("Soft");
+        System.out.println(sj2.toString());
+        */
+
     }
 
     private static FileSystem openZip(Path zipPath) throws IOException, URISyntaxException{

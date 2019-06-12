@@ -136,7 +136,7 @@ public class Main {
         for(String str:restrictedArray){
             System.out.println(str);
         }
-*/
+
         //addAll
         ArrayList<String> list1 = new ArrayList<>();
         list1.add("A");
@@ -159,6 +159,20 @@ public class Main {
             System.out.print(str+ " ");
         }
         System.out.println();
+
+ */
+        ArrayList<MyClass> list = new ArrayList<>();
+        MyClass v1 = new MyClass("v1","abc");
+        MyClass v2 = new MyClass("v2","abc");
+        MyClass v3 = new MyClass("v3","abc");
+        list.add(v1);
+        list.add(v2);
+        list.add(v3);
+        list.remove(v3);
+        for(MyClass item : list){
+            System.out.println(item.getLabel());
+        }
+
      }
 
     private static FileSystem openZip(Path zipPath) throws IOException, URISyntaxException{

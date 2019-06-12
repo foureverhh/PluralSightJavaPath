@@ -6,6 +6,8 @@ import java.nio.charset.Charset;
 import java.nio.file.*;
 import java.sql.SQLOutput;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Main {
 
@@ -76,14 +78,88 @@ public class Main {
         System.out.printf("Print string %3$s, %<s and %1$s", "A","B","C");
         */
 
+        /*
+        //invoke doWrite();
         try {
             doWrite(13,11,4,2,1.0d);
         } catch (IOException e) {
             e.printStackTrace();
         }
+        */
+/*
+        //replaceAll
+        String s1 = "apple， apple， and orange please";
+        String s2 = s1.replaceAll("ple","ricot");
+        System.out.println(s1);
+        System.out.println(s2);
 
+        String s3 = s1.replaceAll("ple\\b","ricot");
+        System.out.println(s3);
+        String s4 = s1.replaceAll("ple\\B","ricot");
+        System.out.println(s4);
 
-    }
+ */
+
+/*
+        //Split and match Methods
+        String s1 = "apple， apple， and orange please";
+        String[] parts = s1.split("\\b");
+
+        for(String part : parts){
+            System.out.println(part);
+        }
+        System.out.println("with \\w");
+        for(String part : parts){
+            if(part.matches("\\w+"))
+                System.out.println(part);
+        }
+
+ */
+
+        //patternAndMatcher();
+
+/*
+        //By default collections hold Object types, so not type restricted
+        ArrayList list = new ArrayList();
+        list.add("a");
+        list.add(123);
+        list.add(12.34d);
+        System.out.println(list.size());
+        for(Object obj:list){
+            System.out.println(obj.toString());
+        }
+
+        //Type-restricted collection
+        ArrayList<String> restrictedArray = new ArrayList<>();
+        restrictedArray.add("Foo");
+        restrictedArray.add("Bar");
+        for(String str:restrictedArray){
+            System.out.println(str);
+        }
+*/
+        //addAll
+        ArrayList<String> list1 = new ArrayList<>();
+        list1.add("A");
+        list1.add("B");
+        LinkedList<String> list2 = new LinkedList<>();
+        list2.add("B");
+        list2.add("C");
+        list2.add("D");
+
+        list1.addAll(list2);
+        System.out.println("addAll()");
+        for(String str: list1){
+            System.out.print(str+" ");
+        }
+        System.out.println();
+        //retainAll 取交集
+        list1.retainAll(list2);
+        System.out.println("retainAll():");
+        for(String str: list1){
+            System.out.print(str+ " ");
+        }
+        System.out.println();
+     }
 
     private static FileSystem openZip(Path zipPath) throws IOException, URISyntaxException{
 
@@ -137,6 +213,20 @@ public class Main {
             f.format("My nephews are %d, %d, %d, and %d years old",david,dawson,dillon,gordon);
             f.format("\n");
             f.format("The average age between each is %.1f years",avgDiff);
+        }
+    }
+
+
+
+    private static void patternAndMatcher(){
+        //Pattern and Matcher Classes
+        String value1 = "apple, apple and orange please";
+        System.out.println("Pattern and Matcher Classes");
+        Pattern pattern = Pattern.compile("\\w+");
+
+        Matcher matcher = pattern.matcher(value1);
+        while(matcher.find()){
+            System.out.println(matcher.group());
         }
     }
 }

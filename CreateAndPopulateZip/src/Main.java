@@ -220,6 +220,13 @@ public class Main {
         newList.forEach(list -> System.out.println(list.getLabel() + " " + list.getValue()));
     */
 
+    /*********************************** TreeSet****************************************/
+        TreeSet<MyClass> tree = new TreeSet<>();
+        tree.add(new MyClass("2222","ghi"));
+        tree.add(new MyClass("3333","abc"));
+        tree.add(new MyClass("1111","def"));
+        //Compareto works on forEach to print abc def and ghi
+        tree.forEach( item -> System.out.println(item));
      }
 
     private static FileSystem openZip(Path zipPath) throws IOException, URISyntaxException{

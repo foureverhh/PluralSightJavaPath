@@ -175,7 +175,7 @@ public class Main {
             System.out.println(item.getLabel());
         }
     */
-
+    /*
         //Lambda forEach() removeIf()
         ArrayList<MyClass> list = new ArrayList<>();
 
@@ -190,7 +190,35 @@ public class Main {
         //list.forEach( m -> System.out.println(m.getLabel()));
         list.removeIf( m -> m.getValue().equals("abc"));
         list.forEach(n-> System.out.println(n.getLabel()));
+    */
+    /*  array and collections conversion
+        //convert a list to array
+        ArrayList<MyClass> classList = new ArrayList<>();
 
+        MyClass v1 = new MyClass("v1","abc");
+        MyClass v2 = new MyClass("v2","xyz");
+        MyClass v3 = new MyClass("v3","abc");
+         //Object[] objectArray = list.toArray(); return an array in Object
+        //Object[] objArray = classList.toArray();
+        //T[] to Array(T[] a)
+        classList.add(v1);
+        classList.add(v2);
+        classList.add(v3);
+        MyClass[] newArray1 = new MyClass[classList.size()];
+        newArray1 = classList.toArray(newArray1);
+       // MyClass[] newArray2 = list.toArray(new MyClass[4]);
+        for(MyClass item: newArray1){
+            System.out.println(item.getLabel() + " " + item.getValue());
+        }
+        //Retrieving a Collection from an Array
+        MyClass[] myArray = {
+            new MyClass("val1","abc"),
+            new MyClass("val2","xyz"),
+            new MyClass("val3","abc")
+        };
+        Collection<MyClass> newList = Arrays.asList(myArray);
+        newList.forEach(list -> System.out.println(list.getLabel() + " " + list.getValue()));
+    */
      }
 
     private static FileSystem openZip(Path zipPath) throws IOException, URISyntaxException{

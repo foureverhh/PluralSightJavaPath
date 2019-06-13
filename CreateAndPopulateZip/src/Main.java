@@ -118,7 +118,7 @@ public class Main {
 
         //patternAndMatcher();
 
-/*
+    /*
         //By default collections hold Object types, so not type restricted
         ArrayList list = new ArrayList();
         list.add("a");
@@ -160,7 +160,9 @@ public class Main {
         }
         System.out.println();
 
- */
+    */
+    /*
+        //equals will compare value
         ArrayList<MyClass> list = new ArrayList<>();
         MyClass v1 = new MyClass("v1","abc");
         MyClass v2 = new MyClass("v2","abc");
@@ -172,6 +174,22 @@ public class Main {
         for(MyClass item : list){
             System.out.println(item.getLabel());
         }
+    */
+
+        //Lambda forEach() removeIf()
+        ArrayList<MyClass> list = new ArrayList<>();
+
+        MyClass v1 = new MyClass("v1","abc");
+        MyClass v2 = new MyClass("v2","xyz");
+        MyClass v3 = new MyClass("v3","abc");
+
+        list.add(v1);
+        list.add(v2);
+        list.add(v3);
+
+        //list.forEach( m -> System.out.println(m.getLabel()));
+        list.removeIf( m -> m.getValue().equals("abc"));
+        list.forEach(n-> System.out.println(n.getLabel()));
 
      }
 

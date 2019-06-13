@@ -219,6 +219,7 @@ public class Main {
         Collection<MyClass> newList = Arrays.asList(myArray);
         newList.forEach(list -> System.out.println(list.getLabel() + " " + list.getValue()));
     */
+
      }
 
     private static FileSystem openZip(Path zipPath) throws IOException, URISyntaxException{

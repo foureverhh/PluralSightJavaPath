@@ -1,4 +1,4 @@
-public class MyClass {
+public class MyClass implements Comparable<MyClass>{
     private String label, value;
 
     public MyClass(){
@@ -22,5 +22,14 @@ public class MyClass {
     public boolean equals(Object o){
         MyClass other = (MyClass) o;
         return getValue().equalsIgnoreCase(other.getValue());
+    }
+
+    public String toString(){
+        return label + " | " + value;
+    }
+
+    @Override
+    public int compareTo(MyClass other) {
+        return value.compareToIgnoreCase(other.getValue());
     }
 }

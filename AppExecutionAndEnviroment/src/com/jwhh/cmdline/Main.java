@@ -1,9 +1,6 @@
 package com.jwhh.cmdline;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.Reader;
-import java.io.Writer;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Properties;
@@ -54,7 +51,30 @@ public class Main {
         System.out.println(val3);
         System.out.println(val4);
          */
-        /*****************************    ******************************/
+        /*****************************Store Properties as XML******************************/
+        /*
+        Properties props = new Properties();
+        props.setProperty("displayName","Jim Wilson");
+        props.setProperty("accountNumber","123-45-678");
+        try(OutputStream output = Files.newOutputStream(Paths.get("props.xml"))){
+            props.storeToXML(output,"My comment");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        */
+        /*******************************Load Properties from XMl********************************/
+        /*
+        Properties props = new Properties();
+        try(InputStream inputStream = Files.newInputStream(Paths.get("props.xml"))){
+            props.loadFromXML(inputStream);
+        } catch (IOException e) {
+            System.out.println(e.getClass().getSimpleName() + " - " + e.getMessage());
+        }
+        String name = props.getProperty("displayName");
+        String number = props.getProperty("accountNumber");
+        System.out.println("Name and number are: "+ " " + name+ " " + number);
+        */
+
     }
 
     private static void showFileLines(String fileName) {

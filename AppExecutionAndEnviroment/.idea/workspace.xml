@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4050fbe-7c76-4749-8b53-c722879aeceb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multiple part file name.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CreateAndPopulateZip/src/MyComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AdventureOfCode/Day1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AdventureOfCode/Day1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AdventureOfCode/Day1/out/production/Day1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AdventureOfCode/Day1/out/production/Day1/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AdventureOfCode/Day1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AdventureOfCode/Day1/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppExecutionAndEnviroment/com/jwhh/cmdline/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AppExecutionAndEnviroment/com/jwhh/cmdline/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jwhh/cmdline/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jwhh/cmdline/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CreateAndPopulateZip/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CreateAndPopulateZip/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CreateAndPopulateZip/out/production/CreateAndPopulateZip/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CreateAndPopulateZip/out/production/CreateAndPopulateZip/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CreateAndPopulateZip/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CreateAndPopulateZip/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CreateAndPopulateZip/src/MyComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CreateAndPopulateZip/src/MyComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ExerciseTryWithResources/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExerciseTryWithResources/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,11 +30,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jwhh/cmdline/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+            <state relative-caret-position="460">
+              <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/props.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -52,6 +60,7 @@
         <option value="$PROJECT_DIR$/file1.txt" />
         <option value="$PROJECT_DIR$/multiple part file name.txt" />
         <option value="$PROJECT_DIR$/myapp.properties" />
+        <option value="$PROJECT_DIR$/props.xml" />
         <option value="$PROJECT_DIR$/src/com/jwhh/cmdline/Main.java" />
       </list>
     </option>
@@ -157,7 +166,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" weight="0.2819277" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
@@ -204,10 +213,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/props.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jwhh/cmdline/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+        <state relative-caret-position="460">
+          <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

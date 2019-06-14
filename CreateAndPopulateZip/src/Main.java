@@ -225,9 +225,18 @@ public class Main {
         tree.add(new MyClass("2222","ghi"));
         tree.add(new MyClass("3333","abc"));
         tree.add(new MyClass("1111","def"));
-        //Compareto works on forEach to print abc def and ghi
+        //compareTo works on forEach to print abc def and ghi
         tree.forEach( item -> System.out.println(item));
+
+        TreeSet<MyClass> treeCompare = new TreeSet<>(new MyComparator());
+        treeCompare.add(new MyClass("2222","ghi"));
+        treeCompare.add(new MyClass("3333","abc"));
+        treeCompare.add(new MyClass("1111","def"));
+        treeCompare.forEach(t-> System.out.println(t));
+
+
      }
+
 
     private static FileSystem openZip(Path zipPath) throws IOException, URISyntaxException{
 

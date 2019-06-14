@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a560013c-53ac-4712-b1e1-aab0e40b5fbd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/MyComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AdventureOfCode/Day1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AdventureOfCode/Day1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AdventureOfCode/Day1/out/production/Day1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AdventureOfCode/Day1/out/production/Day1/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AdventureOfCode/Day1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AdventureOfCode/Day1/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CreateAndPopulateZip/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CreateAndPopulateZip/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ExerciseTryWithResources/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExerciseTryWithResources/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -20,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="227" column="89" selection-start-line="227" selection-start-column="89" selection-end-line="227" selection-end-column="89" />
+            <state relative-caret-position="406">
+              <caret line="239" selection-start-line="239" selection-end-line="239" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,11 +35,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MyComparator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MyClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="469">
+              <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
               <folding>
                 <element signature="e#242#243#0" expanded="true" />
                 <element signature="e#270#271#0" expanded="true" />
@@ -44,8 +56,8 @@
                 <element signature="e#330#331#0" expanded="true" />
                 <element signature="e#545#546#0" expanded="true" />
                 <element signature="e#588#589#0" expanded="true" />
-                <element signature="e#672#673#0" expanded="true" />
-                <element signature="e#738#739#0" expanded="true" />
+                <element signature="e#642#643#0" expanded="true" />
+                <element signature="e#708#709#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,6 +86,7 @@
         <option value="$PROJECT_DIR$/file1.txt" />
         <option value="$PROJECT_DIR$/MyFile.txt" />
         <option value="$PROJECT_DIR$/src/MyClass.java" />
+        <option value="$PROJECT_DIR$/src/MyComparator.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -171,7 +184,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50143063" side_tool="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
@@ -204,8 +217,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="469">
+          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
           <folding>
             <element signature="e#242#243#0" expanded="true" />
             <element signature="e#270#271#0" expanded="true" />
@@ -213,19 +226,26 @@
             <element signature="e#330#331#0" expanded="true" />
             <element signature="e#545#546#0" expanded="true" />
             <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="227" column="89" selection-start-line="227" selection-start-column="89" selection-end-line="227" selection-end-column="89" />
+        <state relative-caret-position="406">
+          <caret line="239" selection-start-line="239" selection-end-line="239" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>

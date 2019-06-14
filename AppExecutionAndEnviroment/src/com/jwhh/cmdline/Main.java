@@ -74,6 +74,18 @@ public class Main {
         String number = props.getProperty("accountNumber");
         System.out.println("Name and number are: "+ " " + name+ " " + number);
         */
+        /*******************************Using Default Properties***************************************/
+
+        Properties defaults = new Properties();
+        defaults.setProperty("position","1");
+        Properties props = new Properties(defaults);
+        String nextPos = props.getProperty("position");
+        System.out.println(nextPos);
+
+        int pos = Integer.parseInt(nextPos);
+        props.setProperty("position",Integer.toString(++pos));
+        String newPos = props.getProperty("position");
+        System.out.println(newPos);
 
     }
 

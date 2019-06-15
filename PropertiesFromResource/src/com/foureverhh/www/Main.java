@@ -6,6 +6,7 @@ import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.sql.SQLOutput;
 import java.util.Properties;
 
 public class Main {
@@ -33,6 +34,14 @@ public class Main {
         }catch (IOException e){
             System.out.println("Exception <" + e.getClass().getSimpleName() + "> " + e.getMessage() );
         }
+
+        String userName = System.getProperty("user.name");
+        String userHome = System.getProperty("user.home");
+        String osArchitecture = System.getProperty("os.arch");
+        String javaVendor = System.getProperty("java.vendor");
+        System.out.println(userName+" "+userHome+" "+osArchitecture+" "+javaVendor);
+
+
     }
 
     private static void saveUserProps(Properties userProps) throws IOException {

@@ -3,7 +3,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Main {
 
@@ -25,6 +27,7 @@ public class Main {
         boolean findNumber = false;
         int sum =0;
         sums.add(sum);
+        Set<Integer> setResults = new HashSet<>();
 
         //Iterate all elements in frequencies
         for(int index = 0; index <= frequencies.size(); index++) {
@@ -34,11 +37,19 @@ public class Main {
 
             sum += frequencies.get(index);
 
+
+                if (!setResults.add(sum)) {
+                    System.out.println("Repeated: " + sum);
+                    break;
+                }
+/*
             if (sums.contains(sum)) {
                 System.out.print("Found " + sum + " twice");
                 break;
             } else
                 sums.add(sum);
+
+ */
             //Check results
             /*
             for(int number : sums){

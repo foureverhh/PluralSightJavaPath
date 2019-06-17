@@ -20,12 +20,14 @@ public class Main {
         //logger.log(Level.FINE,"Hey developer dude");
         //logger.log(Level.FINEST,"Special explanation");
         //logger.severe("severe level");
-        logger.setLevel(Level.ALL);
-        doWork();
+
+        //doWork();
+        logger.log(Level.INFO,"{0} is my favorite","Java");
+        logger.log(Level.INFO,"{0} is {1} days from {2}",new Object[]{"Wed",2,"Fri"});
     }
 
     private static void doWork(){
-
+        logger.setLevel(Level.ALL);
         logger.entering("com.jwhh.support.Other","doWork");
         logger.logp(Level.WARNING,"com.jwhh.support.Other","doWork","Empty Function");
         logger.exiting("com.jwhh.support.Other","doWork");

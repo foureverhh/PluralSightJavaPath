@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4050fbe-7c76-4749-8b53-c722879aeceb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../PropertiesFromResource/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PropertiesFromResource/src/com/foureverhh/www/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PropertiesFromResource/src/com/foureverhh/www/MyDefaultValue.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AdventureOfCode/Day1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AdventureOfCode/Day1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AdventureOfCode/Day1/out/production/Day1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AdventureOfCode/Day1/out/production/Day1/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AdventureOfCode/Day1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AdventureOfCode/Day1/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppExecutionAndEnviroment/com/jwhh/cmdline/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AppExecutionAndEnviroment/com/jwhh/cmdline/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jwhh/cmdline/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jwhh/cmdline/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CalcEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CalcEngine/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CreateAndPopulateZip/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CreateAndPopulateZip/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CreateAndPopulateZip/out/production/CreateAndPopulateZip/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CreateAndPopulateZip/out/production/CreateAndPopulateZip/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CreateAndPopulateZip/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CreateAndPopulateZip/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CreateAndPopulateZip/src/MyComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CreateAndPopulateZip/src/MyComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ExerciseTryWithResources/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExerciseTryWithResources/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PropertiesFromResource/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PropertiesFromResource/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PropertiesFromResource/src/Main.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,16 +24,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/jwhh/cmdline/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+            <state relative-caret-position="1602">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/props.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+            <state>
+              <caret selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -65,7 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -75,6 +76,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -97,8 +100,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -156,32 +157,32 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.2819277" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32891566" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2819277" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -215,15 +216,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/props.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        <state>
+          <caret selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jwhh/cmdline/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+        <state relative-caret-position="1602">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

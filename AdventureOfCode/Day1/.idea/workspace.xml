@@ -3,14 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="59f72b29-fd1e-4009-a06d-78b3524b190d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Day1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Day1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AppExecutionAndEnviroment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AppExecutionAndEnviroment/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AppExecutionAndEnviroment/src/com/jwhh/cmdline/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AppExecutionAndEnviroment/src/com/jwhh/cmdline/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../CalcEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CalcEngine/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CalcEngine/out/production/CalcEngine/CargoFlight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CalcEngine/out/production/CalcEngine/Flight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CalcEngine/out/production/CalcEngine/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CalcEngine/out/production/CalcEngine/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CalcEngine/out/production/CalcEngine/MathEquation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../CalcEngine/out/production/CalcEngine/MathEquation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CalcEngine/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CalcEngine/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreateAndPopulateZip/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CreateAndPopulateZip/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExerciseTryWithResources/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExerciseTryWithResources/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MakingLogCalls/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MakingLogCalls/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PropertiesFromResource/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PropertiesFromResource/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QuickSortLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuickSortLearning/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="412">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -69,8 +69,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -87,6 +85,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -140,9 +140,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -174,7 +174,7 @@
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

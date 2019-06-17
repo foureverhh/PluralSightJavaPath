@@ -5,11 +5,6 @@
       <change beforePath="$PROJECT_DIR$/../AdventureOfCode/Day1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AdventureOfCode/Day1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AdventureOfCode/Day1/out/production/Day1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AdventureOfCode/Day1/out/production/Day1/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AdventureOfCode/Day1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AdventureOfCode/Day1/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/file1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyAutoCloseable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyAutoCloseable.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -167,12 +162,12 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32909605" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32909605" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32909605" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32909605" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32909605" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

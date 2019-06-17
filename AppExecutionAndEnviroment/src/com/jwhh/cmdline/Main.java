@@ -75,7 +75,7 @@ public class Main {
         System.out.println("Name and number are: "+ " " + name+ " " + number);
         */
         /*******************************Using Default Properties***************************************/
-
+        /*
         Properties defaults = new Properties();
         defaults.setProperty("position","1");
         Properties props = new Properties(defaults);
@@ -86,6 +86,7 @@ public class Main {
         props.setProperty("position",Integer.toString(++pos));
         String newPos = props.getProperty("position");
         System.out.println(newPos);
+        */
 
     }
 

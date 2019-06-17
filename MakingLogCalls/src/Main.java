@@ -12,12 +12,22 @@ public class Main {
         logger.log(Level.INFO,"Another message");
         */
         //logger.setLevel(Level.INFO);
-        logger.setLevel(Level.FINE);
-        logger.log(Level.WARNING,"Warning");
-        logger.log(Level.SEVERE,"Severe failure.");
-        logger.log(Level.INFO,"Info level");
-        logger.log(Level.CONFIG,"Configuration");
-        logger.log(Level.FINE,"Hey developer dude");
-        logger.log(Level.FINEST,"Special explanation");
+        //logger.setLevel(Level.FINE);
+        //logger.log(Level.WARNING,"Warning");
+        //logger.log(Level.SEVERE,"Severe failure.");
+        //logger.log(Level.INFO,"Info level");
+        //logger.log(Level.CONFIG,"Configuration");
+        //logger.log(Level.FINE,"Hey developer dude");
+        //logger.log(Level.FINEST,"Special explanation");
+        //logger.severe("severe level");
+        logger.setLevel(Level.ALL);
+        doWork();
+    }
+
+    private static void doWork(){
+
+        logger.entering("com.jwhh.support.Other","doWork");
+        logger.logp(Level.WARNING,"com.jwhh.support.Other","doWork","Empty Function");
+        logger.exiting("com.jwhh.support.Other","doWork");
     }
 }

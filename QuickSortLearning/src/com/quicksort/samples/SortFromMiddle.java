@@ -1,5 +1,7 @@
 package com.quicksort.samples;
 
+//https://www.programcreek.com/2012/11/quicksort-array-in-java/
+
 public class SortFromMiddle {
 
 

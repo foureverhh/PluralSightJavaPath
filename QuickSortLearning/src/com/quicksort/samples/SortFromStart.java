@@ -24,10 +24,12 @@ public class SortFromStart {
     }
 
     public void quickSortFromStart(int[] array, int start, int end){
-        if(start < end){
+
             int partition = partition(array,start,end);
-            quickSortFromStart(array,start,partition-1);
-            quickSortFromStart(array,partition+1,end);
-        }
+            if(partition -1 > start)
+                quickSortFromStart(array,start,partition-1);
+            if(partition +1 < end)
+                quickSortFromStart(array,partition+1,end);
+
     }
 }

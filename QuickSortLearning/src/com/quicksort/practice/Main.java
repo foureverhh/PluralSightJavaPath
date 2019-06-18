@@ -14,8 +14,9 @@ public class Main {
         int[] array = {80,100,30,50,200,210,150,30};
         int endIndex = array.length-1;
         SortFromEndSample sample = new SortFromEndSample(array);
-        //sample.quickSort(array,0,endIndex);
-
+        sample.quickSort(array,0,endIndex);
+        printArray(array);
+        System.out.println();
         SortFromEndSample1 sample1 = new SortFromEndSample1(array);
         //sample1.quickSort(array,0,endIndex);
 

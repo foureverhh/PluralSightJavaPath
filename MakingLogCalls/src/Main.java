@@ -1,11 +1,13 @@
-import java.util.logging.Level;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
+import java.io.IOException;
+import java.util.logging.*;
 
 public class Main {
-
+    /*
     static LogManager logManager = LogManager.getLogManager();
     static Logger logger = logManager.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    */
+
+    static Logger logger = Logger.getLogger("com.pluralsight");
     public static void main(String[] args) {
         logger.setLevel(Level.FINER);
         /*
@@ -22,10 +24,41 @@ public class Main {
         //logger.log(Level.FINEST,"Special explanation");
         //logger.severe("severe level");
 
-        doWork();
         //logger.log(Level.INFO,"{0} is my favorite","Java");
         //logger.log(Level.INFO,"{0} is {1} days from {2}",new Object[]{"Wed",2,"Fri"});
-        parameterisedLog("Jim","Jones");
+
+        //doWork();
+        //parameterisedLog("Jim","Jones");
+
+
+        /**************************************Creating/Adding Log Components***************************************/
+
+        /*
+        Handler handler = new ConsoleHandler();
+        Formatter formatter = new SimpleFormatter();
+        handler.setFormatter(formatter);
+        logger.addHandler(handler);
+        logger.log(Level.INFO,"We are Logging");
+
+         */
+
+        /**************************************Built-in Handlers****************************************/
+        /*ConsoleHandler
+         *StreamHandler
+         *SocketHandler
+         *FileHandler
+         **/
+        //Logging with FileHandler
+        FileHandler fileHandler = null;
+        try {
+            fileHandler = new FileHandler("%h/myapp_%g.log",1000,4);
+            fileHandler.setFormatter(new SimpleFormatter());
+            logger.addHandler(fileHandler);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     private static void doWork(){

@@ -1,5 +1,11 @@
+package com.pluralsight.training;
+
+import sun.rmi.runtime.Log;
+
 import java.io.IOException;
 import java.util.logging.*;
+
+import static java.util.logging.Level.ALL;
 
 public class Main {
     /*
@@ -7,8 +13,21 @@ public class Main {
     static Logger logger = logManager.getLogger(Logger.GLOBAL_LOGGER_NAME);
     */
 
-    static Logger logger = Logger.getLogger("com.pluralsight");
+    static Logger pkgLogger = Logger.getLogger("com.pluralsight.training");
+    static Logger logger = Logger.getLogger("com.pluralsight.training.Main");
+
+
     public static void main(String[] args) {
+
+        logger.entering("com.pluralsight.training","Main");
+        logger.log(Level.INFO,"We're logging!");
+        logger.exiting("com.pluralsight.training","Main");
+
+
+
+
+
+
         //logger.setLevel(Level.FINER);
         /*
         logger.log(Level.INFO,"My first log message");

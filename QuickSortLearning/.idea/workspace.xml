@@ -4,8 +4,6 @@
     <list default="true" id="8a00f95a-5cf0-4ab3-9765-c3c966109cb6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../MakingLogCalls/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MakingLogCalls/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MakingLogCalls/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MakingLogCalls/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/quicksort/practice/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/quicksort/practice/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/quicksort/samples/SortIdeaHan.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
-              <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/quicksort/samples/SortFromMiddle.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="52">
-              <caret line="51" column="24" lean-forward="true" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+              <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -228,7 +226,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/quicksort/samples/SortIdeaHan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
-          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -269,7 +267,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/quicksort/samples/SortFromMiddle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
-          <caret line="51" column="24" lean-forward="true" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
         </state>
       </provider>
     </entry>

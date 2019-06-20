@@ -9,7 +9,7 @@ public class Main {
 
     static Logger logger = Logger.getLogger("com.pluralsight");
     public static void main(String[] args) {
-        logger.setLevel(Level.FINER);
+        //logger.setLevel(Level.FINER);
         /*
         logger.log(Level.INFO,"My first log message");
         logger.log(Level.INFO,"Another message");
@@ -49,6 +49,7 @@ public class Main {
          *FileHandler
          **/
         //Logging with FileHandler
+        /*
         FileHandler fileHandler = null;
         try {
             fileHandler = new FileHandler("%h/myapp_%g.log",1000,4);
@@ -58,6 +59,18 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        */
+
+        /***************************Logging Code-based Configuration********************************/
+        /*
+        Handler h = new ConsoleHandler();
+        h.setLevel(Level.ALL);
+        h.setFormatter(new SimpleFormatter());
+        logger.addHandler(h);
+        logger.setLevel(Level.ALL);
+        logger.log(Level.INFO,"We're logging");
+        */
+
 
     }
 

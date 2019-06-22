@@ -5,6 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         ExecutorService es = Executors.newFixedThreadPool(5);
+        /*
         BankAccount account = new BankAccount(100);
         Thread[] workers = new Thread[5];
         for(int i = 0; i < 5; i++){
@@ -20,6 +21,13 @@ public class Main {
         //Worker worker = new Worker(account);
         //es.submit(workers);
         es.shutdown();
+        */
+        TransactionWorker[] workers = new TransactionWorker[]{};
 
+        for(TransactionWorker worker : workers){
+            es.submit(worker);
+        }
+
+        es.shutdown();
     }
 }

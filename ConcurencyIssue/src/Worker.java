@@ -9,7 +9,8 @@ public class Worker implements Runnable{
             int startBalance = account.getBalance();
             account.deposit(10);
             int endBalance = account.getBalance();
-            System.out.println("Start balance: "+ startBalance + " .End balance: " + endBalance);
+            System.out.println("Start balance: "+ startBalance + ". End balance: " + endBalance + ". Worker: "+
+                    Thread.currentThread().getName());
         }
     }
 

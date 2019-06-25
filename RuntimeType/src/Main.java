@@ -25,5 +25,8 @@ public class Main {
         HighVolumeAccount highVolumeAccount = new HighVolumeAccount("1234",100);
         highVolumeAccount.classInfo(highVolumeAccount);
 
+        //Test modifiers
+        LowVolumeAccount lowVolumeAccount = new LowVolumeAccount("4567");
+        lowVolumeAccount.typeModifiers(lowVolumeAccount);
     }
 }

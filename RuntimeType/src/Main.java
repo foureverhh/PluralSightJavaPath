@@ -28,5 +28,9 @@ public class Main {
         //Test modifiers
         LowVolumeAccount lowVolumeAccount = new LowVolumeAccount("4567");
         lowVolumeAccount.typeModifiers(lowVolumeAccount);
+
+        //Test getFields() and getDeclaredFields()
+        System.out.println();
+        account2.fieldInfo(account2);
     }
 }

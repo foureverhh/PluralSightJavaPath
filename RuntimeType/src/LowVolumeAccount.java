@@ -39,5 +39,6 @@ public final class LowVolumeAccount extends BankAccount implements Runnable {
             System.out.println("method check - protected");
         else if(Modifier.isPublic(modifiers))
             System.out.println("method check - public");
+        System.out.println(Modifier.toString(modifiers));
     }
 }

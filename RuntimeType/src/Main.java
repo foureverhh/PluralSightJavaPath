@@ -1,3 +1,4 @@
+import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
@@ -81,6 +82,34 @@ public class Main {
         } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
+    }
+
+    static void startWorker(String workerTypeName, Object workerTarget){
+        try {
+            //Get class for workerType
+            Class<?> workerType = Class.forName(workerTypeName);
+
+            //Make an instance of workerType
+            Class<?> targetType = workerTarget.getClass();
+            Constructor constructor = workerType.getConstructor(targetType);
+            Object worker = constructor.newInstance(workerTarget);
+
+            //Invoke a special method on the instance
+            Method doWork = workerType.getMethod("doWork");
+            doWork.invoke(worker);
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
+
     }
 
 }

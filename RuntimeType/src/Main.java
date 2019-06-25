@@ -32,5 +32,9 @@ public class Main {
         //Test getFields() and getDeclaredFields()
         System.out.println();
         account2.fieldInfo(account2);
+
+        //Test getMethods() and getDeclaredMethods()
+        System.out.println();
+        account2.methodInfo(account2);
     }
 }

@@ -20,5 +20,10 @@ public class Main {
 
         String c4 = account1.getClass().getSimpleName();
         System.out.println("c4: "+c4);
+
+        //Test interface and class
+        HighVolumeAccount highVolumeAccount = new HighVolumeAccount("1234",100);
+        highVolumeAccount.classInfo(highVolumeAccount);
+
     }
 }

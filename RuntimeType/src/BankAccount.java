@@ -1,4 +1,5 @@
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
@@ -72,7 +73,32 @@ public class BankAccount {
         }
     }
 
-    void methodInfo2(Object obj){
+    void callGetId(Object object){
+        Class<?> theClass = object.getClass();
+        try {
+            Method m = theClass.getMethod("getId");
+            Object result = m.invoke(object);
+            System.out.println("Result: "+result);
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e1) {
+            e1.printStackTrace();
+        } catch (InvocationTargetException e2) {
+            e2.printStackTrace();
+        }
+    }
 
+    void callDeposit(Object object, int amount){
+        Class<?> theClass = object.getClass();
+        try {
+            Method method = theClass.getMethod("deposit",int.class);
+            method.invoke(object, amount);
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
     }
 }

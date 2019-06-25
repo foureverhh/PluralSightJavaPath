@@ -1,3 +1,6 @@
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -36,5 +39,48 @@ public class Main {
         //Test getMethods() and getDeclaredMethods()
         System.out.println();
         account2.methodInfo(account2);
+
+
+        System.out.println();
+        System.out.println("callGetId");
+        account1.callGetId(account1);
+        System.out.println();
+        System.out.println("callDeposit");
+        account1.callDeposit(account1, 200);
+        System.out.println(account1.getBalance());
+
+        callGetId(account1);
+        callDeposit(account1,50);
+        System.out.println(account1.getBalance());
     }
+
+    static void callGetId(Object object){
+        Class<?> theClass = object.getClass();
+        try {
+            Method m = theClass.getMethod("getId");
+            Object result = m.invoke(object);
+            System.out.println("Result: "+result);
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e1) {
+            e1.printStackTrace();
+        } catch (InvocationTargetException e2) {
+            e2.printStackTrace();
+        }
+    }
+
+    static void callDeposit(Object object, int amount){
+        Class<?> theClass = object.getClass();
+        try {
+            Method method = theClass.getMethod("deposit",int.class);
+            method.invoke(object, amount);
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

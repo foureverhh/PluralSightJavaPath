@@ -1,4 +1,4 @@
-
+//@SuppressWarnings("deprecation")
 public class MyWorker {
 
     @SuppressWarnings("deprecation")
@@ -7,6 +7,7 @@ public class MyWorker {
         doer.doItThisWay();
     }
 
+    @SuppressWarnings("deprecation")
     void  doDoubleWork(){
         Doer d1 = new Doer("d1");
         Doer d2 = new Doer("d2");

@@ -1,6 +1,7 @@
-@SuppressWarnings("deprecation")
+
 public class MyWorker {
 
+    @SuppressWarnings("deprecation")
     void doSomeWork(){
         Doer doer = new Doer("doer");
         doer.doItThisWay();

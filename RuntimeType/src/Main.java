@@ -53,6 +53,10 @@ public class Main {
         callGetId(account1);
         callDeposit(account1,50);
         System.out.println(account1.getBalance());
+
+        //Test startWorker
+        startWorker("AccountWorker",account1);
+        System.out.println(account1.getBalance());
     }
 
     static void callGetId(Object object){

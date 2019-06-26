@@ -55,8 +55,10 @@ public class Main {
         System.out.println(account1.getBalance());
 
         //Test startWorker
-        startWorker("AccountWorker",account1);
+        startWork("AccountWorker",account1);
         System.out.println(account1.getBalance());
+
+        startWorkTwo("AccountWorkerTwo",account1);
     }
 
     static void callGetId(Object object){
@@ -88,7 +90,7 @@ public class Main {
         }
     }
 
-    static void startWorker(String workerTypeName, Object workerTarget){
+    static void startWork(String workerTypeName, Object workerTarget){
         try {
             //Get class for workerType
             Class<?> workerType = Class.forName(workerTypeName);
@@ -114,6 +116,23 @@ public class Main {
             e.printStackTrace();
         }
 
+    }
+
+    static void startWorkTwo(String workTypeName, Object workTarget){
+        try {
+            //Get class for workType
+            Class<?> workType = Class.forName(workTypeName);
+            TaskWorker worker = (TaskWorker) workType.newInstance();
+            worker.setTarget(workTarget);
+            worker.doWork();
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        }
     }
 
 }

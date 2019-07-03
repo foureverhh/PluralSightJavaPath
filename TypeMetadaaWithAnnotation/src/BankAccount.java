@@ -2,7 +2,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
-
+@ProcessedBy(AccountWorker.class)
 public class BankAccount {
     private final String id ;
     private int balance = 0;

@@ -1,5 +1,6 @@
-@WorkHandler(useThreadPool = false)
 
+@WorkHandler(false) //as useThreadPool has default value as true now, so no need to write it
+//But if we want to make useThreadPool as false @WorkHandler(useThreadPool = false)
 public class AccountWorker implements Runnable,TaskWorker {
 
     BankAccount ba;
@@ -29,4 +30,5 @@ public class AccountWorker implements Runnable,TaskWorker {
         else
             System.out.println(ba.getClass());
     }
+
 }

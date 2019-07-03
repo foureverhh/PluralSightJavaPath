@@ -5,7 +5,6 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface WorkHandler {
-    //boolean useThreadPool() default true;
-    boolean value() default true;
+public @interface ProcessedBy {
+    Class<?> value();
 }

@@ -1,3 +1,4 @@
+import com.li.finance.AccountGroup;
 import com.li.finance.BankAccount;
 
 import java.io.IOException;
@@ -9,6 +10,7 @@ import java.nio.file.Paths;
 public class Main {
 
     public static void main(String[] args) {
+        /*
         BankAccount account = new BankAccount("1234", 500);
         account.deposit(250);
         saveAccount(account,"account.bat");
@@ -17,6 +19,17 @@ public class Main {
 
         BankAccount account1 = new BankAccount("9876",500);
         saveAccount(account1,"account1.dat");
+        */
+        BankAccount acct1 = new BankAccount("1234",500);
+        BankAccount acct2 = new BankAccount("9876",750);
+
+        AccountGroup group = new AccountGroup();
+        group.addAccount(acct1);
+        group.addAccount(acct2);
+        saveGroup(group,"group.dat");
+        AccountGroup testGroup = loadGroup("group.dat");
+        System.out.println(testGroup.getTotalBalance());
+
     }
 
     static void saveAccount(BankAccount bankAccount, String fileName)  {
@@ -37,5 +50,27 @@ public class Main {
             e.printStackTrace();
         }
         return bankAccount;
+    }
+
+    static void saveGroup(AccountGroup group, String file) {
+        try (ObjectOutputStream outputStream = new ObjectOutputStream(Files.newOutputStream(Paths.get(file)))) {
+            outputStream.writeObject(group);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    static AccountGroup loadGroup(String file) {
+        AccountGroup group = null;
+        try (ObjectInputStream inputStream = new ObjectInputStream(Files.newInputStream(Paths.get(file)))) {
+            group = (AccountGroup) inputStream.readObject();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return group;
     }
 }

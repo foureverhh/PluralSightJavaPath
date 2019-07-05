@@ -1,3 +1,5 @@
+import com.li.finance.BankAccount;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -11,7 +13,10 @@ public class Main {
         account.deposit(250);
         saveAccount(account,"account.bat");
         BankAccount newAccount = loadAccount("account.bat");
-        System.out.println(newAccount.getId()+" : "+newAccount.getBalance());
+        System.out.println(newAccount.getId()+" : "+newAccount.getBalance()+" TxType: "+newAccount.getLastTxType());
+
+        BankAccount account1 = new BankAccount("9876",500);
+        saveAccount(account1,"account1.dat");
     }
 
     static void saveAccount(BankAccount bankAccount, String fileName)  {

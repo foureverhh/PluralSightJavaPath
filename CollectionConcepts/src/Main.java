@@ -15,7 +15,7 @@ public class Main {
         products.add(door);
         products.add(floorPanel);
         products.add(window);
-
+        //for each loop creates ConcurrentModificationException
         for(Product product:products){
             if(product.getSize() >20){
                 System.out.println(product);
@@ -23,6 +23,7 @@ public class Main {
                 products.remove(product);
             }
         }
+
 
 /*
         System.out.println(products);

@@ -1,18 +1,5 @@
-import java.util.Comparator;
-
 public class Product
 {
-
-    //public static final Comparator<Product> BY_SIZE = Comparator.comparing(Product::getSize);
-    public static final Comparator<Product> BY_SIZE = new Comparator<Product>() {
-        @Override
-        public int compare(Product o1, Product o2) {
-            return Integer.compare(o1.getSize(), o1.getSize());
-        }
-    };
-
-
-
     private String name;
     private int size;
 

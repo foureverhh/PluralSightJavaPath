@@ -1,7 +1,4 @@
-import Queue.CategorisedHelpDesk;
-import Queue.Category;
-import Queue.Customer;
-import Queue.HelpDesk;
+import Queue.*;
 
 public class Main {
 
@@ -15,6 +12,7 @@ public class Main {
         helpDesk.processAllEnquiries();
         */
 
+        /*
         CategorisedHelpDesk categorisedHelpDesk = new CategorisedHelpDesk();
         categorisedHelpDesk.enquire(Customer.JACK, Category.PHONE);
         categorisedHelpDesk.enquire(Customer.JILL, Category.PRINTER);
@@ -22,7 +20,14 @@ public class Main {
         categorisedHelpDesk.processPrinterEnquiry();
         categorisedHelpDesk.processGeneralEnquiry();
         categorisedHelpDesk.processPrinterEnquiry();
+        */
 
+        PriorityHelpDesk priorityHelpDesk = new PriorityHelpDesk();
+        priorityHelpDesk.enquire(Customer.JACK,Category.PHONE);
+        priorityHelpDesk.enquire(Customer.JILL,Category.PRINTER);
+        priorityHelpDesk.enquire(Customer.MARY,Category.COMPUTER);
+
+        priorityHelpDesk.processAllEnquires();
     }
 
 

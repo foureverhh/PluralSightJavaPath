@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f7b2ab3-5b45-4f13-8fed-bd9207f46482" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Queue/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Queue/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Queue/Enquiry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Queue/HelpDesk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Queue/CategorisedHelpDesk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CollectionConcepts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CollectionConcepts/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CollectionConcepts/src/Shipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CollectionConcepts/src/Shipment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConcurencyIssue/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConcurencyIssue/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MultiThreadLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MultiThreadLearning/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QueueLearning/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QueueLearning/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QueueLearning/Queue/HelpDesk.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QueueLearning/Queue/HelpDesk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Queue/HelpDesk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Queue/HelpDesk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../QuickSortLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../QuickSortLearning/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RuntimeType/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RuntimeType/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SerializationPractise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SerializationPractise/.idea/workspace.xml" afterDir="false" />
@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+            <state relative-caret-position="339">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,15 +46,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Queue/HelpDesk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="80" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
+            <state relative-caret-position="378">
+              <caret line="21" column="84" selection-start-line="21" selection-start-column="84" selection-end-line="21" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#240#241#0" expanded="true" />
                 <element signature="e#303#304#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Queue/CategorisedHelpDesk.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="592">
+              <caret line="37" column="83" selection-start-line="37" selection-start-column="83" selection-end-line="37" selection-end-column="83" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/src/Queue/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#186#187#0" expanded="true" />
                 <element signature="e#218#219#0" expanded="true" />
@@ -120,9 +132,10 @@
         <option value="$PROJECT_DIR$/src/HelpDesk.java" />
         <option value="$PROJECT_DIR$/src/Queue/Customer.java" />
         <option value="$PROJECT_DIR$/src/Queue/Category.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Queue/Enquiry.java" />
         <option value="$PROJECT_DIR$/src/Queue/HelpDesk.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Queue/CategorisedHelpDesk.java" />
       </list>
     </option>
   </component>
@@ -222,14 +235,15 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -245,6 +259,13 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Queue/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Queue/Enquiry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -260,17 +281,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Queue/Category.java">
+    <entry file="file://$PROJECT_DIR$/src/Queue/HelpDesk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        <state relative-caret-position="378">
+          <caret line="21" column="84" selection-start-line="21" selection-start-column="84" selection-end-line="21" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Queue/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#186#187#0" expanded="true" />
             <element signature="e#218#219#0" expanded="true" />
@@ -282,22 +308,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+        <state relative-caret-position="339">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Queue/HelpDesk.java">
+    <entry file="file://$PROJECT_DIR$/src/Queue/CategorisedHelpDesk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="80" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
+        <state relative-caret-position="592">
+          <caret line="37" column="83" selection-start-line="37" selection-start-column="83" selection-end-line="37" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,9 +1,13 @@
+package lookup.pack;
+
+import product.pack.Product;
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class MapProductLookupTable  implements ProductLookupTable{
+public class MapProductLookupTable  implements ProductLookupTable {
 
-    private Map<Integer,Product> idToProduct = new HashMap<>();
+    private Map<Integer, Product> idToProduct = new HashMap<>();
 
     @Override
     public Product lookupById(int id) {

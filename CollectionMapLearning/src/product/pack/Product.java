@@ -1,7 +1,8 @@
+package product.pack;
+
 import java.util.Comparator;
 
 public class Product {
-
     public static final Comparator<Product> BY_NAME = Comparator.comparing(Product::getName);
     public static final Comparator<Product> BY_WEIGHT = new Comparator<Product>() {
         @Override
@@ -14,6 +15,10 @@ public class Product {
     private int weight;
     private String name;
 
+    public Product(int id,String name) {
+        this.id = id;
+        this.name = name;
+    }
 
     public Product(int id, String name, int weight) {
         this.id = id;
@@ -33,5 +38,10 @@ public class Product {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{id=\'"+id+"\',"+"name=\'"+name+"\', weight=\'"+weight+"\'";
     }
 }

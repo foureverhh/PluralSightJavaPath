@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6715b394-e2b1-4e7f-a8e4-75be15305491" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/product/pack/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/product/pack/ProductFixtures.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/product/pack/Supplier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CalculatorWithDeque/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CalculatorWithDeque/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CollectionConcepts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CollectionConcepts/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CollectionConcepts/src/Shipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CollectionConcepts/src/Shipment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CollectionMapLearning/LookupTableComparison.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CollectionMapLearning/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CollectionMapLearning/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CollectionMapLearning/MapProductLookupTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CollectionMapLearning/NaiveProductLookupTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CollectionMapLearning/Product$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CollectionMapLearning/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CollectionMapLearning/ProductLookupTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LookupTableComparison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lookup/pack/LookupTableComparison.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MapProductLookupTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lookup/pack/MapProductLookupTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NaiveProductLookupTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lookup/pack/NaiveProductLookupTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProductLookupTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lookup/pack/ProductLookupTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConcurencyIssue/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConcurencyIssue/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MultiThreadLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MultiThreadLearning/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../QueueLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../QueueLearning/.idea/workspace.xml" afterDir="false" />
@@ -52,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+            <state relative-caret-position="191">
+              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/product/pack/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
+            <state relative-caret-position="238">
               <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
             </state>
           </provider>
@@ -340,13 +323,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/product/pack/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/product/pack/ProductFixtures.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -354,10 +330,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/product/pack/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+        <state relative-caret-position="191">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

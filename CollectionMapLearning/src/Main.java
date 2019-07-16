@@ -20,6 +20,9 @@ public class Main {
         productMap.put(2,floorPanel);
         productMap.put(3,window);
 
+        System.out.println(productMap);
+        productMap.forEach((key,value) ->
+                System.out.println(key + " -> " + value));
         /*
         //getOrDefault test
         Product result = productMap.getOrDefault(10,defaultProduct);
@@ -44,8 +47,8 @@ public class Main {
         //computeIfAbsent(); test
         Product result = productMap.computeIfAbsent(10, (id)-> new Product(id,"Custom product", 10));
         System.out.println(result);
-
         */
+
 
     }
 

@@ -31,11 +31,13 @@ public class Rotate {
         Collections.shuffle(products);
         System.out.println("Shuffled: "+products);
 
-        Collections.sort(products, Product.BY_NAME);
+        //Collections.sort(products, Product.BY_NAME);
+        products.sort(Product.BY_NAME);//This is better
         System.out.println("Sorted by name: "+products);
         System.out.println();
 
-        Collections.sort(products, Product.BY_WEIGHT);
+        //Collections.sort(products, Product.BY_WEIGHT);
+        products.sort(Product.BY_WEIGHT); //This is better
         System.out.println("Sorted by weight: "+ products);
     }
 }

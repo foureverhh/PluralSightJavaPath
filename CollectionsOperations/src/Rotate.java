@@ -26,5 +26,16 @@ public class Rotate {
 
         Collections.rotate(products,1);
         System.out.println(products);
+        System.out.println();
+
+        Collections.shuffle(products);
+        System.out.println("Shuffled: "+products);
+
+        Collections.sort(products, Product.BY_NAME);
+        System.out.println("Sorted by name: "+products);
+        System.out.println();
+
+        Collections.sort(products, Product.BY_WEIGHT);
+        System.out.println("Sorted by weight: "+ products);
     }
 }

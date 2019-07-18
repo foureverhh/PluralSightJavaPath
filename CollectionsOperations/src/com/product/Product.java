@@ -42,6 +42,6 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{id=\'"+id+"\',"+"name=\'"+name+"\', weight=\'"+weight+"\'";
+        return "Product{id=\'"+id+"\',"+"name=\'"+name+"\', weight=\'"+weight+"\'}";
     }
 }

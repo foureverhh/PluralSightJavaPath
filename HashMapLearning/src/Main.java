@@ -6,6 +6,12 @@ import java.util.Objects;
 public class Main {
 
     public static void main(String[] args) {
+        //testMutableKey();
+        Console console = System.console();
+        
+    }
+
+    static void testMutableKey(){
         Map<MutableString, String> brokenMap = new HashMap<>();
         String value = "abc";
         MutableString key = new MutableString(value);

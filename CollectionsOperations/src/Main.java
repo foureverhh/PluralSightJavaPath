@@ -47,7 +47,7 @@ public class Main {
         basket.add(ProductFixtures.door);
         System.out.println(basket);
 
-        basket.getItems().add(ProductFixtures.window);//This add is out of the range of add function in Shopping basket
+        basket.getItems().remove(ProductFixtures.window);//This add is out of the range of add function in Shopping basket
         System.out.println(basket);
     }
 }

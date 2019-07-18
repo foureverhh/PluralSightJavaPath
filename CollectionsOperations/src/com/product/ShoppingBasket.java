@@ -1,6 +1,7 @@
 package com.product;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ShoppingBasket {
@@ -13,7 +14,8 @@ public class ShoppingBasket {
     }
 
     public List<Product> getItems() {
-        return items;
+        //By adding Collections.unmodifiableList(items)  make the list can not invoke List.api functions
+        return  Collections.unmodifiableList(items);
     }
 
     @Override

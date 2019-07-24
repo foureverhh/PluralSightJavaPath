@@ -1,8 +1,7 @@
 import com.monotonic.testing.m2.Cafe;
 import com.monotonic.testing.m2.Coffee;
 import com.monotonic.testing.m2.CoffeeType;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.*;
 
 public class CafeTest {
 
@@ -10,6 +9,29 @@ public class CafeTest {
     public static final int ESPRESSO_BEANS = 7;
     public static final int NO_MILK = 0;
     public static final int NO_BEANS = 0;
+
+    public CafeTest(){
+        System.out.println("Constructor");
+    }
+    @BeforeClass
+    public static void beforeClass(){
+        System.out.println("before class");
+    }
+
+    @AfterClass
+    public static void afterClass(){
+        System.out.println("after class");
+    }
+
+    @Before
+    public void before(){
+        System.out.println("before");
+    }
+
+    @After
+    public void after(){
+        System.out.println("after");
+    }
 
     @Test
     public void canBrewEspresso(){
@@ -86,6 +108,7 @@ public class CafeTest {
         //When
         cafe.restockBeans(NO_BEANS);
     }
+
     private Cafe cafeWithBeans() {
         Cafe cafe = new Cafe();
         cafe.restockBeans(ESPRESSO_BEANS);

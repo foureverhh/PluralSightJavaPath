@@ -10,9 +10,12 @@ public class CafeTest {
     public static final int NO_MILK = 0;
     public static final int NO_BEANS = 0;
 
+    private Cafe cafe;
+    /*
     public CafeTest(){
         System.out.println("Constructor");
     }
+
     @BeforeClass
     public static void beforeClass(){
         System.out.println("before class");
@@ -23,20 +26,24 @@ public class CafeTest {
         System.out.println("after class");
     }
 
-    @Before
-    public void before(){
-        System.out.println("before");
-    }
-
-    @After
+     @After
     public void after(){
         System.out.println("after");
     }
+    */
+    @Before
+    public void before(){
+        //System.out.println("before");
+        cafe = new Cafe();
+    }
+
+
 
     @Test
     public void canBrewEspresso(){
         //Given clause, preconditions of the test.
-        Cafe cafe = cafeWithBeans();
+        //Cafe cafe = cafeWithBeans();
+        withBeans();
 
         //When clause, the behavior.
         Coffee coffee = cafe.brew(CoffeeType.Espresso);
@@ -55,7 +62,8 @@ public class CafeTest {
     @Test
     public void brewingEspressoConsumeBeans(){
         //Given
-        Cafe cafe = cafeWithBeans();
+       // Cafe cafe = cafeWithBeans();
+        withBeans();
 
         //When
         Coffee coffee = cafe.brew(CoffeeType.Espresso);
@@ -69,7 +77,8 @@ public class CafeTest {
     @Test(expected = IllegalStateException.class)
     public void lattesRequiredMilk(){
         //given
-        Cafe cafe = cafeWithBeans();
+        //Cafe cafe = cafeWithBeans();
+        withBeans();
         //cafe.restockMilk(17);
 
         //when
@@ -79,7 +88,7 @@ public class CafeTest {
     @Test
     public void canBrewLatte(){
         //Given
-        Cafe cafe = new Cafe();
+      //  Cafe cafe = new Cafe();
         cafe.restockMilk(100);
         cafe.restockBeans(100);
 
@@ -94,7 +103,7 @@ public class CafeTest {
     @Test(expected = IllegalArgumentException.class)
     public void mustRestockMilk(){
         //Given
-        Cafe cafe = new Cafe();
+       // Cafe cafe = new Cafe();
 
         //When
         cafe.restockMilk(NO_MILK);
@@ -103,15 +112,13 @@ public class CafeTest {
     @Test(expected = IllegalArgumentException.class)
     public void mustRestockBean(){
         //Given
-        Cafe cafe = new Cafe();
+       // Cafe cafe = new Cafe();
 
         //When
         cafe.restockBeans(NO_BEANS);
     }
 
-    private Cafe cafeWithBeans() {
-        Cafe cafe = new Cafe();
+    private void withBeans() {
         cafe.restockBeans(ESPRESSO_BEANS);
-        return cafe;
     }
 }

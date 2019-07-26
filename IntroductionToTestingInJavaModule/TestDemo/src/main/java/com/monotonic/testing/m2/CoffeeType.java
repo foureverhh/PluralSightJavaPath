@@ -8,7 +8,7 @@ public enum CoffeeType {
     private final int requiredBeans;
     private final int requiredMilk;
 
-    CoffeeType(int requiredBeans, int requiredMilk){
+    private CoffeeType(int requiredBeans, int requiredMilk){
         this.requiredBeans = requiredBeans;
         this.requiredMilk = requiredMilk;
     }

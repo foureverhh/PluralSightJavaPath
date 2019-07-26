@@ -2,50 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e5e0bad-d135-4784-94cf-c9a3b075669c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HamcrestExampleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CalculatorWithDeque/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CalculatorWithDeque/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CollectionConcepts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CollectionConcepts/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CollectionConcepts/src/Shipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CollectionConcepts/src/Shipment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CollectionMapLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CollectionMapLearning/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CollectionsOperations/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CollectionsOperations/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CollectionsOperations/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CollectionsOperations/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ConcurencyIssue/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ConcurencyIssue/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../HashMapLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../HashMapLearning/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../HashMapLearning/out/production/HashMapLearning/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../HashMapLearning/out/production/HashMapLearning/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../HashMapLearning/out/production/HashMapLearning/MutableString.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../HashMapLearning/out/production/HashMapLearning/MutableString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../HashMapLearning/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../HashMapLearning/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_all_1_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TestDemo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CafeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CafeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CafeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CafeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestingDemo/src/Cafe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestingDemo/src/Coffee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestingDemo/src/CoffeeType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestingDemoJunit/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestingDemoJunit/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestingDemoJunit/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestingDemoJunit/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestingDemoJunit/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestingDemoJunit/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestingDemoJunit/src/main/Cafe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestingDemoJunit/src/main/Coffee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestingDemoJunit/src/main/CoffeeType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MultiThreadLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MultiThreadLearning/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../QueueLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../QueueLearning/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../QueueLearning/src/Queue/PriorityHelpDesk.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../QueueLearning/src/Queue/PriorityHelpDesk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../QuickSortLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuickSortLearning/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RuntimeType/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../RuntimeType/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SerializationPractise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SerializationPractise/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SerializationPractise/account.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../../SerializationPractise/account.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SerializationPractise/out/production/HelloWorld/BankAccount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SerializationPractise/out/production/HelloWorld/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../SerializationPractise/out/production/HelloWorld/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SetLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SetLearning/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TypeMetadaaWithAnnotation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TypeMetadaaWithAnnotation/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,17 +21,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/monotonic/testing/m2/Cafe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
+            <state relative-caret-position="344">
               <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CafeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1472">
-              <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
+            <state relative-caret-position="464">
+              <caret line="55" column="65" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/HamcrestExampleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            <state relative-caret-position="273">
+              <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#322#339#0" expanded="true" />
@@ -100,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
-              <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -151,9 +109,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/monotonic/testing/m2/Coffee.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/monotonic/testing/m2/CoffeeType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/monotonic/testing/m2/Cafe.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CafeTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/HamcrestExampleTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/HamcrestExampleTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CafeTest.java" />
       </list>
     </option>
   </component>
@@ -253,12 +211,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HamcrestExampleTest.listOrderingIsIrrelevant">
-    <configuration name="CafeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CafeTest.canBrewEspresso">
+    <configuration name="CafeTest.canBrewEspresso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestDemo" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CafeTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="canBrewEspresso" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -304,11 +263,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CafeTest.canBrewEspresso" />
         <item itemvalue="JUnit.HamcrestExampleTest.listOrderingIsIrrelevant" />
         <item itemvalue="JUnit.HamcrestExampleTest" />
         <item itemvalue="JUnit.HamcrestExampleTest.mapShouldContainValue" />
         <item itemvalue="JUnit.HamcrestExampleTest.listOrderingIsIrrelavant" />
-        <item itemvalue="JUnit.CafeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -326,18 +285,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HamcrestExampleTest_listOrderingIsIrrelevant - 2019.07.26 at 17h 04m 04s.xml">
-      <configuration name="HamcrestExampleTest.listOrderingIsIrrelevant" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HamcrestExampleTest_listOrderingIsIrrelevant - 2019.07.26 at 17h 04m 39s.xml">
-      <configuration name="HamcrestExampleTest.listOrderingIsIrrelevant" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HamcrestExampleTest_listOrderingIsIrrelevant - 2019.07.26 at 17h 04m 49s.xml">
-      <configuration name="HamcrestExampleTest.listOrderingIsIrrelevant" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HamcrestExampleTest - 2019.07.26 at 17h 05m 27s.xml">
-      <configuration name="HamcrestExampleTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HamcrestExampleTest - 2019.07.26 at 17h 05m 46s.xml">
       <configuration name="HamcrestExampleTest" configurationId="JUnit" />
     </history-entry>
@@ -356,12 +303,24 @@
     <history-entry file="HamcrestExampleTest_listOrderingIsIrrelevant - 2019.07.26 at 17h 12m 08s.xml">
       <configuration name="HamcrestExampleTest.listOrderingIsIrrelevant" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="HamcrestExampleTest_listOrderingIsIrrelevant - 2019.07.26 at 17h 13m 44s.xml">
+      <configuration name="HamcrestExampleTest.listOrderingIsIrrelevant" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HamcrestExampleTest_listOrderingIsIrrelevant - 2019.07.26 at 17h 13m 58s.xml">
+      <configuration name="HamcrestExampleTest.listOrderingIsIrrelevant" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HamcrestExampleTest_listOrderingIsIrrelevant - 2019.07.26 at 17h 14m 10s.xml">
+      <configuration name="HamcrestExampleTest.listOrderingIsIrrelevant" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HamcrestExampleTest_listOrderingIsIrrelevant - 2019.07.26 at 17h 14m 31s.xml">
+      <configuration name="HamcrestExampleTest.listOrderingIsIrrelevant" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -371,11 +330,11 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
@@ -390,13 +349,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/monotonic/testing/m2/Cafe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/monotonic/testing/m2/Coffee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -411,32 +363,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CafeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1472">
-          <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HamcrestExampleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        <state relative-caret-position="273">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#322#339#0" expanded="true" />
             <element signature="e#785#786#0" expanded="true" />
             <element signature="e#822#823#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monotonic/testing/m2/Cafe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CafeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="55" column="65" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

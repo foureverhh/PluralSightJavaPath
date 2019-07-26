@@ -35,7 +35,8 @@ public class Cafe {
 
         beansInStock -= requiredBeans;
         milkInStock -= requiredMilk;
-        return new Coffee(coffeeType, requiredBeans,requiredMilk);
+        //return new Coffee(coffeeType, requiredBeans,requiredMilk);
+        return new Coffee(coffeeType, 1,requiredMilk);
     }
 
     public void restockBeans(int weightInGrams){

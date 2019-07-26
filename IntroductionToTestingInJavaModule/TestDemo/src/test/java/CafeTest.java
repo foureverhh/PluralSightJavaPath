@@ -1,6 +1,7 @@
 import com.monotonic.testing.m2.Cafe;
 import com.monotonic.testing.m2.Coffee;
 import com.monotonic.testing.m2.CoffeeType;
+import org.hamcrest.Matchers;
 import org.junit.*;
 
 public class CafeTest {
@@ -52,6 +53,7 @@ public class CafeTest {
         //that we've got enough coffee
 
         //Then clause, the post-condition, to assert
+        Assert.assertThat(coffee, Matchers.hasProperty("beans"));
         Assert.assertEquals("Wrong number of beans",CoffeeType.Espresso,coffee.getType());
         Assert.assertEquals("Wrong number of milk",NO_MILK,coffee.getMilk());
         Assert.assertEquals("Wrong coffee type",ESPRESSO_BEANS,coffee.getBeans());

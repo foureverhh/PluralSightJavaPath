@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         //testMutableKey();
         Console console = System.console();
-        
+        testMutableKey();
     }
 
     static void testMutableKey(){

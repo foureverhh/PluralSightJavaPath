@@ -49,5 +49,7 @@ public class Main {
 
         basket.getItems().remove(ProductFixtures.window);//This add is out of the range of add function in Shopping basket
         System.out.println(basket);
+
+
     }
 }

@@ -46,16 +46,6 @@ public class Shipment implements Iterable<Product>{
         return products.iterator();
     }
 
-    @Override
-    public void forEach(Consumer<? super Product> action) {
-
-    }
-
-    @Override
-    public Spliterator<Product> spliterator() {
-        return null;
-    }
-
     public List<Product> getHeavyVanProducts(){
         return heavyVanProducts;
     }

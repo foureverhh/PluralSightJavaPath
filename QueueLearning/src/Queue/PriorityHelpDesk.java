@@ -7,7 +7,7 @@ import java.util.Queue;
 
 public class PriorityHelpDesk {
 
-    //To make the queue as the order of Categoryc
+    //To make the queue as the order of Category
     public static final Comparator<Enquiry> BY_CATEGORY_ALSO = Comparator.comparing(Enquiry::getCategory) ;
     public static final Comparator<Enquiry> BY_CATEGORY = new Comparator<Enquiry>() {
 

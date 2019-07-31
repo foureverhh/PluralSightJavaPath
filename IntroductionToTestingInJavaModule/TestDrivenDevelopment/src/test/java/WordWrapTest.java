@@ -24,5 +24,10 @@ public class WordWrapTest {
         String result = WordWrap.wrap("The Sleepy Brow",LINE_LENGTH);
         Assert.assertEquals("The S\nleepy\n Brow",result);
     }
+    @Test
+    public void evenLongerLineShouldWrapThrice(){
+        String result = WordWrap.wrap("The Sleepy Brown Fox",LINE_LENGTH);
+        Assert.assertEquals("The S\nleepy\n Brow\nn Fox",result);
+    }
 }
 

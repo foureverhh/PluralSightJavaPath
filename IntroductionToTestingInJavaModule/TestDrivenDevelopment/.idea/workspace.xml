@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a23b566-9847-40e1-bd55-e0063158211d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__Junit_Junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestDrivenDevelopment.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/foureverhh/test/LeapYear.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/foureverhh/test/WordWrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/foureverhh/test/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LeapYearTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WordWrapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TestDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foureverhh/test/WordWrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foureverhh/test/WordWrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WordWrapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WordWrapTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,16 +22,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/foureverhh/test/WordWrap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="414">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/LeapYearTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
+            <state relative-caret-position="342">
               <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -53,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/WordWrapTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="338">
+              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/foureverhh/test/LeapYear.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+            <state relative-caret-position="162">
+              <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
               <folding>
                 <element signature="e#217#218#0" expanded="true" />
                 <element signature="e#253#254#0" expanded="true" />
@@ -116,9 +105,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/foureverhh/test/package-info.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/foureverhh/test/LeapYearTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/WordWrapTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/LeapYearTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/foureverhh/test/LeapYear.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/foureverhh/test/WordWrap.java" />
+        <option value="$PROJECT_DIR$/src/test/java/WordWrapTest.java" />
       </list>
     </option>
   </component>
@@ -233,16 +223,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LeapYearTest.leapYearsAreDivisibleByFourHundred">
-    <configuration name="LeapYearTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestDrivenDevelopment" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LeapYearTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.WordWrapTest">
     <configuration name="LeapYearTest.leapYearsAreDivisibleByFourHundred" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestDrivenDevelopment" />
       <option name="PACKAGE_NAME" value="" />
@@ -253,31 +234,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeapYearTest.leapYearsAreNotDivisibleByFourHundred" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WordWrapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestDrivenDevelopment" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LeapYearTest" />
-      <option name="METHOD_NAME" value="leapYearsAreNotDivisibleByFourHundred" />
+      <option name="MAIN_CLASS_NAME" value="WordWrapTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordWrapTest.lineShouldWrapIfOverLineLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestDrivenDevelopment" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WordWrapTest" />
+      <option name="METHOD_NAME" value="lineShouldWrapIfOverLineLength" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeapYearTest.leapYearsAreNotDivisibleByOneHundred" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WordWrapTest.longerLineShouldWrapTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestDrivenDevelopment" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LeapYearTest" />
-      <option name="METHOD_NAME" value="leapYearsAreNotDivisibleByOneHundred" />
+      <option name="MAIN_CLASS_NAME" value="WordWrapTest" />
+      <option name="METHOD_NAME" value="longerLineShouldWrapTwice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeapYearTest.normalYearsAreNotDivisibleByFour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WordWrapTest.shortLinesShouldNotWrap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestDrivenDevelopment" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LeapYearTest" />
-      <option name="METHOD_NAME" value="normalYearsAreNotDivisibleByFour" />
+      <option name="MAIN_CLASS_NAME" value="WordWrapTest" />
+      <option name="METHOD_NAME" value="shortLinesShouldNotWrap" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -285,11 +275,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WordWrapTest" />
+        <item itemvalue="JUnit.WordWrapTest.longerLineShouldWrapTwice" />
+        <item itemvalue="JUnit.WordWrapTest.lineShouldWrapIfOverLineLength" />
+        <item itemvalue="JUnit.WordWrapTest.shortLinesShouldNotWrap" />
         <item itemvalue="JUnit.LeapYearTest.leapYearsAreDivisibleByFourHundred" />
-        <item itemvalue="JUnit.LeapYearTest.leapYearsAreNotDivisibleByFourHundred" />
-        <item itemvalue="JUnit.LeapYearTest.leapYearsAreNotDivisibleByOneHundred" />
-        <item itemvalue="JUnit.LeapYearTest" />
-        <item itemvalue="JUnit.LeapYearTest.normalYearsAreNotDivisibleByFour" />
       </list>
     </recent_temporary>
   </component>
@@ -307,23 +297,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LeapYearTest_leapYearsAreDivisibleByFour - 2019.07.26 at 22h 17m 56s.xml">
-      <configuration name="LeapYearTest.leapYearsAreDivisibleByFour" configurationId="JUnit" />
+    <history-entry file="WordWrapTest_lineShouldWrapIfOverLineLength - 2019.07.31 at 21h 19m 13s.xml">
+      <configuration name="WordWrapTest.lineShouldWrapIfOverLineLength" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeapYearTest_normalYearsAreNotDivisibleByFour - 2019.07.26 at 22h 20m 04s.xml">
-      <configuration name="LeapYearTest.normalYearsAreNotDivisibleByFour" configurationId="JUnit" />
+    <history-entry file="WordWrapTest_longerLineShouldWrapTwice - 2019.07.31 at 21h 19m 20s.xml">
+      <configuration name="WordWrapTest.longerLineShouldWrapTwice" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeapYearTest - 2019.07.26 at 22h 21m 23s.xml">
-      <configuration name="LeapYearTest" configurationId="JUnit" />
+    <history-entry file="WordWrapTest - 2019.07.31 at 21h 20m 39s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeapYearTest_leapYearsAreNotDivisibleByOneHundred - 2019.07.29 at 11h 39m 00s.xml">
-      <configuration name="LeapYearTest.leapYearsAreNotDivisibleByOneHundred" configurationId="JUnit" />
+    <history-entry file="WordWrapTest - 2019.07.31 at 21h 23m 39s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeapYearTest_leapYearsAreNotDivisibleByOneHundred - 2019.07.29 at 11h 39m 39s.xml">
-      <configuration name="LeapYearTest.leapYearsAreNotDivisibleByOneHundred" configurationId="JUnit" />
+    <history-entry file="WordWrapTest - 2019.07.31 at 21h 24m 26s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeapYearTest_leapYearsAreNotDivisibleByFourHundred - 2019.07.29 at 11h 51m 56s.xml">
-      <configuration name="LeapYearTest.leapYearsAreNotDivisibleByFourHundred" configurationId="JUnit" />
+    <history-entry file="WordWrapTest - 2019.07.31 at 21h 27m 10s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordWrapTest - 2019.07.31 at 21h 32m 52s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordWrapTest - 2019.07.31 at 21h 33m 58s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordWrapTest - 2019.07.31 at 21h 34m 18s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordWrapTest - 2019.07.31 at 21h 35m 15s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -344,7 +346,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
@@ -373,13 +375,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/foureverhh/test/WordWrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/foureverhh/test/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -390,20 +385,10 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/package-info.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/WordWrapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/foureverhh/test/LeapYear.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        <state relative-caret-position="162">
+          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
           <folding>
             <element signature="e#217#218#0" expanded="true" />
             <element signature="e#253#254#0" expanded="true" />
@@ -413,12 +398,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LeapYearTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
+        <state relative-caret-position="342">
           <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#697#698#0" expanded="true" />
             <element signature="e#732#733#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/foureverhh/test/WordWrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/WordWrapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

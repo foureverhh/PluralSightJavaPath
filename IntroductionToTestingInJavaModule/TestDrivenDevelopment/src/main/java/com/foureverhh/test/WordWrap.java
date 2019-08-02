@@ -27,10 +27,10 @@ public class WordWrap {
         */
         while(length > split){
             accumulator.append("\n");
-            accumulator.append(inputLine, split,split+ lineLength);
+            accumulator.append(inputLine, split,Math.min(length,split+ lineLength));
             split += lineLength;
         }
-        //accumulator.append(inputLine,split,length);
+        //accumulator.append(inputLine,length,split);
 
         return accumulator.toString();
     }

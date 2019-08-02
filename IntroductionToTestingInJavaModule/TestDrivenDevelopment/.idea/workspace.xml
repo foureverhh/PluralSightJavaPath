@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2a23b566-9847-40e1-bd55-e0063158211d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../TestDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/foureverhh/test/WordWrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foureverhh/test/WordWrap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/WordWrapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WordWrapTest.java" afterDir="false" />
     </list>
@@ -22,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/foureverhh/test/WordWrap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+            <state relative-caret-position="255">
+              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -45,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/WordWrapTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+            <state relative-caret-position="572">
+              <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -223,7 +224,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WordWrapTest">
+  <component name="RunManager" selected="JUnit.WordWrapTest.longLinesDoNotHaveToBeMultipleOfLineLength">
     <configuration name="WordWrapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestDrivenDevelopment" />
       <option name="PACKAGE_NAME" value="" />
@@ -253,6 +254,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WordWrapTest.longLinesDoNotHaveToBeMultipleOfLineLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestDrivenDevelopment" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WordWrapTest" />
+      <option name="METHOD_NAME" value="longLinesDoNotHaveToBeMultipleOfLineLength" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WordWrapTest.longerLineShouldWrapTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestDrivenDevelopment" />
       <option name="PACKAGE_NAME" value="" />
@@ -263,23 +274,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordWrapTest.shortLinesShouldNotWrap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestDrivenDevelopment" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WordWrapTest" />
-      <option name="METHOD_NAME" value="shortLinesShouldNotWrap" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WordWrapTest.longLinesDoNotHaveToBeMultipleOfLineLength" />
         <item itemvalue="JUnit.WordWrapTest" />
         <item itemvalue="JUnit.WordWrapTest.evenLongerLineShouldWrapThrice" />
         <item itemvalue="JUnit.WordWrapTest.longerLineShouldWrapTwice" />
         <item itemvalue="JUnit.WordWrapTest.lineShouldWrapIfOverLineLength" />
-        <item itemvalue="JUnit.WordWrapTest.shortLinesShouldNotWrap" />
       </list>
     </recent_temporary>
   </component>
@@ -297,24 +298,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WordWrapTest - 2019.07.31 at 21h 27m 10s.xml">
-      <configuration name="WordWrapTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WordWrapTest - 2019.07.31 at 21h 32m 52s.xml">
-      <configuration name="WordWrapTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WordWrapTest - 2019.07.31 at 21h 33m 58s.xml">
-      <configuration name="WordWrapTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WordWrapTest - 2019.07.31 at 21h 34m 18s.xml">
-      <configuration name="WordWrapTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WordWrapTest - 2019.07.31 at 21h 35m 15s.xml">
-      <configuration name="WordWrapTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WordWrapTest - 2019.07.31 at 21h 37m 06s.xml">
-      <configuration name="WordWrapTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="WordWrapTest - 2019.07.31 at 21h 38m 06s.xml">
       <configuration name="WordWrapTest" configurationId="JUnit" />
     </history-entry>
@@ -325,6 +308,24 @@
       <configuration name="WordWrapTest.evenLongerLineShouldWrapThrice" configurationId="JUnit" />
     </history-entry>
     <history-entry file="WordWrapTest - 2019.07.31 at 21h 54m 08s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordWrapTest - 2019.07.31 at 21h 58m 29s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordWrapTest - 2019.07.31 at 22h 00m 59s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordWrapTest_longLinesDoNotHaveToBeMultipleOfLineLength - 2019.07.31 at 22h 11m 19s.xml">
+      <configuration name="WordWrapTest.longLinesDoNotHaveToBeMultipleOfLineLength" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordWrapTest_longLinesDoNotHaveToBeMultipleOfLineLength - 2019.07.31 at 22h 14m 25s.xml">
+      <configuration name="WordWrapTest.longLinesDoNotHaveToBeMultipleOfLineLength" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordWrapTest - 2019.07.31 at 22h 14m 37s.xml">
+      <configuration name="WordWrapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordWrapTest - 2019.07.31 at 22h 15m 01s.xml">
       <configuration name="WordWrapTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -410,15 +411,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/foureverhh/test/WordWrap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        <state relative-caret-position="255">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/WordWrapTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+        <state relative-caret-position="572">
+          <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

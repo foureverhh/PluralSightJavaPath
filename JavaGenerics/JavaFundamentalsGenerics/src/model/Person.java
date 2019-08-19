@@ -1,3 +1,5 @@
+package model;
+
 import java.util.Objects;
 
 public class Person {
@@ -38,4 +40,5 @@ public class Person {
     public String toString() {
         return "Person{"+"name='"+name+"',age='"+age+"'}";
     }
+
 }

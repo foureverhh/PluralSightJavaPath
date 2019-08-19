@@ -1,4 +1,9 @@
+package collections;
+
+import model.Person;
+
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
@@ -24,6 +29,8 @@ public class ListExamples {
             }
             System.out.println(person);
         }
+
         System.out.println(madMen.size());
+
     }
 }

@@ -1,3 +1,7 @@
+package collections;
+
+import model.Person;
+
 import java.util.Arrays;
 
 public class TheArrayProblem {

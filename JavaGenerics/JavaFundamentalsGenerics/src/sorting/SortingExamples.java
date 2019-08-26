@@ -17,7 +17,7 @@ public class SortingExamples {
                 return -Integer.compare(o1.getAge(),o2.getAge());
             }
         };
-        */
+
 
         Person donDraper = new Person("Don Draper",89);
         Person peggyOlson = new Person("Peggy Olson", 65);
@@ -42,6 +42,8 @@ public class SortingExamples {
         System.out.println();
         System.out.println("Descending order");
         System.out.println(madMen);
+
+         */
     }
 
 }

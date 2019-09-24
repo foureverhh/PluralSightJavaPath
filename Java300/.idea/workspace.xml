@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f49afa72-645e-4496-a806-b11601b8deaa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/designPatterns/src/patterns/prototype/performanceComparison/Client4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internetProgramming/src/tcpSample/multiSelectedUsers/Client1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internetProgramming/src/tcpSample/multiSelectedUsers/Client2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internetProgramming/src/tcpSample/multiSelectedUsers/Client3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internetProgramming/src/tcpSample/multiSelectedUsers/CloseUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internetProgramming/src/tcpSample/multiSelectedUsers/Receive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internetProgramming/src/tcpSample/multiSelectedUsers/Send.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internetProgramming/src/tcpSample/multiSelectedUsers/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internetProgramming/src/tcpSample/multiUsers/Client1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internetProgramming/src/tcpSample/multiUsers/Client2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internetProgramming/src/tcpSample/multiUsers/Client3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internetProgramming/src/tcpSample/multiUsers/CloseUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internetProgramming/src/tcpSample/multiUsers/Receive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internetProgramming/src/tcpSample/multiUsers/Send.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internetProgramming/src/tcpSample/multiUsers/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketProgrammingIntro/server/server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketProgrammingIntro/server/src/yuanheng/server/servletXMl/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketProgrammingIntro/server/src/yuanheng/server/servletXMl/WEB_INFO/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketProgrammingIntro/server/src/yuanheng/server/servletXMl/WebApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketProgrammingIntro/server/src/yuanheng/server/servletXMl/servlet/Dispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketProgrammingIntro/server/src/yuanheng/server/servletXMl/servlet/Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketProgrammingIntro/server/src/yuanheng/server/servletXMl/servlet/ServletContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketProgrammingIntro/server/src/yuanheng/server/servletXMl/servlet/login/LogInServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketProgrammingIntro/server/src/yuanheng/server/servletXMl/servlet/register/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketProgrammingIntro/server/src/yuanheng/server/servletXMl/utils/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketProgrammingIntro/server/src/yuanheng/server/servletXMl/utils/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketProgrammingIntro/server/src/yuanheng/server/servletXMl/webParsing/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketProgrammingIntro/server/src/yuanheng/server/servletXMl/webParsing/Mapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socketProgrammingIntro/server/src/yuanheng/server/servletXMl/webParsing/WebHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internetProgramming/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/internetProgramming/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internetProgramming/internetProgramming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/internetProgramming/socketProgramming.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internetProgramming/src/tcpSample/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketProgrammingIntro/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/socketProgrammingIntro/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketProgrammingIntro/socketProgrammingIntro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/socketProgrammingIntro/socketProgrammingIntro.iml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/socketProgrammingIntro" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1RHfIJsF1rrcMzBQH5hRg6ac5jY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f49afa72-645e-4496-a806-b11601b8deaa" name="Default Changelist" comment="" />
+      <created>1569328860120</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569328860120</updated>
+      <workItem from="1569328861389" duration="19000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

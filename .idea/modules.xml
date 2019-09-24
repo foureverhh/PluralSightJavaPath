@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/FunctionalProgrammingWithJava.iml" filepath="$PROJECT_DIR$/FunctionalProgrammingWithJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaPluralSightPath.iml" filepath="$PROJECT_DIR$/.idea/JavaPluralSightPath.iml" />
     </modules>
   </component>

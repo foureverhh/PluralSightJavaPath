@@ -1,4 +1,4 @@
-package demo04;
+package demo04_ResultSet;
 
 import java.sql.*;
 
@@ -27,8 +27,6 @@ public class Demo04 {
             while(rs.next()){
                 System.out.println(rs.getInt(1)+"--"+rs.getString(2)+"--"+rs.getString(3));
             }
-
-
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {

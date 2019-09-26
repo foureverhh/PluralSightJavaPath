@@ -19,7 +19,7 @@ public class Demo02 {
 
             //instantiate statement
             Statement statement = connection.createStatement();
-            String sql = "INSERT INTO employees(emp_no,birth_date,first_name,last_name,gender,hire_date) VALUES ('9999','1986-03-12','元亨','李','M','2019-01-31')";
+            String sql = "INSERT INTO employees(emp_no,birth_date,first_name,last_name,gender,hire_date) VALUES ('9998','1986-03-12','元亨','李','M','2019-01-31')";
             statement.execute(sql);
 
 

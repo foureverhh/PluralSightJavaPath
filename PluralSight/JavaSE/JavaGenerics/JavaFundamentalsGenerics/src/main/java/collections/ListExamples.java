@@ -12,7 +12,7 @@ public class ListExamples {
         Person donDraper = new Person("Don Draper",89);
         Person peggyOlson = new Person("Peggy Olson",65);
 
-        List<Person> madMen = new ArrayList<>();
+        List<Person> madMen = new ArrayList<Person>();
         madMen.add(donDraper);
         madMen.add(peggyOlson);
 

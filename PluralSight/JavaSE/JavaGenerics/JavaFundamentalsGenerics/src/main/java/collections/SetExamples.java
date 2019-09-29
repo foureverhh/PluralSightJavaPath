@@ -13,7 +13,7 @@ public class SetExamples {
         Person peggyOlson = new Person("Peggy Olson",65);
         Person bertCooper = new Person("Bert Cooper",100);
 
-        List<Person> madMen = new ArrayList<>();
+        List<Person> madMen = new ArrayList<Person>();
         madMen.add(donDraper);
         madMen.add(peggyOlson);
         madMen.add(donDraper);
@@ -26,7 +26,7 @@ public class SetExamples {
         System.out.println();
 
         System.out.println("Person in set:");
-        Set<Person> personSet = new HashSet<>();
+        Set<Person> personSet = new HashSet<Person>();
         personSet.add(donDraper);
         personSet.add(peggyOlson);
         personSet.add(donDraper);

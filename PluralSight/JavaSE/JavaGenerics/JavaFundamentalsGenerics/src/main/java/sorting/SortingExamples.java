@@ -12,7 +12,7 @@ public class SortingExamples<T,S> {
         Person peggyOlson = new Person("Peggy Olson", 65);
         Person bertCooper = new Person("Bert Cooper", 100);
 
-        List<Person> madMen = new ArrayList<>();
+        List<Person> madMen = new ArrayList<Person>();
         madMen.add(donDraper);
         madMen.add(peggyOlson);
         madMen.add(bertCooper);
@@ -49,7 +49,7 @@ public class SortingExamples<T,S> {
 
          */
 
-        List<Integer> numbers = new ArrayList<>();
+        List<Integer> numbers = new ArrayList<Integer>();
         numbers.add(1);
         numbers.add(2);
         numbers.add(3);

@@ -12,7 +12,7 @@ public class MapExamples {
         Person peggyOlson = new Person("Peggy Olson",65);
         Person bertCooper = new Person("Bert Cooper",100);
 
-        Map<String, Person> madMen = new HashMap<>();
+        Map<String, Person> madMen = new HashMap<String, Person>();
         madMen.put(donDraper.getName(),donDraper);
         madMen.put(peggyOlson.getName(),peggyOlson);
         madMen.put(bertCooper.getName(),bertCooper);

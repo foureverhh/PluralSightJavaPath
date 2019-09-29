@@ -22,7 +22,8 @@ public class PersonSaver {
     }
 
     //public void saveAll(Person[] people) throws IOException {
-    public void saveAll(List<Person> people) throws IOException {
+    //public void saveAll(List<? extends Person> people) throws IOException {
+    public <T extends Person> void saveAll(List<T> people) throws IOException {
        for(Person person : people){
            save(person);
        }

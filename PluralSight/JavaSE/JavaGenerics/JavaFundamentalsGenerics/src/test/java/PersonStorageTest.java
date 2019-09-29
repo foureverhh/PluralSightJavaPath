@@ -32,9 +32,16 @@ public class PersonStorageTest {
         */
         List<Person> persons = new ArrayList<>();
         persons.add(donDraper);
-        persons.add(bertCooper)
+        persons.add(bertCooper);
         saver.saveAll(persons);
         Assert.assertEquals(donDraper,loader.load());
         Assert.assertEquals(bertCooper,loader.load());
+    }
+
+    static class PersonHolder<T extends Person>{
+        T get(){
+            return Null;
+        }
+
     }
 }

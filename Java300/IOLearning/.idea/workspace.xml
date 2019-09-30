@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="570aded6-25ea-407c-be77-3c448149d532" name="Default Changelist" comment="" />
+    <list default="true" id="570aded6-25ea-407c-be77-3c448149d532" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/IOObjectStream/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/textFiles/ObjectStreamSample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/generics.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/src/main/java/covariance_contravariance/CovariantArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/src/main/java/covariance_contravariance/GenericsAndCovariance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/src/main/java/covariance_contravariance/NonCovariantGenerics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/src/main/java/covariance_contravariance/SuperClassWildCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/src/main/java/wildcard_learning/unbounded/UnboundedUsage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataStreamIO/DataDemo02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStreamIO/DataDemo02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designPatterns" beforeDir="false" afterPath="$PROJECT_DIR$/../designPatterns" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../internetProgramming" beforeDir="false" afterPath="$PROJECT_DIR$/../internetProgramming" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphismSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../polymorphismSample/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socketProgrammingIntro" beforeDir="false" afterPath="$PROJECT_DIR$/../socketProgrammingIntro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/src/main/java/wildcard_learning/bounded/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/src/main/java/wildcard_learning/bounded/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/src/main/java/wildcard_learning/bounded/PersonLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/src/main/java/wildcard_learning/bounded/PersonLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/src/test/java/PersonStorageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/src/test/java/PersonStorageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/target/classes/wildcard_learning/bounded/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/target/classes/wildcard_learning/bounded/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/target/classes/wildcard_learning/bounded/PersonLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/target/classes/wildcard_learning/bounded/PersonLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/target/classes/wildcard_learning/bounded/PersonSaver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/target/classes/wildcard_learning/bounded/PersonSaver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/target/test-classes/PersonStorageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/JavaFundamentalsGenerics/target/test-classes/PersonStorageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/JavaGenerics/Test/Test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/TheBigPicture" beforeDir="false" afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/TheBigPicture" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,16 +40,24 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JavaFXApplication" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1QJzgzox1O16VJBF9koFL2iiCYp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -36,6 +70,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/textFiles" />
       <recent name="$PROJECT_DIR$/parent1/test1" />
     </key>
   </component>
@@ -51,20 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DataDemo01">
-    <configuration name="BufferedCharDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bufferedIO.BufferedCharDemo" />
-      <module name="IOLearning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bufferedIO.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.demo01">
     <configuration name="ByteArrayDemo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="byteArrayIO.ByteArrayDemo01" />
       <module name="IOLearning" />
@@ -104,12 +126,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IOConvertDemo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IOConvert.IOConvertDemo01" />
+    <configuration name="DataDemo02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dataStreamIO.DataDemo02" />
       <module name="IOLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="IOConvert.*" />
+          <option name="PATTERN" value="dataStreamIO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IOObjectStream.demo.demo01" />
+      <module name="IOLearning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IOObjectStream.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.demo01" />
+        <item itemvalue="Application.DataDemo02" />
         <item itemvalue="Application.DataDemo01" />
         <item itemvalue="Application.ByteArrayDemo02" />
         <item itemvalue="Application.ByteArrayDemo01" />
-        <item itemvalue="Application.IOConvertDemo01" />
-        <item itemvalue="Application.BufferedCharDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -141,10 +176,28 @@
       <workItem from="1569236449765" duration="8125000" />
       <workItem from="1569328649308" duration="12000" />
       <workItem from="1569328806920" duration="24000" />
+      <workItem from="1569330765404" duration="2666000" />
+      <workItem from="1569846611117" duration="1493000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

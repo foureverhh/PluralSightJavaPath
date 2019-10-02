@@ -22,8 +22,8 @@ public class Person {
 
     @Override
     public boolean equals(Object obj) {
-        if(obj == null || getClass()!= obj.getClass())
-            return false;
+       /* if(obj == null || getClass()!= obj.getClass())
+            return false;*/
         Person another = (Person) obj;
         return name.equals(another.getName()) && age == Integer.valueOf(another.getAge());
     }

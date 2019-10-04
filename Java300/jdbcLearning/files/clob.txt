@@ -1,0 +1,1 @@
+This is a clob Character large object file

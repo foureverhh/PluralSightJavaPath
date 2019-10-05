@@ -14,26 +14,25 @@ public class demo09 {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
-
+        Reader reader = null;
 
         String user = "root";
         String pinCode = "!!8603122692167";
         try {
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbcTest?useSSL=false"
-                    ,user,pinCode);
+                    , user, pinCode);
             ps = conn.prepareStatement("SELECT * FROM t_user2 where id=?");
-            ps.setObject(1,102);
+            ps.setObject(1, 102);
             rs = ps.executeQuery();
-            while(rs.next()){
-              Clob clob = rs.getClob("myInfo");
-              Reader r = clob.getCharacterStream();
-              char[] buffer = new char[32];
-              int len = 0;
-              while(-1!=(len=r.read(buffer))){
-                  System.out.println(new String(buffer,0,len));
-              }
-              r.close();
+            while (rs.next()) {
+                Clob clob = rs.getClob("myInfo");
+                reader = clob.getCharacterStream();
+                char[] buffer = new char[32];
+                int len;
+                while (-1 != (len = reader.read(buffer))) {
+                    System.out.println(new String(buffer, 0, len));
+                }
               /*
                 int temp = 0;
                 while(-1!=(temp=r.read())){
@@ -57,33 +56,30 @@ public class demo09 {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            if(null!=rs){
+            if (null != reader) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (null != rs) {
                 rs.close();
             }
-            if(null!=ps){
+            if (null != ps) {
                 try {
                     ps.close();
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
             }
-            if(null!=conn){
+            if (null != conn) {
                 try {
                     conn.close();
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
             }
-        }
-
-    }
-    public static long strToDate(String dateString){
-        DateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss" );
-        try {
-            return format.parse(dateString).getTime();
-        } catch (ParseException e) {
-            e.printStackTrace();
-            return 0L;
         }
     }
 }

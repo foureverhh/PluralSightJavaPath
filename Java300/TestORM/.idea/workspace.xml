@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="505841c6-8747-4b25-9dae-0c5fee73d50e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_8_0_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestORM.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protobuf-java-3.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo01/Demo01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo01/JDBCUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/demo01/Demo01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdbcLearning/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IOLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IOLearning/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IOLearning/src/utils/closeStreams/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../IOLearning/src/utils/closeStreams/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IOLearning/src/utils/closeStreams/demo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../IOLearning/src/utils/closeStreams/demo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designPatterns" beforeDir="false" afterPath="$PROJECT_DIR$/../designPatterns" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../internetProgramming" beforeDir="false" afterPath="$PROJECT_DIR$/../internetProgramming" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcLearning/jdbcLearning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcLearning/jdbcLearning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcLearning/src/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcLearning/src/main/java/demo11_JDBCUtils/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcLearning/src/main/java/demo11_JDBCUtils/JDBCUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcLearning/src/main/java/demo11_JDBCUtils/demo11.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcLearning/src/main/java/demo11_JDBCUtils/demo11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcLearning/target/classes/demo11_JDBCUtils/JDBCUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcLearning/target/classes/demo11_JDBCUtils/JDBCUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbcLearning/target/classes/demo11_JDBCUtils/demo11.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcLearning/target/classes/demo11_JDBCUtils/demo11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../polymorphismSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../polymorphismSample/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../socketProgrammingIntro" beforeDir="false" afterPath="$PROJECT_DIR$/../socketProgrammingIntro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/TheBigPicture" beforeDir="false" afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/TheBigPicture" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="TestORM" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1RpHiVHnh7U8vz6cB4m1z8DEAk6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="56fe1e1c-bf23-4530-a232-2b1c44157020&#10;mysql" />
+    <property name="Downloaded.Files.Path" value="$PROJECT_DIR$" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="MySQL" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Demo01">
+    <configuration name="Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo01.Demo01" />
+      <module name="TestORM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mysql-connector-java-8.0.17.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/mysql-connector-java-8.0.17.jar" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Demo01" />
+        <item itemvalue="JAR Application.mysql-connector-java-8.0.17.jar" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@cc576ed7" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="505841c6-8747-4b25-9dae-0c5fee73d50e" name="Default Changelist" comment="" />
+      <created>1570357244714</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570357244714</updated>
+      <workItem from="1570357246646" duration="4020000" />
+      <workItem from="1570362719906" duration="1376000" />
+      <workItem from="1570364151708" duration="628000" />
+      <workItem from="1570364832663" duration="1233000" />
+      <workItem from="1570366685139" duration="3025000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

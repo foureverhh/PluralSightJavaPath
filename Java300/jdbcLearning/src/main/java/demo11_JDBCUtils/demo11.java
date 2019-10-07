@@ -9,20 +9,36 @@ import java.sql.SQLException;
 
 public class demo11 {
     public static void main(String[] args) {
-        Connection connection = null;
-        PreparedStatement preparedStatement = null;
+
+        Connection conn = null;
+        PreparedStatement ps = null;
         //ResultSet resultSet = null;
 
         try {
-        connection = JDBCUtil.getMysqlConn();
-        preparedStatement = connection.prepareStatement("INSERT INTO t_user2 (username) VALUES (?)");
-        preparedStatement.setObject(1,"haha");
-        preparedStatement.execute();
+        conn = JDBCUtil.getMysqlConn();
+        ps = conn.prepareStatement("INSERT INTO t_user2 (username) VALUES (?)");
+        ps.setObject(1,"haha");
+        ps.execute();
 
         } catch (SQLException e) {
             e.printStackTrace();
         }finally {
-          JDBCUtil.close(connection,preparedStatement);
+          JDBCUtil.close(conn,ps);
+
+           /* if(ps!=null){
+                try {
+                    ps.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if(conn!=null){
+                try {
+                    conn.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }*/
         }
 
     }

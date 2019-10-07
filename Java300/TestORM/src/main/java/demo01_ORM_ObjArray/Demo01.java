@@ -1,4 +1,4 @@
-package demo01;
+package demo01_ORM_ObjArray;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

@@ -2,37 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="505841c6-8747-4b25-9dae-0c5fee73d50e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_8_0_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestORM.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protobuf-java-3.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo01/Demo01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo01/JDBCUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/demo01/Demo01.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jdbcLearning/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo02_ORM_ObjMap/Demo02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo02_ORM_ObjMap/JDBCUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo03_javaBean/Demo03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo03_javaBean/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo03_javaBean/Emp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo03_javaBean/JDBCUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../IOLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IOLearning/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../IOLearning/src/utils/closeStreams/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../IOLearning/src/utils/closeStreams/FileUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../IOLearning/src/utils/closeStreams/demo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../IOLearning/src/utils/closeStreams/demo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo01/Demo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo01_ORM_ObjArray/Demo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo01/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo01_ORM_ObjArray/JDBCUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/demo01/Demo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/demo01/JDBCUtils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../designPatterns" beforeDir="false" afterPath="$PROJECT_DIR$/../designPatterns" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../internetProgramming" beforeDir="false" afterPath="$PROJECT_DIR$/../internetProgramming" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcLearning/jdbcLearning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcLearning/jdbcLearning.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcLearning/src/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcLearning/src/main/java/demo11_JDBCUtils/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcLearning/src/main/java/demo11_JDBCUtils/JDBCUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcLearning/src/main/java/demo11_JDBCUtils/demo11.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcLearning/src/main/java/demo11_JDBCUtils/demo11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcLearning/target/classes/demo11_JDBCUtils/JDBCUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcLearning/target/classes/demo11_JDBCUtils/JDBCUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcLearning/target/classes/demo11_JDBCUtils/demo11.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcLearning/target/classes/demo11_JDBCUtils/demo11.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../polymorphismSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../polymorphismSample/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../socketProgrammingIntro" beforeDir="false" afterPath="$PROJECT_DIR$/../socketProgrammingIntro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/TheBigPicture" beforeDir="false" afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/TheBigPicture" afterDir="false" />
@@ -119,6 +105,13 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="demo03_javaBean" />
+      <recent name="demo02_ORM_ObjMap" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main" />
@@ -136,13 +129,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Demo01">
+  <component name="RunManager" selected="Application.Demo03">
     <configuration name="Demo01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo01.Demo01" />
+      <option name="MAIN_CLASS_NAME" value="demo01_ORM_ObjArray.Demo01" />
       <module name="TestORM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo01.*" />
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo02_ORM_ObjMap.Demo02" />
+      <module name="TestORM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo02_ORM_ObjMap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo03_javaBean.Demo03" />
+      <module name="TestORM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo03_javaBean.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,6 +175,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Demo03" />
+        <item itemvalue="Application.Demo02" />
         <item itemvalue="Application.Demo01" />
         <item itemvalue="JAR Application.mysql-connector-java-8.0.17.jar" />
       </list>
@@ -190,7 +211,7 @@
       <workItem from="1570362719906" duration="1376000" />
       <workItem from="1570364151708" duration="628000" />
       <workItem from="1570364832663" duration="1233000" />
-      <workItem from="1570366685139" duration="3025000" />
+      <workItem from="1570366685139" duration="6279000" />
     </task>
     <servers />
   </component>

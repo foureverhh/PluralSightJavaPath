@@ -1,4 +1,4 @@
-package demo01;
+package demo03_javaBean;
 
 import java.io.IOException;
 import java.sql.*;

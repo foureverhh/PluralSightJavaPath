@@ -1,3 +1,5 @@
+package runnable_pattern;
+
 public class FirstRunnable {
     public static void main(String[] args) {
         Runnable runnable = ()->{

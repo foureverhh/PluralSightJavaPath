@@ -3,13 +3,25 @@ package produce_consumer;
 public class App {
     private static int[] buffer;
     private static int count;
-    private static int num;
+    private static Object lock = new Object();
 
     static class Producer{
         void produce(){
-            while (isFull(buffer)){
-               // buffer[count++] = num++;
-                buffer[count++] = 1;
+            synchronized (lock) {
+                if(isFull(buffer)){
+                    try {
+                        lock.wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                buffer[count++]=1;
+                lock.notify();
+
+            /*    while (isFull(buffer)) {
+                    // buffer[count++] = num++;
+                    buffer[count++] = 1;
+                }*/
             }
         }
 
@@ -17,18 +29,30 @@ public class App {
 
     static class Consumer{
         void consume(){
-            while (isEmpty(buffer)){
-                buffer[count--] = 0;
-                //buffer[count--] = num--;
+            synchronized (lock) {
+                if(isEmpty(buffer)){
+                    try {
+                        lock.wait();
+
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                buffer[--count] = 0;
+                lock.notify();
+                /*
+                while (isEmpty(buffer)) {
+                    buffer[count--] = 0;
+                    //buffer[count--] = num--;
+                }
+                */
             }
         }
     }
 
-
     static boolean isFull(int[] buffer) {
         return count == buffer.length;
     }
-
 
     static boolean isEmpty(int[] buffer) {
         return count == 0;
@@ -37,7 +61,6 @@ public class App {
     public static void main(String[] args) throws InterruptedException {
         buffer = new int[10];
         count = 0;
-        num = 0;
         Producer producer = new Producer();
         Consumer consumer = new Consumer();
 
@@ -65,11 +88,11 @@ public class App {
             System.out.println("Done consuming");
         };
 
-        Thread producerThread = new Thread(produceTask);
         Thread consumerThread = new Thread(consumeTask);
+        Thread producerThread = new Thread(produceTask);
 
-        producerThread.start();
         consumerThread.start();
+        producerThread.start();
 
         consumerThread.join();
         producerThread.join();

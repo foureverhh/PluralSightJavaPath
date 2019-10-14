@@ -79,7 +79,7 @@ public class App {
         Runnable consumeTask = () -> {
             System.out.println("count in consumer:");
             //System.out.println("num in consumer:");
-            for (int i = 0; i <50 ; i++) {
+            for (int i = 0; i <45 ; i++) {
                 consumer.consume();
                 System.out.print(count+" ");
                 //System.out.print(num+" ");

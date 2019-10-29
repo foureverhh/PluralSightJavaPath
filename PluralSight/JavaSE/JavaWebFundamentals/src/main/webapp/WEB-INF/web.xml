@@ -3,14 +3,29 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    <!--
+    <context-param>
+        <param-name>ProductName</param-name>
+        <param-value>Servlet context product name</param-value>
+    </context-param>
     <servlet>
         <servlet-name>JavaWebFundamentals</servlet-name>
         <servlet-class>servletDemo.SimpleServlet</servlet-class>
+        <init-param>
+            <param-name>ProductName</param-name>
+            <!--<param-value>server=homer;catalog=pubs;uid=sa;pwd=;</param-value>-->
+            <param-value>Yet Another Product Name</param-value>
+        </init-param>
     </servlet>
+    <!--
     <servlet-mapping>
         <servlet-name>JavaWebFundamentals</servlet-name>
-        <url-pattern>*.do</url-pattern>
+      <url-pattern>*.do</url-pattern>
+        <url-pattern>/other</url-pattern>
     </servlet-mapping>
     -->
+    <servlet-mapping>
+        <servlet-name>JavaWebFundamentals</servlet-name>
+        <!--<url-pattern>*.do</url-pattern>-->
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
 </web-app>

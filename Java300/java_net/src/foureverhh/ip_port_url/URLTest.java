@@ -1,4 +1,4 @@
-package foureverhh;
+package foureverhh.ip_port_url;
 
 import java.net.MalformedURLException;
 import java.net.URL;

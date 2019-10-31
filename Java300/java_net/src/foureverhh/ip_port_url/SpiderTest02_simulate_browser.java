@@ -1,4 +1,4 @@
-package foureverhh;
+package foureverhh.ip_port_url;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.io.*;

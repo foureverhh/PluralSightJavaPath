@@ -17,10 +17,23 @@ public class UpdFileServer {
         server.receive(packet);
         //4. handle the received packet
         byte[] data = packet.getData();
-        BufferedOutputStream bis = new BufferedOutputStream(new FileOutputStream(new File("receivedFlower.jpeg")));
+        ByteArrayInputStream bais = new ByteArrayInputStream(data);
+        OutputStream os = new FileOutputStream("receivedFlower.jpeg");
+        byte[] buffer = new byte[1024*60];
+        int len = 0;
+        while((len=bais.read(buffer))!=-1){
+            os.write(data,0,len);
+        }
+        os.flush();
+        os.close();
+
+        //os.write(data,0,packet.getLength());
+
+
+        /*BufferedOutputStream bis = new BufferedOutputStream(new FileOutputStream(new File("receivedFlower.jpeg")));
         bis.write(data,0,packet.getLength());
         bis.flush();
-        bis.close();
+        bis.close();*/
         server.close();
 
     }

@@ -35,6 +35,7 @@ public class LoginServer {
             dos.writeUTF("You are failed to log in!");
         }
         dos.flush();
+        dos.close();
         dis.close();
 
     }

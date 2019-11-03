@@ -1,5 +1,6 @@
 package foureverhh.tcp.tcp_log_in;
 
+import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
@@ -16,6 +17,10 @@ public class LoginClient {
         DataOutputStream dos = new DataOutputStream(client.getOutputStream());
         dos.writeUTF("userName="+userName+"&pwd="+pwd);
         dos.flush();
+
+        DataInputStream dis = new DataInputStream(client.getInputStream());
+        System.out.println(dis.readUTF());
         dos.close();
+        dis.close();
     }
 }

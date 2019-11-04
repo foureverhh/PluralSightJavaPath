@@ -6,22 +6,25 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class ChatServer {
+public class MultiChatServer {
     public static void main(String[] args) throws IOException {
-        ServerSocket server = new ServerSocket(8895);
-        Socket client = server.accept();
         System.out.println("One clint built");
-        //Get request from client
+        ServerSocket server = new ServerSocket(8895);
+        boolean serverIsRunning = true;
+        Socket client = server.accept();
         DataInputStream reader = new DataInputStream(client.getInputStream());
-        String inputMsg = reader.readUTF();
-        System.out.println("Client Message: "+inputMsg);
-        //Send response to client
         DataOutputStream writer = new DataOutputStream(client.getOutputStream());
-        writer.writeUTF("Hi Client, get your request.");
-        writer.flush();
+        while (serverIsRunning) {
+            //Get request from client
+            String inputMsg = reader.readUTF();
+            System.out.println("Client Message: " + inputMsg);
+            //Send response to client
+            writer.writeUTF(inputMsg);
+            writer.flush();
+        }
         writer.close();
         reader.close();
-
+        server.close();
     }
 
 

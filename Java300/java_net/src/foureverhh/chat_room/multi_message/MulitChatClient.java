@@ -7,22 +7,28 @@ import java.io.InputStreamReader;
 import java.net.Socket;
 
 //246
-public class ChatClient {
+public class MulitChatClient {
     public static void main(String[] args) throws Exception {
         System.out.println("--------Client--------");
-        Socket client = new Socket("localhost",8895);
-        //Client send request
-        String msg = "";
+        boolean clientIsRunning = true;
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        msg = reader.readLine();
+        Socket client = new Socket("localhost",8895);
         DataOutputStream dos = new DataOutputStream(client.getOutputStream());
-        dos.writeUTF(msg);
-        dos.flush();
-
-        //Client read response
         DataInputStream writer = new DataInputStream(client.getInputStream());
-        String info = writer.readUTF();
-        System.out.println("Server: "+info);
+        //Client send request
+        while (clientIsRunning) {
+            System.out.println("Send your message: ");
+            String msg = "";
+            msg = reader.readLine();
+            dos.writeUTF(msg);
+            dos.flush();
+
+            //Client read response
+            String info = writer.readUTF();
+            System.out.println("Server: " + info);
+        }
+        writer.close();
+        dos.close();
     }
 
 

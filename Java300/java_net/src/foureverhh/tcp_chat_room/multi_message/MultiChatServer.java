@@ -7,15 +7,21 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class MultiChatServer {
+
+    private static CopyOnWriteArrayList<Channel> all = new CopyOnWriteArrayList<>();
+
     public static void main(String[] args) throws IOException {
         System.out.println("------Server-------");
         ServerSocket server = new ServerSocket(8895);
         while(true) {
                 Socket client = server.accept();
                 System.out.println("One clint built");
-                new Thread(new Channel(client)).start();
+                Channel newChannel = new Channel(client);
+                all.add(newChannel);
+                new Thread(newChannel).start();
         }
     }
 
@@ -25,12 +31,16 @@ public class MultiChatServer {
         private DataOutputStream dos;
         private Socket client;
         private boolean isRunning;
+        private String username;
 
         public Channel(Socket client) {
             this.client = client;
             try {
                 dis = new DataInputStream(client.getInputStream());
                 dos = new DataOutputStream(client.getOutputStream());
+                username = receive();
+                send("Welcome "+username);
+                sendOthers(username+" is online now",true);
                 isRunning = true;
             } catch (IOException e) {
                 System.out.println("Exception happens!");
@@ -49,6 +59,19 @@ public class MultiChatServer {
             }
             return msg;
         }
+        //发送群聊
+        private void sendOthers(String msg,boolean sysInfo){
+
+                for (Channel channel : all) {
+                    if (channel != this) {
+                        if(sysInfo)
+                            channel.send(msg);
+                        else
+                            channel.send(this.username + " writes to all: " + msg);
+                    }
+                }
+
+        }
         //发送消息
         private void send(String msg){
             try {
@@ -61,7 +84,10 @@ public class MultiChatServer {
         }
         //释放资源
         private void release(){
-            this.isRunning = false;
+            isRunning = false;
+            send(username+" bye");
+            sendOthers(username+" quit",true);
+            all.remove(this);
             Release.close(dis,dos,client);
         }
 
@@ -70,8 +96,10 @@ public class MultiChatServer {
             while (isRunning){
                 String msg = receive();
                 if(!msg.equals(""))
-                    send(msg);
+                    sendOthers(msg,false);
+                    //send(msg);
             }
+            //release();
             System.out.println("one client shut down");
         }
     }

@@ -5,15 +5,18 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.InputStreamReader;
 import java.net.Socket;
+import java.util.Scanner;
 
 //246
 public class MultiChatClient {
     public static void main(String[] args) throws Exception {
         System.out.println("--------Client--------");
-        boolean clientIsRunning = true;
+        //boolean clientIsRunning = true;
         Socket client = new Socket("localhost",8895);
+        System.out.println("Input username:");
+        Scanner scanner = new Scanner(System.in);
         //send thread
-        new Thread(new Send(client)).start();
+        new Thread(new Send(client,scanner.nextLine())).start();
         //Receive thread
         new Thread(new Receive(client)).start();
 

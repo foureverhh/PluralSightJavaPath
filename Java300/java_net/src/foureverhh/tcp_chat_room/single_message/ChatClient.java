@@ -1,4 +1,4 @@
-package foureverhh.chat_room.single_message;
+package foureverhh.tcp_chat_room.single_message;
 
 import java.io.*;
 import java.net.Socket;

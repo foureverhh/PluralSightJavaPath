@@ -25,7 +25,6 @@ public class MultiChatServer {
         }
     }
 
-
     static class Channel implements Runnable{
         private DataInputStream dis;
         private DataOutputStream dos;
@@ -59,17 +58,32 @@ public class MultiChatServer {
             }
             return msg;
         }
-        //发送群聊
-        private void sendOthers(String msg,boolean sysInfo){
 
+
+
+        //发送群聊及私聊
+        private void sendOthers(String msg,boolean sysInfo){
+                //private conversation begins with @name:info
+                if(msg.contains("@")) {
+                    int index = msg.indexOf(':');
+                    String targetName = msg.substring(1,index);
+                    String info = msg.substring(index+1);
+                    for(Channel channel: all){
+                        if(channel.username.equals(targetName)){
+                            channel.send(this.username+" send you info privately: "+info);
+                            break;
+                        }
+                    }
+                }else{
                 for (Channel channel : all) {
                     if (channel != this) {
-                        if(sysInfo)
+                        if (sysInfo)
                             channel.send(msg);
                         else
                             channel.send(this.username + " writes to all: " + msg);
                     }
                 }
+            }
 
         }
         //发送消息
@@ -104,44 +118,4 @@ public class MultiChatServer {
         }
     }
 
-
-   /* static class Channel implements Runnable{
-        private Socket client;
-        private DataInputStream dis;
-        private DataOutputStream dos;
-        private String inputMsg = "";
-
-        public Channel(Socket client) {
-            this.client = client;
-            try {
-                dis = new DataInputStream(client.getInputStream());
-                dos = new DataOutputStream(client.getOutputStream());
-            } catch (IOException e) {
-                e.printStackTrace();
-                serverIsRunning = false;
-            }
-        }
-
-        @Override
-        public void run() {
-            try {
-                inputMsg = dis.readUTF();
-            System.out.println("Client Message: " + inputMsg);
-            //Send response to client
-                dos.writeUTF(inputMsg);
-                dos.flush();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            try {
-                if(dos!=null)
-                    dos.close();
-                if(dis!=null)
-                    dis.close();
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }*/
 }

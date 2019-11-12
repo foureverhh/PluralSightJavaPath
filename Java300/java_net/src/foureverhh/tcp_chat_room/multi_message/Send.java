@@ -7,7 +7,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class Send implements Runnable {
-    private String senderName;
+
     private Socket client;
     private DataOutputStream dos;
     private BufferedReader reader;
@@ -20,7 +20,7 @@ public class Send implements Runnable {
         flag = true;
         try {
             reader = new BufferedReader(new InputStreamReader(System.in));
-            dos = new DataOutputStream(client.getOutputStream());
+            dos = new DataOutputStream(this.client.getOutputStream());
             send(name);
         } catch (IOException e) {
             System.out.println("Client sending build up went wrong");
@@ -36,6 +36,7 @@ public class Send implements Runnable {
             try {
                 msg = reader.readLine();
                 send(msg);
+                System.out.println("Client send succeed");
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -47,6 +48,7 @@ public class Send implements Runnable {
         try {
             dos.writeUTF(msg);
             dos.flush();
+            System.out.println("Send send() works");
             if(msg.equals("bye"))
                 flag = false;
         } catch (IOException e) {

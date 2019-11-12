@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.InputStreamReader;
+import java.net.InetAddress;
 import java.net.Socket;
 import java.util.Scanner;
 
@@ -12,7 +13,8 @@ public class MultiChatClient {
     public static void main(String[] args) throws Exception {
         System.out.println("--------Client--------");
         //boolean clientIsRunning = true;
-        Socket client = new Socket("localhost",8895);
+        //Socket client = new Socket("localhost",8895);
+        Socket client = new Socket("192.168.10.189",8894);
         System.out.println("Input username:");
         Scanner scanner = new Scanner(System.in);
         //send thread

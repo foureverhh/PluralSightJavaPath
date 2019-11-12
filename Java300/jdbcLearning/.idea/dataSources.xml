@@ -15,5 +15,12 @@
       <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
       <jdbc-url>jdbc:oracle:thin:@localhost :1521:orcl</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="myPostgres" uuid="7d33c5d9-fa3f-4310-9feb-2c847ff11e43">
+      <driver-ref>ea5fab4e-eb1a-453c-929d-34bc0c8d3d1f</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432</jdbc-url>
+    </data-source>
   </component>
 </project>

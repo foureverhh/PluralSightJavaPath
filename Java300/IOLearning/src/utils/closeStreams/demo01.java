@@ -1,4 +1,4 @@
-package IOObjectStream.demo;
+package utils.closeStreams;
 
 import IOObjectStream.Employee;
 
@@ -18,7 +18,8 @@ public class demo01 {
             ObjectOutputStream dos = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(filePath)));
             dos.writeObject(employee);
             dos.flush();
-            dos.close();
+            FileUtil.close(dos);
+            //dos.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -32,7 +33,8 @@ public class demo01 {
         try {
             ObjectInputStream ois = new ObjectInputStream(new BufferedInputStream(new FileInputStream(filePath)));
             employee = (Employee) ois.readObject();
-            ois.close();
+            FileUtil.close(ois);
+            //ois.close();
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {

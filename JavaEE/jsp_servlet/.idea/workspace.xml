@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bce9dd51-a8aa-4d61-8379-e218e4b19b99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/jsp_servlet_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/jsp_servlet_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsp_servlet.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/foureverhh/SimpleServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Java300/IOLearning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java300/IOLearning/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Java300/IOLearning/src/utils/closeStreams/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java300/IOLearning/src/utils/closeStreams/FileUtil.java" afterDir="false" />
@@ -25,8 +11,8 @@
       <change beforePath="$PROJECT_DIR$/../../Java300/internetProgramming" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java300/internetProgramming" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Java300/polymorphismSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java300/polymorphismSample/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Java300/socketProgrammingIntro" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java300/socketProgrammingIntro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/foureverhh/SimpleServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/foureverhh/SimpleServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/ConcurrencyLearning/out/production/ConcurrencyLearning/META-INF/ConcurrencyLearning.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/ConcurrencyLearning/out/production/ConcurrencyLearning/demo_all/dem02/Worker$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/ConcurrencyLearning/out/production/ConcurrencyLearning/demo_all/dem02/Worker$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/ConcurrencyLearning/out/production/ConcurrencyLearning/demo_all/dem02/Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/ConcurrencyLearning/out/production/ConcurrencyLearning/demo_all/dem02/Worker.class" afterDir="false" />
@@ -124,6 +110,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -183,7 +175,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572359917248</updated>
       <workItem from="1572359918825" duration="861000" />
-      <workItem from="1572362334564" duration="478000" />
+      <workItem from="1572362334564" duration="1780000" />
     </task>
     <servers />
   </component>

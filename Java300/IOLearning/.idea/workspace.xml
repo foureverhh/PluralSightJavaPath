@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="570aded6-25ea-407c-be77-3c448149d532" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../RegExTest/src/Regex/test/Demo03.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/closeStreams/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/closeStreams/FileUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/closeStreams/demo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/closeStreams/demo01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TestORM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestORM/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../designPatterns" beforeDir="false" afterPath="$PROJECT_DIR$/../designPatterns" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../internetProgramming" beforeDir="false" afterPath="$PROJECT_DIR$/../internetProgramming" afterDir="false" />
@@ -16,31 +12,10 @@
       <change beforePath="$PROJECT_DIR$/../java_net/src/foureverhh/tcp_chat_room/multi_message/MultiChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java_net/src/foureverhh/tcp_chat_room/multi_message/MultiChatClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java_net/src/foureverhh/tcp_chat_room/multi_message/MultiChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java_net/src/foureverhh/tcp_chat_room/multi_message/MultiChatServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java_net/src/foureverhh/tcp_chat_room/multi_message/Send.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java_net/src/foureverhh/tcp_chat_room/multi_message/Send.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcLearning/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcLearning/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcLearning/jdbcLearning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcLearning/jdbcLearning.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcLearning/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcLearning/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcLearning/src/main/java/postgres_demo/Postgres.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcLearning/src/main/java/postgres_demo/Postgres.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcLearning/target/classes/META-INF/jdbcLearning.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcLearning/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcLearning/target/classes/db.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../polymorphismSample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../polymorphismSample/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../socketProgrammingIntro" beforeDir="false" afterPath="$PROJECT_DIR$/../socketProgrammingIntro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../webserver_http/resources/person.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../webserver_http/resources/person.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../webserver_http/resources/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../webserver_http/resources/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../webserver_http/src/server_basic/ReflectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../webserver_http/src/server_basic/ReflectTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../webserver_http/src/server_basic/sax_parse_xml/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../webserver_http/src/server_basic/sax_parse_xml/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../webserver_http/src/server_basic/sax_parse_xml/XmlTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../webserver_http/src/server_basic/sax_parse_xml/XmlTest01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../webserver_http/src/server_basic/web/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../webserver_http/src/server_basic/web/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../webserver_http/src/server_basic/web/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../webserver_http/src/server_basic/web/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../webserver_http/src/server_basic/web/Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/../webserver_http/src/server_basic/web/Mapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../webserver_http/src/server_basic/web/WebXmlParsing.java" beforeDir="false" afterPath="$PROJECT_DIR$/../webserver_http/src/server_basic/web/WebXmlParsing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../webserver_http/webserver_http.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../webserver_http/webserver_http.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../JavaEE/jsp_servlet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaEE/jsp_servlet/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../JavaEE/jsp_servlet/src/main/java/foureverhh/SimpleServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaEE/jsp_servlet/src/main/java/foureverhh/SimpleServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/ConcurrencyLearning/out/production/ConcurrencyLearning/META-INF/ConcurrencyLearning.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/ConcurrencyLearning/out/production/ConcurrencyLearning/demo_all/dem02/Worker$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/ConcurrencyLearning/out/production/ConcurrencyLearning/demo_all/dem02/Worker$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/ConcurrencyLearning/out/production/ConcurrencyLearning/demo_all/dem02/Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/ConcurrencyLearning/out/production/ConcurrencyLearning/demo_all/dem02/Worker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/ConcurrencyLearning/src/demo_all/dem02/TestTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/ConcurrencyLearning/src/demo_all/dem02/TestTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/ConcurrencyLearning/src/demo_all/dem02/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../PluralSight/JavaSE/ConcurrencyLearning/src/demo_all/dem02/Worker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/SimpleWeb/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/SimpleWeb/.idea/artifacts/SimpleWeb_war.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PluralSight/JavaSE/SimpleWeb/.idea/artifacts/SimpleWeb_war_exploded.xml" beforeDir="false" />
@@ -246,6 +221,7 @@
       <workItem from="1569870822139" duration="565000" />
       <workItem from="1570268402916" duration="1232000" />
       <workItem from="1573390765876" duration="6000" />
+      <workItem from="1573570971310" duration="55000" />
     </task>
     <servers />
   </component>

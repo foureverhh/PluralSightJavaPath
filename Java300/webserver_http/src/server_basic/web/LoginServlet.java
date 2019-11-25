@@ -1,6 +1,7 @@
 package server_basic.web;
 
-public class RegisterServlet implements Servlet{
+public class LoginServlet implements Servlet {
+    public LoginServlet(){}
     @Override
     public void doGet() {
 
@@ -13,6 +14,6 @@ public class RegisterServlet implements Servlet{
 
     @Override
     public void service() {
-        System.out.println("Register");
+        System.out.println("Log in service!");
     }
 }

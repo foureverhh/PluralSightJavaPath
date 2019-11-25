@@ -8,21 +8,28 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-public class WebXmlParsing {
+public class  WebXmlParsing {
     private List<Mapping> mappings = new LinkedList<>();
     private List<Entity> entities = new LinkedList<>();
-    public void parse() throws ParserConfigurationException, SAXException, IOException {
+    public void parse() throws ParserConfigurationException, SAXException, IOException, ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
         WebXmlHandler handler = new WebXmlHandler();
         parser.parse(Thread.currentThread().getContextClassLoader().getResourceAsStream("web.xml"),handler);
-        mappings = handler.getMappings();
-        entities = handler.getEntities();
+        WebContent content = new WebContent(handler.getEntities(),handler.getMappings());
+        //mappings = handler.getMappings();
+        //entities = handler.getEntities();
+        String className = content.getClz("/reg");
+        Class clz = Class.forName(className);
+        System.out.println(clz);
+        Servlet servlet =(Servlet) clz.getConstructor().newInstance();
+        servlet.service();
     }
 
     public List<Entity> getEntities() {

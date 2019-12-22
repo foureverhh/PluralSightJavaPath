@@ -16,6 +16,8 @@ public class MainComparator {
         Function<Person, String> f3 = person -> person.getLastName();
 
         //Comparator<Person> compPerson = Comparator.comparing(f1);
-        Comparator<Person> compPerson = Comparator.comparing(Person::getAge);
+        Comparator<Person> compPersonAge = Comparator.comparing(Person::getAge);
+        Comparator<Person> compPersonFirstName = Comparator.comparing(Person::getAge);
+        Comparator<Person> compPersonLastName = Comparator.comparing(Person::getAge);
     }
 }

@@ -1,14 +1,14 @@
 package comparisonBetweenComparableAndComparator;
 
-public class Laptop implements Comparable<Laptop>{
+public class LaptopA implements Comparable<LaptopA>{
     private String brand;
     private int ram;
     private int price;
 
-    public Laptop() {
+    public LaptopA() {
     }
 
-    public Laptop(String brand, int ram, int price) {
+    public LaptopA(String brand, int ram, int price) {
         this.brand = brand;
         this.ram = ram;
         this.price = price;
@@ -39,10 +39,10 @@ public class Laptop implements Comparable<Laptop>{
     }
 
     @Override
-    public int compareTo(Laptop laptop2) {
+    public int compareTo(LaptopA laptopA2) {
         //return Integer.compare(this.price,o.price);
         //return this.getBrand().compareTo(o.getBrand());
-        return -(this.ram - laptop2.getRam());
+        return -(this.ram - laptopA2.getRam());
     }
 
     @Override

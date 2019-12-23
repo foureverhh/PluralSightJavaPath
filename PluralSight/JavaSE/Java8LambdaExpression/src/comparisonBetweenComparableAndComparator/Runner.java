@@ -22,7 +22,8 @@ public class Runner {
         laptopBs.add(new LaptopB("Dell",16,800));
         laptopBs.add(new LaptopB("Apple",8,1200));
         laptopBs.add(new LaptopB("Acer",12,700));
-        Collections.sort(laptopBs, (laptopB1,laptopB2) -> laptopB1.getRam() - laptopB2.getRam());
+        //Collections.sort(laptopBs, (laptopB1,laptopB2) -> laptopB1.getRam() - laptopB2.getRam());
+        Collections.sort(laptopBs, Comparator.comparing(LaptopB::getBrand));
         System.out.println("Comparator interface");
         System.out.println(laptopBs);
 

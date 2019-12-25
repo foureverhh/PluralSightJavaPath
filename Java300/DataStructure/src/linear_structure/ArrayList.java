@@ -53,22 +53,29 @@ public class ArrayList implements List {
 
     @Override
     public void add(Object e) {
-        if(e == null)
+        add(size,e);
+   /*     if(e == null)
             return;
         if(size == elementData.length){
-            resizeElementData();
+            grow();
         }
         elementData[size] = e;
-        size++;
+        size++;*/
     }
 
     @Override
     public void add(int i, Object e) {
-        if(i<0 || e == null)
-            return;
-        if(i >= elementData.length){
-            System.out.println("It runs here");
-            resizeElementData();
+        if(i < 0 || e == null || i > size)
+            throw new RuntimeException("索引不能为负,也不能超过数组的长度，插入的对象不能为空");
+        //扩容
+        if( size == elementData.length || (i + size) >= elementData.length) {
+            System.out.println("Grow called");
+            grow();
+        }
+        //后移i及其后面的元素，从最后一个元素开始
+        for (int j = size; j > i ; j--) {
+            System.out.println("J: " + j);
+            elementData[j] = elementData[j-1];
         }
         elementData[i] = e;
         size++;
@@ -99,12 +106,17 @@ public class ArrayList implements List {
         return null;
     }
 
-    void resizeElementData(){
+    void grow(){
         /*
         Object[] temp = new Object[elementData.length * 2];
         System.arraycopy(elementData, 0, temp, 0, elementData.length);
         elementData = temp;
         */
-        elementData = Arrays.copyOf(elementData,elementData.length * 2);
+        elementData = Arrays.copyOf(elementData,elementData.length + elementData.length /2);
+    }
+
+    @Override
+    public String toString() {
+        return size ==0 ? "" : "ArrayList:" + Arrays.toString(elementData);
     }
 }

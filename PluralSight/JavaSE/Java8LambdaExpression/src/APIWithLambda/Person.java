@@ -1,6 +1,7 @@
 package APIWithLambda;
 
-public class Person {
+public class Person implements Comparable<Person>{
+//public class Person {
     private String firstName;
     private String lastName;
     private int age;
@@ -41,5 +42,10 @@ public class Person {
     @Override
     public String toString() {
         return "Person with name as " + firstName + " " + lastName + " at the age of " + age;
+    }
+
+ @Override
+    public int compareTo(Person otherPerson) {
+        return Integer.compare(this.getAge(), otherPerson.getAge());
     }
 }

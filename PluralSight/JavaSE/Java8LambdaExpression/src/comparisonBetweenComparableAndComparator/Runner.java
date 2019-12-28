@@ -26,9 +26,5 @@ public class Runner {
         Collections.sort(laptopBs, Comparator.comparing(LaptopB::getBrand));
         System.out.println("Comparator interface");
         System.out.println(laptopBs);
-
-
-
-
     }
 }

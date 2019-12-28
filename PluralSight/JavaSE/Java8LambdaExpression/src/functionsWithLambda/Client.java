@@ -42,6 +42,6 @@ public class Client {
         BiConsumer<Person,Integer> personIntegerBiConsumer = (person,age) -> System.out.println(person.getLastName() + age);
         personIntegerBiConsumer.accept(personDavid.get(),personDavid.get().getAge());
 
-
+        //Functions
     }
 }

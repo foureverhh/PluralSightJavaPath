@@ -1,4 +1,6 @@
-package linear_structure;
+package linear_structure.arrayList_sample;
+
+import linear_structure.List;
 
 import java.util.Arrays;
 

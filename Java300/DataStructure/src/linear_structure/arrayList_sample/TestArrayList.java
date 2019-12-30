@@ -1,4 +1,4 @@
-package linear_structure;
+package linear_structure.arrayList_sample;
 
 public class TestArrayList {
     public static void main(String[] args) {

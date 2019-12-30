@@ -9,6 +9,11 @@ public class Person implements Comparable<Person>{
     public Person() {
     }
 
+    public Person(String firstName, int age) {
+        this.firstName = firstName;
+        this.age = age;
+    }
+
     public Person(String firstName, String lastName, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -41,7 +46,7 @@ public class Person implements Comparable<Person>{
 
     @Override
     public String toString() {
-        return "Person with name as " + firstName + " " + lastName + " at the age of " + age;
+        return " " + firstName + " -> " + age;
     }
 
  @Override

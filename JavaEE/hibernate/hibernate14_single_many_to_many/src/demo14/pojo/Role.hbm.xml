@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="demo14.pojo">
+    <class name="Role" table="t_role">
+        <id name="id">
+            <generator class="native"/>
+        </id>
+        <property name="name"/>
+        <!--table属性为hibernate自动生成的连接表-->
+        <set name="permissions" table="t_role_permission">
+            <!--key指明当前类在关联表中的外键-->
+            <key column="rid"/>
+            <!--column是指多对对的另一方在关联表中的外键-->
+            <many-to-many class="Permission" column="pid"/>
+        </set>
+    </class>
+</hibernate-mapping>

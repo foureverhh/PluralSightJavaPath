@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function(){
+            alert("ajax")
+            let $btn = $("#btn");
+            $btn.on('click',function () {
+                alert("button clicked")
+                $.get("/user/showAll",function (data) {
+                    let dataString = JSON.stringify(data);
+                    alert("data->" + dataString);
+                    let result = "<table>"+
+                        "<tr>" +
+                        "<th>ID</th>" +
+                        "<th>name</th>" +
+                        "<th>password</th>" +
+                        "<th>edit</th>" +
+                        "<th>delete</th>" +
+                        "</tr>" ;
+                    for (let i = 0; i < data.length; i++) {
+                        result += "<tr>" +
+                                       "<td>" + data[i].id + "</td>" +
+                                       "<td>" + data[i].username + "</td>" +
+                                       "<td>" + data[i].password + "</td>" +
+                                       "<td>" + "<a href=\"/user/findUserById?id="+data[i].id+"\">" + "更新用户</a></td>" +
+                                       "<td>" + "<a href=\"/user/deleteUserById?id="+data[i].id+"\">" + "删除用户</a></td>" +
+                                    "</tr>"
+                    }
+                    result += "</table>"
+                    alert(result);
+                    $("#userList").css("border","2px dotted blue").html(result);
+                })
+            })
+        });
+    </script>
+</head>
+<body>
+    <h3>register</h3>
+    <form th:action="@{/user/regis}" method="post">
+       username: <input type="text" name="username">
+       password: <input type="password" name="password">
+        <input type="submit" value="Register">
+    </form>
+    <button id="btn">All users</button>
+    <div id="userList" style="border: 1px dotted red"></div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+       <bean id="peo" class="pojo.people_factory.People">
+              <!-- 有参构造器
+                     index表示arguments的索引，从0开始
+                     ref 表示引用其他bean对象
+                     name 表示argument的名字
+                     type 表示argument的类型，int跟Integer不同
+              -->
+              <constructor-arg index="0" name="id" value="123"/>
+              <constructor-arg index="1" name="name" value="张三"/>
+       </bean>
+       <!--spring 实例工厂   -->
+       <bean id="factory" class="pojo.people_factory.PeopleFactoryInstance"/>
+       <bean id="peo1" factory-bean="factory" factory-method="newInstance"/>
+
+       <!--spring 静态工厂模式-->
+       <bean id="peo2" class="pojo.people_factory.PeopleFactoryStatic" factory-method="getInstance"/>
+       <bean id="peo3" class="pojo.people_factory.PeopleFactoryInstance" factory-method="getInstance"/>
+
+       <bean id="property1" class="pojo.ioc_property.Property">
+              <property name="id" value="1"/>
+              <property name="name" value="property1"/>
+              <property name="sets">
+                     <set>
+                            <value>1</value>
+                            <value>2</value>
+                            <value>3</value>
+                     </set>
+              </property>
+              <property name="people" ref="peo"/>
+              <!--<property name="words" value="a,b,c"> 也可以生成list，但是list的size为1-->
+              <property name="words">
+                     <list>
+                            <value>a</value>
+                            <value>b</value>
+                            <value>c</value>
+                     </list>
+              </property>
+              <property name="strings">
+                     <array>
+                            <value>1</value>
+                            <value>2</value>
+                            <value>3</value>
+                     </array>
+              </property>
+              <property name="map">
+                     <map>
+                            <entry key="a" value="b"/>
+                            <entry key="c" value="d"/>
+                     </map>
+              </property>
+              <!--为property赋值-->
+              <property name="demo">
+                     <props>
+                            <prop key="key1">value1</prop>
+                            <prop key="key2">value2</prop>
+                     </props>
+              </property>
+              <property name="desk" ref="myDesk"/>
+       </bean>
+       <bean id="myDesk" class="pojo.ioc_property.Desk">
+              <property name="id" value="1"/>
+              <property name="price" value="100"/>
+       </bean>
+
+       <!--spring 数据源类封装，配置mybatis中environment里面的dataSource spring-jdbc.jar-->
+       <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+             <property name="url" value="jdbc:mysql://localhost:3306/ssm?serverTimezone=UTC"/>
+             <property name="username" value="root"/>
+             <property name="password" value="vps2020"/>
+              <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+       </bean>
+       <!--mybatis-spring  -->
+       <!--配置SqlSessionFactory实例-->
+       <bean id="sessionFactory"  class="org.mybatis.spring.SqlSessionFactoryBean">
+              <property name="dataSource" ref="dataSource"/>
+       </bean>
+       <!-- mapper扫描器，相当于<mappers><package name=""></mappers>，会给对应的接口创建对象，比如生成airportMapper -->
+       <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+              <!--<package name="mapper">-->
+              <property name="basePackage" value="mapper"/>
+              <property name="sqlSessionFactoryBeanName" value="sessionFactory"/>
+       </bean>
+       <bean id="airportService" class="service.impl.AirportServiceImpl">
+              <property name="airportMapper" ref="airportMapper"/>
+       </bean>
+</beans>

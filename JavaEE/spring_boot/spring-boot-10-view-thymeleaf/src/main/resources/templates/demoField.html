@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Iterate Map</title>
+</head>
+<body>
+    <h3>field</h3>
+    Request: <span th:text="${#httpServletRequest.getAttribute('req')}"></span><br>
+    Session: <span th:text="${session.session}"></span><br>
+    Session.get: <span th:text="${#session.getAttribute('session')}"></span><br>
+    Application: <span th:text="${application.app}"></span><br>
+    <!--Application.get: <span th:text="${#application.getAttribute('app')}"></span><br>-->
+</body>
+</html>

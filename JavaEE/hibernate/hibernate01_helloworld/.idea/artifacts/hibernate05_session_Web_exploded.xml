@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="hibernate05_session:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/hibernate05_session_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="hibernate05_session/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="hibernate05_session" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Hibernate 5.4.11-5.4.11" />
+          <element id="library" level="application" name="mysql-connector-java-8.0.19" />
+          <element id="library" level="application" name="junit:junit:4.13" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

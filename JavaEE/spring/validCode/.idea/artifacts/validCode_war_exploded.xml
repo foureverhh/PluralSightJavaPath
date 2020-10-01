@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="validCode:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/validCode_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="validCode/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="validCode" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="Spring-5.2.3.RELEASE" />
+          <element id="library" level="project" name="Spring WebService" />
+          <element id="library" level="application" name="asm-7.1" />
+          <element id="library" level="application" name="jstl-1.2" />
+          <element id="library" level="application" name="mybatis-3.5.5" />
+          <element id="library" level="application" name="mybatis-spring-2.0.5" />
+          <element id="library" level="application" name="spring-web-5.2.7.RELEASE" />
+          <element id="library" level="application" name="mysql-connector-java-8.0.19" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="one_to_many_demo.pojo">
+    <class name="Clz" table="t_class">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="address" column="address"/>
+        <property name="name" column="name"/>
+        <set name="students">
+            <!--key里面指定many方外键的column名称-->
+            <key column="clz_id"/>
+            <!--class只能多的一端的类型-->
+            <one-to-many class="Student"/>
+        </set>
+    </class>
+</hibernate-mapping>

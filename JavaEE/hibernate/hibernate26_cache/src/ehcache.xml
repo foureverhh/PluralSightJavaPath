@@ -1,0 +1,17 @@
+<ehcache>
+    <diskStore path="java.io.tmpdir"/>
+    <!--
+       最多缓存元素的个数
+       是否永久存储
+       空闲时间
+       存活时间
+       overflowToDisk 如果超过memory的设置数值10000，将写入磁盘
+    -->
+    <default
+            maxElementsInMemory="10000"
+            eternal="false"
+            timeToIdleSeconds="120"
+            timeToLiveSeconds="120"
+            overflowToDisk="true"
+    />
+</ehcache>

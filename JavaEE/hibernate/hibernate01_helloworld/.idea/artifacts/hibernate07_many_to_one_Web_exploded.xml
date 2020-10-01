@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="hibernate07_many_to_one:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/hibernate07_many_to_one_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="hibernate07_many_to_one/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="hibernate07_many_to_one" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$USER_HOME$/Downloads/all_jars/structs/ognl-3.1.28.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/all_jars/structs/commons-logging-1.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/all_jars/structs/log4j-api-2.13.3.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/all_jars/structs/log4j-core-2.13.3.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/all_jars/structs/xwork-core-2.3.37.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/all_jars/structs/javassist-3.27.0-GA.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/all_jars/structs/freemarker-2.3.30.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/all_jars/structs/commons-lang3-3.11.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/all_jars/structs/struts2-core-2.5.22.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/all_jars/structs/commons-io-2.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/all_jars/structs/commons-fileupload-1.4.jar" />
+          <element id="library" level="application" name="mysql-connector-java-8.0.19" />
+          <element id="library" level="project" name="Hibernate 5.4.11-5.4.11" />
+          <element id="library" level="application" name="jstl-1.2" />
+          <element id="library" level="application" name="junit:junit:4.13" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

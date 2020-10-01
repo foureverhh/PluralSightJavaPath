@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>url demo</title>
+</head>
+<body>
+    <h3>Thymeleaf-URL</h3>
+    <p>绝对路径</p>
+    <a href="http://www.baidu.com">百度</a><br>
+    <a th:href="@{http://www.google.com}">谷歌 th:href</a>
+    <hr>
+    <p>相对路径:相对于项目目录（上下文context的根）</p>
+    <p><span>转向处理<u>/show</u>的uri</span></p>
+    th:href="@{show} <a th:href="@{show}">show</a> <br>
+    th:href="@{/show} <a th:href="@{/show}">show</a>
+    <p>/show和show都可以</p>
+    <a th:href="@{html/my.html}">my.html</a><br>
+    <a th:href="@{/html/my.html}">/my.html</a>
+    <hr>
+    <p>相对路径:相对于服务器的根目录</p>
+    <a th:href="@{~/projectName/resourceName}">相对于服务器的根</a>
+    <p>Thymeleaf传参数</p>
+    <a th:href="@{/show(id=3)}">相对路径-传参/show(id=3) 等同于/show?id=3</a><br>
+    <a th:href="@{/show(id=3,name='张三')}">相对路径-传参/show(id=3,name='张三') 等同于/show?id=3&name="张三"</a>
+    <p>restful相对路径-传参-风格传值</p>
+    <a th:href="@{/path/{id}/show(id=1,name=张三)}">/path/{id}/show(id=1,name=张三)</a>
+
+
+
+
+</body>
+</html>

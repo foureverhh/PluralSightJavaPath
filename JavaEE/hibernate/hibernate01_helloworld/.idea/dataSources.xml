@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="hibernate4" uuid="e5704a47-e7f0-4cfe-970b-eb105f556a93">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate01" uuid="d7752524-f90f-48bf-a80c-2eaf8cee66d8">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+/Users/foureverhh/Java/JavaEE/hibernate/hibernate03_crud/src/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Hibernate05" uuid="5c624e0c-be81-4d73-8606-e09e3650ddd6">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+/Users/foureverhh/Java/JavaEE/hibernate/hibernate01_helloworld/src/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Hibernate04" uuid="954fbeb4-a6e9-424d-a7da-a00159c7b4ed">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+/Users/foureverhh/Java/JavaEE/hibernate/hibernate02_config/src/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Hibernate03" uuid="c0c9bf82-a405-44e2-adfa-b79441a8ed7c">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+/Users/foureverhh/Java/JavaEE/hibernate/hibernate04_junit/src/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Hibernate02" uuid="662f741e-dd66-4131-8e0b-5ab6352b543d">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+/Users/foureverhh/Java/JavaEE/hibernate/hibernate06_struts/src/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Hibernate06_again" uuid="61f5e686-59d3-486b-82bd-1d352d2033d8">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="07" uuid="78f23577-eceb-4aa6-a513-9188fa7789ce">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="one_to_many_08" uuid="44c91c08-a109-4975-9577-2b2fb50f3ef5">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate09" uuid="f7c8e0aa-444c-4044-bdf3-1aac3461a1a8">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate10" uuid="c56725c7-d2cf-444c-bae0-a494e26b3679">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate12" uuid="08d082ea-fdba-4fb5-9723-d1149be731b0">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate13" uuid="06f94e85-2062-48fe-b4ca-3c4c516e406a">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate14" uuid="5b74eb21-4a33-4ea1-a4c2-273073b4ffd6">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate15" uuid="08ed0a2f-4eb6-4cae-91d0-95a5ee8df688">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate16" uuid="b411f3d6-3164-43dc-b2f5-1dbf7634d9e1">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate17" uuid="36c40c31-bd39-4f0c-8093-5f651691d2c0">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate18" uuid="d80e73f0-2789-4370-b9e4-fa01a989f6b9">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate19" uuid="f47611ca-4966-4dfa-a5ee-c859ca8fdc4f">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate20" uuid="de083368-5bda-413c-9421-bc21d2fb40ab">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate21" uuid="e08404ab-a766-48f6-a886-645644119eb7">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate22" uuid="a6364100-ab1f-4196-86f7-b9afb9bce7e1">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate23" uuid="c0ed2809-a82e-4a58-96a4-38e7e8174ca7">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate24" uuid="4b0e2ff4-f550-4245-ab5e-84bc88c2d8be">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate25" uuid="767f2eb1-0e36-402e-8098-fac4e2652926">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate26" uuid="d6402f7c-6102-4472-9b94-7aa0732ee485">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate28" uuid="fb6ccb7f-48a6-48e1-af62-5bba53d2d8d5">
+      <driver-ref>3f01ade7-7728-47ac-acae-bf520fad4854</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</jdbc-url>
+    </data-source>
+  </component>
+</project>

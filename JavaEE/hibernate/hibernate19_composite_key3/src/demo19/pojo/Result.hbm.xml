@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="demo19.pojo">
+    <class name="Result" table="t_result_19">
+        <!--组合主键映射-->
+        <composite-id>
+            <key-many-to-one name="student" class="Student" column="stuId"/>
+            <key-many-to-one name="subject" class="Subject" column="subId"/>
+        </composite-id>
+        <property name="score"/>
+    </class>
+</hibernate-mapping>

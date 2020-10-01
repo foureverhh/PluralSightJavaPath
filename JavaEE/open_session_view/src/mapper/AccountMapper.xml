@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accountMapper">
+    <!--所有查询都放在二级缓存中，即放在sqlsessionfactory的缓存中-->
+    <cache readOnly="true"/>
+    <!--根据账号和密码，查询账户信息-->
+    <select id="selectByAccnoPwd" resultType="account" parameterType="account">
+        select * from account where accno=#{accNo} and password=#{password}
+    </select>
+    <!--根据账号和姓名，查询账户信息-->
+    <select id="selectByAccnoName" resultType="account" parameterType="account">
+        select * from account where accno=#{accNo} and name=#{name}
+    </select>
+
+    <!--根据账号，修改余额-->
+    <update id="updateBalanceByAccno" parameterType="account">
+        update account set balance=balance+#{balance} where accno = #{accNo}
+    </update>
+</mapper>

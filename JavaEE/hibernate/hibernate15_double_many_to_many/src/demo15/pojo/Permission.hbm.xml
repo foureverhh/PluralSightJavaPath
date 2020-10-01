@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="demo15.pojo">
+    <class name="Permission" table="t_permission_15">
+        <id name="id">
+            <generator class="native"/>
+        </id>
+        <property name="name"/>
+        <set name="roles" table="t_role_permission_15" inverse="true">
+            <key column="pid"/>
+            <many-to-many column="rid" class="Role"/>
+        </set>
+    </class>
+</hibernate-mapping>

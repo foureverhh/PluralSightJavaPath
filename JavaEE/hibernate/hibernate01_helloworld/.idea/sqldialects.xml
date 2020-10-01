@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/../03hibernate_crud" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../hibernate03_crud" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../hibernate04_junit" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../hibernate05_session" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../hibernate06_struts" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../hibernate06_struts_again" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../hibernate09_many_to_one_double" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../hibernate10_single_one_to_one_foreign_key" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../hibernate24_native_sql/test/Test.java" dialect="MySQL" />
+  </component>
+</project>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>dates</title>
+</head>
+<body>
+    <h3 th:text="${dates}"></h3>
+    <p>dates.format 以浏览器默认语言为标准的日期</p>
+    <p th:text=${#dates.format(key)}></p>
+    <hr>
+    <p>按照指定格式演示年月日 th:text=${#dates.format(key,"yyyy-MM-dd")}</p>
+    <p th:text=${#dates.format(key,"yyyy-MM-dd")}></p>
+    <hr>
+    <p>年 #dates.year(key)</p>
+    <p th:text=${#dates.year(key)}></p>
+    <p>月 #dates.month(key)</p>
+    <p th:text=${#dates.month(key)}></p>
+    <p>日 #dates.day(key)</p>
+    <p th:text=${#dates.day(key)}></p>
+    <hr>
+
+</body>
+</html>

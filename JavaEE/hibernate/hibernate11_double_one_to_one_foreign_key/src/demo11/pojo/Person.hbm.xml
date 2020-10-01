@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="demo11.pojo">
+    <class name="Person" table="t_person">
+         <id column="id" name="id">
+             <generator class="native"/>
+         </id>
+        <property name="name" column="name"/>
+        <property name="sex" column="sex"/>
+        <!--当多对一时，在多的一个方的外键不重复，实质就是一对一外键-->
+        <many-to-one name="card" class="Card" column="card_id" unique="true"/>
+    </class>
+</hibernate-mapping>

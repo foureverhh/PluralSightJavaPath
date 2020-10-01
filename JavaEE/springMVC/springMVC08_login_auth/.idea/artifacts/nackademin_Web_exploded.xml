@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="nackademin:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/nackademin_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="nackademin/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="nackademin" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="application" name="spring-web-5.2.7.RELEASE" />
+          <element id="library" level="application" name="spring-webmvc-5.2.7.RELEASE" />
+          <element id="library" level="application" name="asm-7.1" />
+          <element id="library" level="application" name="jstl-1.2" />
+          <element id="library" level="application" name="Spring-5.2.3.RELEASE" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

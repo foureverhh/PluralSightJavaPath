@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/data/jpa
+        http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+        <!--配置springIOC的注解扫描-->
+        <context:component-scan base-package="com.foureverhh"/>
+        
+        <!--配置读取properties文件的工具类-->
+        <context:property-placeholder location="classpath:jdbc.properties"/>
+
+        <!--配置数据库连接池-->
+        <bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+                <property name="jdbcUrl" value="${jdbc.url}"/>
+                <property name="driverClass" value="${jdbc.driver.class}"/>
+                <property name="user" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+        </bean>
+
+        <!--配置hibernate原生的session factory-->
+        <!--
+        <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+                <property name="dataSource" ref="myDataSource"/>
+                &lt;!&ndash;hibernate properties属性：&ndash;&gt;
+                &lt;!&ndash;配置与hibernate相关的内容，入显示sql语句，开启正向工程&ndash;&gt;
+                <property name="hibernateProperties">
+                        <props>
+                                &lt;!&ndash;显示当前执行的sql语句&ndash;&gt;
+                                <prop key="hibernate.show_sql">true</prop>
+                                <prop key="hibernate.format_sql">true</prop>
+                                &lt;!&ndash;开启正向工程&ndash;&gt;
+                                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                        </props>
+                </property>
+                &lt;!&ndash;配置扫描实体所在的包&ndash;&gt;
+                <property name="packagesToScan">
+                        <list>
+                                <value>com.foureverhh.pojo</value>
+                        </list>
+                </property>
+          </bean>
+        -->
+
+        <!--Spring整合JPA 配置EntityManagerFactory上下文工程，用于配置hibernate context的工程-->
+        <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+                <property name="dataSource" ref="myDataSource"/>
+                <property name="jpaVendorAdapter">
+                        <!--jap vendor adapter的内部实例，spring不需要使用，所以不需要id-->
+                        <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+                                <!--hibernate 相关属性的注入-->
+                                <!--配置数据库类型-->
+                                <property name="database" value="MYSQL"/>
+                                <!--hibernate正向工程，自动创建表格 相当于hbm2ddl.auto-->
+                                <property name="generateDdl" value="true"/>
+                                <!--显示执行的sql,   hibernate.show_sql-->
+                                <property name="showSql" value="true"/>
+                        </bean>
+                </property>
+                <!--扫描实体的包-->
+                <property name="packagesToScan">
+                        <list>
+                                <value>com.foureverhh.pojo</value>
+                        </list>
+                </property>
+        </bean>
+
+
+        <!--Hibernate JPA 配置事务管理器-->
+        <bean name="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+                <property name="entityManagerFactory" ref="entityManagerFactory"/>
+        </bean>
+
+
+        <!--配置开启注解事务处理-->
+        <tx:annotation-driven />
+
+        <!--配置Spring Data JPA-->
+        <!--base-package:扫描Dao接口所在的包-->
+        <jpa:repositories base-package="com.foureverhh.dao"/>
+
+
+
+        <!--配置原生 Hibernate的事务管理器-->
+        <!--
+        <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+                <property name="dataSource" ref="myDataSource"/>
+                <property name="sessionFactory" ref="sessionFactory"/>
+        </bean>
+        -->
+
+        <!--Hibernate template 对象的配置，用于简化hibernate orm查询-->
+        <!--
+                <bean id="hibernateTemplate" class="org.springframework.orm.hibernate5.HibernateTemplate">
+                <property name="sessionFactory" ref="sessionFactory"/>
+                </bean>
+        -->
+
+</beans>

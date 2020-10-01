@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="hibernate06_struts:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/hibernate06_struts_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="hibernate06_struts/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="hibernate06_struts" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Hibernate 5.4.11-5.4.11" />
+          <element id="library" level="application" name="mysql-connector-java-8.0.19" />
+          <element id="library" level="application" name="commons-fileupload-1.4" />
+          <element id="library" level="application" name="commons-io-2.7" />
+          <element id="library" level="application" name="jstl-1.2" />
+          <element id="library" level="application" name="asm-7.1" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/all_jars/commons-lang3-3.11.jar" />
+          <element id="library" level="application" name="struts2-core-2.5.22" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/all_jars/structs/commons-lang3-3.11.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/all_jars/structs/freemarker-2.3.30.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/all_jars/structs/struts2-core-2.5.22.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/all_jars/structs/ognl-3.2.14.jar" />
+          <element id="library" level="application" name="log4j-1.2.17" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/all_jars/structs/javassist-3.27.0-GA.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/all_jars/structs/xwork-core-2.3.37.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

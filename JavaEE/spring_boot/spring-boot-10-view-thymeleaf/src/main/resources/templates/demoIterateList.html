@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Iterate</title>
+</head>
+<body>
+    <h3>th iteration</h3>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Age</th>
+        </tr>
+        <tr th:each="user:${usersList}">
+            <td th:text="${user.userId}"></td>
+            <td th:text="${user.username}"></td>
+            <td th:text="${user.userAge}"></td>
+        </tr>
+    </table>
+    <hr>
+    <p>状态变量</p>
+    <p>index 当前迭代器的索引从0开始</p>
+    <p>count 当前迭代对象的计数从1开始</p>
+    <p>size 当前迭代对象的长度</p>
+    <p>even/odd 当前循环是否是偶数/基数，基数从1开始</p>
+    <p>first 当前循环是否是第一条，如果是则返回true，否则返回false</p>
+    <p>last 当前循环是否是最后一条，如果是则返回true，否则返回false</p>
+    <table align="center">
+        <tr>
+            <th align="center" >ID</th>
+            <th align="center" >Username</th>
+            <th align="center" >Age</th>
+            <th align="center" >Index</th>
+            <th align="center" >Count</th>
+            <th align="center" >Size</th>
+            <th align="center" >Even</th>
+            <th align="center" >Odd</th>
+            <th align="center" >First</th>
+            <th align="center" >Last</th>
+        </tr>
+        <tr th:each="user,var:${usersList}">
+            <td align="center" th:text="${user.userId}"></td>
+            <td align="center" th:text="${user.username}"></td>
+            <td align="center" th:text="${user.userAge}"></td>
+            <td align="center" th:text="${var.index}"></td>
+            <td align="center" th:text="${var.count}"></td>
+            <td align="center" th:text="${var.size}"></td>
+            <td align="center" th:text="${var.even}"></td>
+            <td align="center" th:text="${var.odd}"></td>
+            <td align="center" th:text="${var.first}"></td>
+            <td align="center" th:text="${var.last}"></td>
+        </tr>
+    </table>
+</body>
+</html>

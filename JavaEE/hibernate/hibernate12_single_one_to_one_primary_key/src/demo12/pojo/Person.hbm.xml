@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="demo12.pojo">
+        <class name="Person" table="t_person_12">
+        <id name="id" column="id">
+            <!--由card的主键来作为person的主键，这样person的主键既是主键也是外键-->
+            <generator class="foreign">
+                <param name="property">card</param>
+            </generator>
+        </id>
+        <property name="name" column="name"/>
+        <property name="sex" column="sex"/>
+        <!--constraint为true，将添加外键约束-->
+        <one-to-one name="card"  class="Card" constrained="true"/>
+    </class>
+</hibernate-mapping>

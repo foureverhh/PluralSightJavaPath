@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="rbac:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/rbac_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="rbac/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="rbac" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="Spring-5.2.3.RELEASE" />
+          <element id="library" level="application" name="spring-webmvc-5.2.7.RELEASE" />
+          <element id="library" level="project" name="Spring WebService" />
+          <element id="library" level="application" name="asm-7.1" />
+          <element id="library" level="application" name="aspectjweaver-1.9.5" />
+          <element id="library" level="application" name="jackson-annotations-2.11.1" />
+          <element id="library" level="application" name="jackson-core-2.11.1" />
+          <element id="library" level="application" name="jackson-databind-2.11.1" />
+          <element id="library" level="application" name="jstl-1.2" />
+          <element id="library" level="application" name="mybatis-3.5.5" />
+          <element id="library" level="application" name="mybatis-spring-2.0.5" />
+          <element id="library" level="application" name="mysql-connector-java-8.0.19" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Thymeleaf demo</title>
+</head>
+<body>
+    <span th:text="Hello"></span>
+    <hr>
+    <span th:text="${msg}"></span>
+    <hr>
+    <input type="text" name="username" th:value="${msg}">
+    <hr>
+    <p>th:text="${#strings.isEmpty(msg)}" 判断某个字符串是否为空</p>
+    <p>1.Thymeleaf的内置对象，必须使用#</p>
+    <p>2.Thymeleaf大多数的内置对象都是以s结尾，比如#strings，#numbers，#dates</p>
+    <span th:text="${#strings.isEmpty(msg)}"></span>
+    <hr>
+    <p>校验字符是否存在在字符串中 th:text="${#strings.contains(msg,'T')}</p>
+    <span th:text="${#strings.contains(msg,'T')}"></span>
+    <span th:text="${#strings.contains(msg,'9')}"></span>
+    <hr>
+    <p>字符串中的首字母 th:text="${#strings.startsWith(msg,'T')}</p>
+    <p>字符串的尾字母 th:text="${#strings.endsWith(msg,'T')}</p>
+    <span th:text="${#strings.startsWith(msg,'T')}"></span> <br>
+    <span th:text="${#strings.startsWith(msg,'9')}"></span>
+    <hr>
+    <p>字符串长度 th:text="${#strings.startsWith(msg,'T')}</p>
+    <span th:text="${#strings.length(msg)}"></span>
+    <hr>
+    <p>字符位置 th:text="${#strings.indexOf(msg,'T')}</p>
+    <span th:text="${#strings.indexOf(msg,'h')}"></span>
+    <hr>
+    <p>字符subString th:text="${#strings.substring()}"</p>
+    <span th:text="${#strings.substring(msg,3)}"></span> <br>
+    <span th:text="${#strings.substring(msg,3,4)}"></span> <br>
+    <span th:text="${#strings.substring(msg,3,5)}"></span> <br>
+    <span th:text="${#strings.substring(msg,10,11)}"></span> <br>
+    <span th:text="${#strings.substring(msg,11)}"></span> <br>
+    <hr>
+    <p>upper lower case th:text="${#strings.toUpperCase(msg)} </p>
+    <span th:text="${#strings.toUpperCase(msg)}"></span><br>
+    <span th:text="${#strings.toLowerCase(msg)}"></span><br>
+    <hr>
+
+
+</body>
+</html>

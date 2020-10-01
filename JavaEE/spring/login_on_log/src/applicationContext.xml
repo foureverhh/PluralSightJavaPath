@@ -1,0 +1,69 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd
+           http://www.springframework.org/schema/tx
+           http://www.springframework.org/schema/context/spring-tx.xsd"
+           default-autowire="byName">
+    <!--加载属性文件 多个属性文件的话class="classpath:db.properties，classpath:db.properties"-->
+    <context:property-placeholder location="classpath:db.properties,classpath:second.properties"/>
+    <!--注解annotation扫描-->
+    <context:component-scan base-package="service.impl"/>
+    <!--定义数据源-->
+       <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+           <property name="driverClassName" value="${jdbc.driver}"/>
+           <property name="url" value="${jdbc.url}"/>
+           <property name="username" value="${jdbc.username}"/>
+           <property name="password" value="${jdbc.password}"/>
+       </bean>
+    <!--定义SqlSessionFactory-->
+       <bean id="userFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+           <!--<property name="dataSource" ref="dataSource"/>-->
+           <property name="typeAliasesPackage" value="pojo"/>
+       </bean>
+    <!--配置mapper扫描器-->
+       <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+           <property name="basePackage" value="mapper"/>
+           <property name="sqlSessionFactoryBeanName" value="userFactory"/>
+           <!--autowire byName自动注入了-->
+           <!--<property name="sqlSessionFactory" ref="userFactory"/>-->
+       </bean>
+    <bean id="userService" class="service.impl.UserServiceImpl">
+        <!--autowire byName自动注入了-->
+        <!--<property name="userMapper" ref="userMapper"/>-->
+    </bean>
+    <bean id="myBefore" class="advice.MyBefore"/>
+    <bean id="myAfter" class="advice.MyAfter"/>
+    <aop:config>
+        <aop:pointcut id="myPointCut" expression="execution(* service.impl.UserServiceImpl.login(..))"/>
+        <aop:advisor pointcut-ref="myPointCut" advice-ref="myBefore"/>
+        <aop:advisor pointcut-ref="myPointCut" advice-ref="myAfter"/>
+    </aop:config>
+    <!--配置事务管理器transactionManager-->
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!--事务管理器需要接驳数据库-->
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!--配置声明式事务-->
+    <tx:advice id="txAdvice" transaction-manager="txManager">
+        <tx:attributes >
+            <!--写明哪些方法需要事务控制，支持通配符*-->
+            <tx:method name="ins*" propagation="REQUIRED"/>
+            <tx:method name="upd*"/>
+            <tx:method name="del*"/>
+            <tx:method name="*" read-only="true"/>
+        </tx:attributes>
+    </tx:advice>
+    <aop:config>
+        <aop:pointcut id="txPoint" expression="execution(* service.impl.*.*(..))"/>
+        <aop:advisor pointcut-ref="txPoint" advice-ref="txAdvice"/>
+    </aop:config>
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+</beans>

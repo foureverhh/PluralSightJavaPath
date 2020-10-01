@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="spring-cloud-rabbitmq:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/spring_cloud_rabbitmq_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="spring-cloud-rabbitmq/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="spring-cloud-rabbitmq" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

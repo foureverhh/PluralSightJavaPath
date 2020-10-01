@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.LogMapper">
+    <insert id="ins" parameterType="list">
+        insert into log values
+        <trim suffixOverrides=",">
+            <foreach collection="list" item="log" >
+                (default,#{log},'2',2),
+            </foreach>
+        </trim>
+    </insert>
+    <select id="selectAll" resultType="log">
+        select id,accIn,account as accOut,money from log;
+    </select>
+    <!--当多参数时，不需要写parameterType,取primitive及string的parameter使用#{arg0}/#{param1} #{arg1}/#{param2}-->
+  <!--  <select id="selectByAccInAccOut" resultType="log">
+        select * from log where  accin = #{arg0} and account = #{arg1}
+    </select>-->
+
+
+
+     <select id="selectByAccInAccOut" resultType="log">
+        select id,accIn,account as accOut, money from log where accin=#{in} and account =#{out}
+     <!--
+   <if test="in != null and in != ''">
+             and accIn=#{in}
+         </if>
+         <if test="out != null and out != ''">
+             and account=#{out}
+         </if>-->
+    </select>
+
+<!--    <select id="selectByAccInAndAccOut" resultType="log">
+        select id,accIn,account as accOut, money from log where 1=1
+        <if test="accIn != null and accIn != ''">
+                and accIn=#{accIn}
+        </if>
+        <if test="accOut != null and accOut != ''">
+                and account=#{accOut}
+        </if>
+    </select>-->
+    <select id="selectByAccInAndAccOut" resultType="log">
+        select id,accIn,account as accOut, money from log
+        <where>
+            <if test="accIn != null and accIn != ''">
+                and accIn=#{accIn}
+            </if>
+            <if test="accOut != null and accOut != ''">
+                and account=#{accOut}
+            </if>
+        </where>
+    </select>
+    <select id="selIn" resultType="pojo.Log" parameterType="list">
+        select id,accIn,account as accOut, money from log where id in
+        <foreach collection="list" item="abc" open="(" close=")" separator=",">
+            #{abc}
+        </foreach>
+    </select>
+
+    <update id="upd" parameterType="log">
+        update log
+        <set>
+            id=#{id},
+            <if test="accIn != null and accIn!=''">
+                accIn=#{accIn},
+            </if>
+            <if test="accOut != null and accOut!=''">
+                account = #{accOut},
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+</mapper>

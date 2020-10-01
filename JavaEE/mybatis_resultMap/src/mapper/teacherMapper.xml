@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.TeacherMapper">
+    <resultMap id="myMap" type="teacher">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <collection  ofType="student"  property="students">
+            <id column="sid" property="id"/>
+            <result property="name" column="sname"/>
+            <result property="id" column="sid"/>
+            <result property="age" column="age"/>
+            <result property="tid" column="tid"/>
+        </collection>
+    </resultMap>
+    <select id="selAll" resultMap="myMap">
+       select t.id id, t.name name,s.id sid, s.name sname, age, tid from teacher t left join student s on t.id = s.tid;
+   </select>
+    <resultMap type="teacher" id="myMap1">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <collection property="students" ofType="student">
+            <id property="id" column="sid"/>
+            <result property="name" column="sname"/>
+            <result property="age" column="age"/>
+            <result property="tid" column="tid"/>
+        </collection>
+    </resultMap>
+    <select id="selAll1" resultMap="myMap1">
+       select t.id id, t.name name,s.id sid, s.name sname, age, tid from teacher t left join student s on t.id = s.tid;
+   </select>
+</mapper>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!--package 用于指定类所在的包，如果不指定，那么在指定class的name的时候，需要指定全路径-->
+<!--<hibernate-mapping package="pojo">-->
+<hibernate-mapping>
+    <!--
+    //如果package没有指定需要，需要写明全路径
+    <class name="com.foureverhh.pojo.User" table="t_user" schema="hibernate4">
+    -->
+    <!--
+        class 指定类的信息
+        name指定类名
+        table指定类映射的数据库的表名，如果不指定默认跟类名相同
+        schema指定哪个数据库，可以不指定
+    -->
+    <class name="demo22.pojo.User" table="t_user_22">
+        <!--
+            主键映射
+            在hibernate中，指定的数据库的表必须有主键
+           column是属性名所对应的表字段名称，类型是属性的类型
+           column默认和属性名是一致的，类型默认和属性类型一致
+           length是指定长度
+           generator，主键生成策略
+        -->
+        <id name="id" column="id" >
+            <!--
+                主键生成策略：
+                increment 用于龙long,short或者int类型生成唯一标识，只有在没有其他进程往同一张表中插入数据时才能使用。在集群下不能用
+                identity 对DB2，Mysql，MS SQL Server， Sybase的内置标识字段提供支持。返回的标识符是long，short，或者int类型的
+
+            -->
+            <generator class="native"/>
+        </id>
+        <!--属性的映射，可以省略-->
+        <property name="name" />
+        <property name="age" />
+    </class>
+</hibernate-mapping>

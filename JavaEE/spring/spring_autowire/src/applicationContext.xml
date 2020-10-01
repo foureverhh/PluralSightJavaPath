@@ -1,0 +1,28 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd"
+           >
+
+    <!--<bean id="teacher" class="pojo.Teacher" />-->
+    <bean id="teacher2" class="pojo.Teacher"/>
+    <bean id="teacher1" class="pojo.Teacher" scope="prototype"/>
+  <!--  <bean id="people" class="People" autowire="byName">-->
+    <!--<bean id="people" class="People" autowire="byType">-->
+    <!--<bean id="people" class="pojo.People" scope="prototype">-->
+    <!--一次请求内的所有实例都是单例 -->
+   <!-- <bean id="people" class="pojo.People" scope="request" autowire="byName">  </bean>-->
+
+    <bean id="people1" class="pojo.People" autowire="constructor" >
+    </bean>
+    <bean id="people2" class="pojo.People" >
+
+        <!--<property name="teacher" ref="teacher"/>-->
+    </bean>
+</beans>

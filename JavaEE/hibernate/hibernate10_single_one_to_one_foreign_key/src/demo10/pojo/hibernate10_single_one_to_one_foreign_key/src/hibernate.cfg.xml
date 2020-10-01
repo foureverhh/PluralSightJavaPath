@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">vps2020</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate4?serverTimezone=UTC</property>
+        <!--指定数据库语言类型，方言-->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <!--打印sql语句，以更好的格式显示-->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <!--实现对象关联信息自动转化为sql ddl文件-->
+        <!--create 表示每次先删除表，再新建表-->
+        <!--update 表示先检查数据库中是否存在表，如果不存在则新建，如果存在则更新-->
+        <!--create-drop 基本同create一样  -->
+        <!--<property name="hibernate.hbm2ddl.auto">create</property>-->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!--<property name="hibernate.hbm2ddl.auto">create-drop</property>-->
+        <!--指定映射文件-->
+        <!-- <mapping resource="demo07/pojo/User.hbm.xml" />-->
+        <mapping resource="demo10/pojo/Card.hbm.xml" />
+        <mapping resource="demo10/pojo/Person.hbm.xml"/>
+
+    </session-factory>
+</hibernate-configuration>

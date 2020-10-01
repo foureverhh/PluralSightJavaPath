@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:理解为实现类的全路径（包名加类名）-->
+<mapper namespace="a.b">
+    <!--
+    id:方法名
+    parameterType:定义参数类型
+    resultType:定义返回值类型
+    -->
+    <!--如果返回值是list，在resultType中写List的泛型，因为mybatis对jdbc封装，一行一行读取数据-->
+    <select id="selectAll" resultType="pojo.Flower">
+        select * from flower
+    </select>
+    <select id="selectById" resultType="pojo.Flower">
+        select * from FLOWER where id=1
+    </select>
+    <select id="countAll" resultType="int">
+        select count(*) from FLOWER
+    </select>
+    <select id="c" resultType="pojo.Flower">
+        select * from FLOWER;
+    </select>
+</mapper>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.foureverhh.mapper.one_to_many.StudentsMapper">
+    <!--联合查询students-->
+    <resultMap id="stuMap" type="students">
+        <id column="sid" property="id"/>
+        <result column="sName" property="name"/>
+        <result column="age" property="age"/>
+        <association property="classes" javaType="Classes">
+            <id column="id" property="id"/>
+            <result column="name" property="name"/>
+            <result column="teacherName" property="teacherName"/>
+        </association>
+    </resultMap>
+    <select id="selectAllStudents" resultMap="stuMap">
+        select c.id, c.name, c.teacherName,
+               s.id as sid, s.name as sName, s.age
+        from classes c
+        right join
+             students s
+        on c.id = s.cls_id
+    </select>
+
+    <!--外键，根据班级查询学生-->
+    <select id="selectStudentsByClass" resultType="students">
+        select id,name,age from students where clsId = #{param1}
+    </select>
+</mapper>

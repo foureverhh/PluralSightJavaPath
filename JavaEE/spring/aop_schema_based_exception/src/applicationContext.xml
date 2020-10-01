@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop.xsd">
+        <bean id="demo" class="com.bjsxt.test.Demo"/>
+        <bean id="mythrow" class="com.bjsxt.advice.MyThrow"/>
+      <!--  <aop:config>
+
+            <aop:pointcut expression="execution(* com.bjsxt.test.Demo.demo01())" id="myPoint"/>
+            <aop:advisor advice-ref="mythrow" pointcut-ref="myPoint"/>
+          &lt;!&ndash;  <aop:aspect ref="mythrow">
+                <aop:pointcut expression="execution(* com.bjsxt.test.Demo.demo01())" id="myPoint"/>
+                <aop:after-throwing method="afterThrowing" pointcut-ref="myPoint" throwing="ex"/>
+            </aop:aspect>&ndash;&gt;
+
+        </aop:config>-->
+    <bean id="myRound" class="com.bjsxt.advice.MyRound"/>
+    <aop:config>
+        <aop:pointcut id="myPoint" expression="execution(* com.bjsxt.test.Demo.demo01())"/>
+        <aop:advisor advice-ref="myRound" pointcut-ref="myPoint"/>
+    </aop:config>
+
+</beans>

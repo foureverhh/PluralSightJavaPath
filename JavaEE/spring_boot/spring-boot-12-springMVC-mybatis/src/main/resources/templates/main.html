@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+</head>
+<body>
+    <h3>Main</h3>
+    <p th:switch="${msg}">
+        <span th:case="1" th:text="${user.username}"></span>
+        <span th:case="0" th:text="Failed to insert"></span>
+    </p>
+    <p><span th:text="${user.username}"></span> and <span th:text="${user.password}"></span></p>
+</body>
+</html>

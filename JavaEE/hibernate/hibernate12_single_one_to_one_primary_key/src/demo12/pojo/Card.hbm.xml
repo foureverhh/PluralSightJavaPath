@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="demo12.pojo">
+    <class name="Card" table="t_card_12">
+        <id name="id" column="id">
+            <!--自己指定id-->
+            <generator class="assigned"/>
+        </id>
+        <property name="address" column="address"/>
+    </class>
+</hibernate-mapping>

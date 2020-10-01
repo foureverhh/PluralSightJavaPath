@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>show</title>
+</head>
+<body>
+    <h3>show html</h3>
+    <p>visit src/main/resources/templates</p>
+    <a th:href="@{templates/my.html}">templates/my.html</a> <br>
+    <a th:href="@{/templates/my.html}">/templates/my/my.html</a> <br>
+    <a th:href="@{my/my.html}">my/my.html</a><br>
+    <a th:href="@{/my/my.html}">/my/my.html</a>
+    <p>visit src/main/resources/static</p>
+    <a th:href="@{/html/my.html}">/html/my.html</a> <br>
+    <a th:href="@{html/my.html}">html/my.html</a>
+
+</body>
+</html>

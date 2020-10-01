@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="demo23.pojo.Student" table="t_student_23">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="age"/>
+        <property name="name"/>
+        <property name="sex"/>
+        <!--多对一的关联映射-->
+        <!--name为属性名，column为外键名-->
+        <many-to-one name="clz" column="clz_id"/>
+    </class>
+</hibernate-mapping>

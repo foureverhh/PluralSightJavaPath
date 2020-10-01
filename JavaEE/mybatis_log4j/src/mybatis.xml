@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="logImpl" value="LOG4j"/>
+    </settings>
+    <typeAliases>
+        <!--<typeAlias type="pojo.People" alias="peo"/>-->
+        <package name="pojo"/> <!--returnType中的pojo只需要写类名，而不需要写包名了-->
+    </typeAliases>
+    <environments default="my">
+        <environment id="my">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/ssm?serverTimezone=UTC"/>
+                <property name="username" value="root"/>
+                <property name="password" value="vps2020"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="mapper/peopleMapper.xml"/>
+    </mappers>
+</configuration>

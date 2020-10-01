@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="jsf_jpa_demo:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/jsf_jpa_demo_war_exploded.war</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="jsf_jpa_demo/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="jsf_jpa_demo" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="Mojarra-2.4.0" />
+          <element id="library" level="application" name="Maven: com.h2database:h2:1.4.200" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

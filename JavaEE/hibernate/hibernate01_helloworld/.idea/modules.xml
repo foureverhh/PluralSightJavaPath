@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hibernate01_helloworld.iml" filepath="$PROJECT_DIR$/hibernate01_helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate02_config/hibernate02_config.iml" filepath="$PROJECT_DIR$/../hibernate02_config/hibernate02_config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate03_crud/hibernate03_crud.iml" filepath="$PROJECT_DIR$/../hibernate03_crud/hibernate03_crud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate04_junit/hibernate04_junit.iml" filepath="$PROJECT_DIR$/../hibernate04_junit/hibernate04_junit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate05_session/hibernate05_session.iml" filepath="$PROJECT_DIR$/../hibernate05_session/hibernate05_session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate06_struts/hibernate06_struts.iml" filepath="$PROJECT_DIR$/../hibernate06_struts/hibernate06_struts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate06_struts_again/hibernate06_struts_again.iml" filepath="$PROJECT_DIR$/../hibernate06_struts_again/hibernate06_struts_again.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate07_many_to_one/hibernate07_many_to_one.iml" filepath="$PROJECT_DIR$/../hibernate07_many_to_one/hibernate07_many_to_one.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate08_one_to_many/hibernate08_one_to_many.iml" filepath="$PROJECT_DIR$/../hibernate08_one_to_many/hibernate08_one_to_many.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate09_many_to_one_double/hibernate09_many_to_one_double.iml" filepath="$PROJECT_DIR$/../hibernate09_many_to_one_double/hibernate09_many_to_one_double.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate10_single_one_to_one_foreign_key/hibernate10_single_one_to_one_foreign_key.iml" filepath="$PROJECT_DIR$/../hibernate10_single_one_to_one_foreign_key/hibernate10_single_one_to_one_foreign_key.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate11_double_one_to_one_foreign_key/hibernate11_double_one_to_one_foreign_key.iml" filepath="$PROJECT_DIR$/../hibernate11_double_one_to_one_foreign_key/hibernate11_double_one_to_one_foreign_key.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate12_single_one_to_one_primary_key/hibernate12_single_one_to_one_primary_key.iml" filepath="$PROJECT_DIR$/../hibernate12_single_one_to_one_primary_key/hibernate12_single_one_to_one_primary_key.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate13_double_one_to_one_primary_key/hibernate13_double_one_to_one_primary_key.iml" filepath="$PROJECT_DIR$/../hibernate13_double_one_to_one_primary_key/hibernate13_double_one_to_one_primary_key.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate14_single_many_to_many/hibernate14_single_many_to_many.iml" filepath="$PROJECT_DIR$/../hibernate14_single_many_to_many/hibernate14_single_many_to_many.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate15_double_many_to_many/hibernate15_double_many_to_many.iml" filepath="$PROJECT_DIR$/../hibernate15_double_many_to_many/hibernate15_double_many_to_many.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate16_component_mapping/hibernate16_component_mapping.iml" filepath="$PROJECT_DIR$/../hibernate16_component_mapping/hibernate16_component_mapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate17_composite_key1/hibernate17_composite_key1.iml" filepath="$PROJECT_DIR$/../hibernate17_composite_key1/hibernate17_composite_key1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate18_composite_key2/hibernate18_composite_key2.iml" filepath="$PROJECT_DIR$/../hibernate18_composite_key2/hibernate18_composite_key2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate19_composite_key3/hibernate19_composite_key3.iml" filepath="$PROJECT_DIR$/../hibernate19_composite_key3/hibernate19_composite_key3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate20_hibernate_list/hibernate20_hibernate_list.iml" filepath="$PROJECT_DIR$/../hibernate20_hibernate_list/hibernate20_hibernate_list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate21_cascade/hibernate21_cascade.iml" filepath="$PROJECT_DIR$/../hibernate21_cascade/hibernate21_cascade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate22_hql/hibernate22_hql.iml" filepath="$PROJECT_DIR$/../hibernate22_hql/hibernate22_hql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate23_criteria/hibernate23_criteria.iml" filepath="$PROJECT_DIR$/../hibernate23_criteria/hibernate23_criteria.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate24_native_sql/hibernate24_native_sql.iml" filepath="$PROJECT_DIR$/../hibernate24_native_sql/hibernate24_native_sql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate25_lazy_fetch/hibernate25_lazy_fetch.iml" filepath="$PROJECT_DIR$/../hibernate25_lazy_fetch/hibernate25_lazy_fetch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate26_cache/hibernate26_cache.iml" filepath="$PROJECT_DIR$/../hibernate26_cache/hibernate26_cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hibernate28_optimistic_lock/hibernate28_optimistic_lock.iml" filepath="$PROJECT_DIR$/../hibernate28_optimistic_lock/hibernate28_optimistic_lock.iml" />
+    </modules>
+  </component>
+</project>

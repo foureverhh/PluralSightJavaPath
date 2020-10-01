@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax intro</title>
+    <style>
+        #showDiv {
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Ajax：01_ajax的概念与原理</h1>
+    <h2>什么是Ajax</h2>
+    <p>异步刷新技术，用于在当前页面内响应不同的请求内容。</p>
+    <h2>为什么需要ajax</h2>
+    <p>需要将本次响应的结果和前面的响应结果内容在同一个页面中展现给用户</p>
+    <h2>范例</h2>
+    <h3>欢迎回到403峡谷</h3>
+    <hr>
+    <input type="button" value="测试" onclick="getData()"/>
+    <dl>
+        <dt>
+            <dd>
+                <form name="form" action="my.jsp">
+                   Intro: <input type="submit" value="To my.jsp">
+                </form>
+            </dd>
+        </dt>
+        <dt>
+            <dd>
+                <form name="form" action="my2.jsp">
+                    Demo :<input type="submit" value="To my2.jsp">
+                </form>
+            </dd>
+        </dt>
+        <dt>
+            <dd>
+                <form action="ajaxRequest.jsp">
+                    Ajax request: <input type="submit" value="To ajaxRequest">
+                </form>
+            </dd>
+        </dt>
+        <dt>
+        <dd>
+            <form action="ajaxData.jsp">
+                Ajax data: <input type="submit" value="To ajaxData">
+            </form>
+        </dd>
+        </dt>
+    </dl>
+    <script>
+        function getData() {
+           console.log("getData()")
+        }
+    </script>
+</body>
+</html>

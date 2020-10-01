@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.foureverhh.mapper.one_to_one.PersonMapper">
+    <resultMap id="personMap2" type="person">
+        <id column="id" property="id"/>
+        <association property="card" column="{id}" select="com.foureverhh.mapper.one_to_one.PersonCardMapper.selectPersonCardByPerson"/>
+    </resultMap>
+    <select id="selectPersons" resultMap="personMap2">
+        select id, name, birthday from person
+    </select>
+
+    <resultMap id="personMap" type="person">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="birthday" property="birthday"/>
+        <association property="card" javaType="personCard">
+            <id property="id" column="pcId"/>
+            <result property="name" column="pcName"/>
+            <result property="cardNo" column="pcCardNo"/>
+            <result property="address" column="pcAddress"/>
+        </association>
+    </resultMap>
+
+    <select id="selectAll" resultMap="personMap">
+        select p.id, p.name,p.birthday,
+               pc.id as pcId, pc.name as pcName, pc.cardno pcCardNo, pc.address pcAddress
+        from person p
+        left join
+             personcard pc
+        on p.id = pc.personid
+    </select>
+</mapper>

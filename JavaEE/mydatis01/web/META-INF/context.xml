@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Context>
+    <!--auth 表示连接池是被Container（项目里是Tomcat），还是project控制-->
+    <Resource
+        driverClassName="com.mysql.cj.jdbc.Driver"
+        url="jdbc:mysql://localhost:3066/ssm/?serverTimezone=UTC"
+        username="root"
+        password="vps2020"
+        maxActive="50"
+        maxIdle="20"
+        name="test"
+        auth="Container"
+        maxWait="10000"
+        type="javax.sql.DataSource"
+    />
+</Context>

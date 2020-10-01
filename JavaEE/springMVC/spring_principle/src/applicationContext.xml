@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop.xsd
+                           http://www.springframework.org/schema/tx
+                           http://www.springframework.org/schema/tx/spring-tx.xsd">
+        <context:component-scan base-package="com.foureverhh.service.impl"/>
+        <context:property-placeholder location="classpath:db.properties"/>
+        <!--数据源，可以使用druid-->
+        <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+                <property name="driverClassName" value="${driverClass}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+                <property name="url" value="${url}"/>
+        </bean>
+        <!--会话工厂，必须使用MyBatis-spring整合jar包中的工厂bean-->
+        <bean id="factory" class="org.mybatis.spring.SqlSessionFactoryBean">
+                <!--加载本地的Mybatis配置文件，主要用于加载pageelper-->
+                <!--<property name="configLocation" value="classpath:mybatis-config.xml">  </property>-->
+                <property name="dataSource" ref="dataSource"/>
+                <property name="typeAliasesPackage" value="com.foureverhh.pojo"/>
+                <!--mapper xml映射,非必须，仅用于mapper interface与xml不在同一个文件夹下-->
+            <!--    <property name="mapperLocations">
+                        <array>
+                                <value>classpath:com/foureverhh/mapper/*.xml</value>
+                        </array>
+                </property>-->
+        </bean>
+        <!--Mapper 工厂-->
+        <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+                <property name="basePackage" value="com.foureverhh.mapper"/><!--mapper 接口所在包-->
+                <property name="sqlSessionFactoryBeanName" value="factory"/>
+        </bean>
+
+        <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+                <property name="dataSource" ref="dataSource"/>
+        </bean>
+
+        <tx:advice id="txAdvice" transaction-manager="txManager">
+                <tx:attributes>
+                        <tx:method name="ins*"/>
+                        <tx:method name="del*"/>
+                        <tx:method name="upd*"/>
+                        <tx:method name="sel*" read-only="true"/>
+                </tx:attributes>
+        </tx:advice>
+
+        <aop:config>
+                <aop:pointcut id="pointcut" expression="execution(* com.foureverhh.service.impl.*.*(..))"/>
+                <aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut"/>
+        </aop:config>
+
+        <bean id="personService" class="com.foureverhh.service.impl.PersonServiceImpl">
+                <property name="personMapper" ref="personMapper"/>
+        </bean>
+
+        <bean id="personCardService" class="com.foureverhh.service.impl.PersonCardServiceImpl">
+                <property name="personCardMapper" ref="personCardMapper"/>
+        </bean>
+        <bean id="userService" class="com.foureverhh.service.impl.UserServiceImpl">
+              <!--  <property name="userMapper" ref="userMapper"></property>-->
+        </bean>
+</beans>

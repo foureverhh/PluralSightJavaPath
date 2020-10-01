@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Iterate Map</title>
+</head>
+<body>
+    <h3>Map iteration</h3>
+    <table>
+        <tr>
+            <th>map.key</th>
+            <th align="center" >ID</th>
+            <th align="center" >Username</th>
+            <th align="center" >Age</th>
+        <!--
+            <th align="center" >Index</th>
+            <th align="center" >Count</th>
+            <th align="center" >Size</th>
+            <th align="center" >Even</th>
+            <th align="center" >Odd</th>
+            <th align="center" >First</th>
+            <th align="center" >Last</th>
+            -->
+        </tr>
+        <tr th:each="map: ${usersMap}">
+            <td th:text="${map.key}"></td>
+            <td th:text="${map.value.userId}"></td>
+            <td th:text="${map.value.username}"></td>
+            <td th:text="${map.value.userAge}"></td>
+        </tr>
+    </table>
+</body>
+</html>

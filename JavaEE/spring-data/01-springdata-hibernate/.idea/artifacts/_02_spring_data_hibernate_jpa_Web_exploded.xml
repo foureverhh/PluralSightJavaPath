@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="_02-spring-data-hibernate-jpa:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/_02_spring_data_hibernate_jpa_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="_02-spring-data-hibernate-jpa/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="_02-spring-data-hibernate-jpa" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="demo20.pojo">
+    <class name="Clz" table="t_class_20">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="address" column="address"/>
+        <property name="name" column="name"/>
+        <list name="students">
+            <!--key里面指定many方外键的column名称-->
+            <key column="clz_id"/>
+            <!--有序列，顺序由hibernate来维护，默认从0开始，使用base设定开始值-->
+            <list-index base="1" column="idx"/>
+            <!--class只能多的一端的类型-->
+            <one-to-many class="Student"/>
+        </list>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,35 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--Schema based aop 每个接口都需要通知或者类-->
+    <!--aop:config来配置pointcut和advisor-->
+        <!--配置通知类对象-->
+   <!--
+   <bean id="myBefore" class="com.bjsxt.advice.MyBeforeAdvice"/>
+    <bean id="myAfter" class="com.bjsxt.advice.MyAfterAdvice"/>
+    &lt;!&ndash;<bean id="myAfter" class="com.bjsxt.advice.MyAfterAdvice"/>&ndash;&gt;
+    <aop:config>
+        &lt;!&ndash;配置切点&ndash;&gt;
+       &lt;!&ndash; <aop:pointcut expression="execution(* com.bjsxt.test.Demo.demo02(String,int)) and args(name,age)" id="demo02"/>&ndash;&gt;
+        <aop:pointcut expression="execution(* com.bjsxt.test.Demo.*(..))" id="myPoint"/>
+        &lt;!&ndash;配置通知&ndash;&gt;
+        <aop:advisor advice-ref="myBefore" pointcut-ref="myPoint"/>
+        <aop:advisor advice-ref="myAfter" pointcut-ref="myPoint"/>
+    </aop:config>
+    &lt;!&ndash;配置demo类&ndash;&gt;
+    <bean id="demo" class="com.bjsxt.test.Demo"/>
+    <bean id="demo1" class="com.bjsxt.test.Demo1"/>
+    -->
+    <bean id="demo" class="com.bjsxt.test.Demo"/>
+    <bean id="throw" class="com.bjsxt.advice.MyThrowAdvice"/>
+    <aop:config>
+        <aop:aspect ref="throw">
+            <aop:pointcut expression="execution(* com.bjsxt.test.Demo.demo01())" id="myPoint"/>
+            <aop:after-throwing method="myException" pointcut-ref="myPoint" throwing="e"/>
+        </aop:aspect>
+    </aop:config>
+</beans>

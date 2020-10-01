@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.foureverhh.mapper.StudentMapper">
+    <select id="selByPage" resultType="student" parameterType="pageInfo">
+        select * from student
+        <where>
+            <if test="sName != null and sName !=''">
+                <bind name="sName" value="'%'+sName+'%'"/>
+                and name like #{sName}
+            </if>
+            <if test="tName != null and tName !=''">
+                <bind name="tName" value="'%'+tName+'%'"/>
+                and tid in (select id from teacher where name like #{tName})
+            </if>
+        </where>
+        limit #{pageStart}, #{pageSize};
+    </select>
+    <select id="selCountByPageInfo" resultType="long" parameterType="pageInfo">
+        select count(*) from student
+        <where>
+            <if test="sName!=null and sName!=''">
+                <bind name="sName" value="'%'+sName+'%'"/>
+                and name like #{sName}
+            </if>
+            <if test="tName!=null and tName!=''">
+                <bind name="tName" value="'%'+tName+'%'"/>
+                and tid in (select id from teacher where name like #{tName})
+            </if>
+        </where>
+    </select>
+</mapper>

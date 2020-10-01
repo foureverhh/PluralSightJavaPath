@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop.xsd">
+        <bean id="demo" class="com.bjsxt.test.Demo"/>
+        <bean id="myAdvice" class="com.bjsxt.advice.MyAdvice"/>
+        <aop:config>
+            <aop:aspect ref="myAdvice">
+                <aop:pointcut id="mypoint1" expression="execution(* com.bjsxt.test.Demo.demo2(String,int)) and args(name1,age1))"/>
+                <aop:before method="myBefore" pointcut-ref="mypoint1" arg-names="name1,age1"/>
+        <!--        &lt;!&ndash;after-returning 只有切点正常运行时才能被运行&ndash;&gt;
+                <aop:after-returning method="myAftering" pointcut-ref="mypoint1"/>
+                &lt;!&ndash;after是无论切点是否正常运行都会被叫&ndash;&gt;
+                <aop:after method="myAfter" pointcut-ref="mypoint1"/>
+                <aop:around method="myRound"  pointcut-ref="mypoint1"/>
+                <aop:after-throwing method="myThrow" pointcut-ref="mypoint1"/>-->
+            </aop:aspect>
+            <aop:aspect ref="myAdvice">
+                <aop:pointcut id="mypoint2" expression="execution(* com.bjsxt.test.Demo.demo2(String)) and args(name1))"/>
+                <aop:before method="myBefore1" pointcut-ref="mypoint2" arg-names="name1"/>
+            </aop:aspect>
+        </aop:config>
+
+</beans>
